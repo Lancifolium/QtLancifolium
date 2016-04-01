@@ -32,3 +32,6 @@ FORMS    += QtLancifolium.ui \
 
 RESOURCES += \
     images.qrc
+
+DISTFILES += \
+    README.md

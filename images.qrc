@@ -6,5 +6,7 @@
         <file>images/stw.png</file>
         <file>images/move.png</file>
         <file>images/Lancifolium.ico</file>
+        <file>images/movblack.png</file>
+        <file>images/movwhite.png</file>
     </qresource>
 </RCC>

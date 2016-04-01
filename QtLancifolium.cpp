@@ -11,9 +11,15 @@ QtLancifolium::QtLancifolium(QWidget *parent) :
     onlymov.init();
     imgbord.load(":/images/bord.png");
     imgcur.load(":/images/move.png");
-    imgb.load(":/images/stb.png");
-    imgw.load(":/images/stw.png");
+    imgb.load(":/images/movblack.png");
+    imgw.load(":/images/movwhite.png");
     setWindowTitle("Lancifolium");
+
+    win_gap = 30;
+    win_size = 600;
+    win_xlb = 10;
+    win_ylb = 20;
+
     player = 1;
     curmov = -1;
     current = NULL;
@@ -37,28 +43,51 @@ QtLancifolium::~QtLancifolium()
 void QtLancifolium::drawmoveapp() {
     QPainter pain(this);
     pain.setRenderHint(QPainter::Antialiasing, true); // 使得邊緣柔和
+
     int tmpi, tmpj;
+    //QRect source(0, 0, 66, 66);
     for (tmpi = 0; tmpi < 19; tmpi++) {
         for (tmpj = 0; tmpj < 19; tmpj++) {
             if (onlymov.ston[tmpi][tmpj] == 1) {
-                pain.drawImage(tmpi * 30 + 16, tmpj * 30 + 16, imgb);
+                QRect target(win_xlb + tmpi * win_gap + win_gap * 11 / 20,
+                             win_ylb + tmpj * win_gap + win_gap * 11 / 20,
+                             win_gap * 9 / 10,
+                             win_gap * 9 / 10);
+                //pain.drawImage(tmpi * win_gap + win_xlb, tmpj * win_gap + win_ylb, imgb);
+                pain.drawImage(target, imgb);
             }
             else if (onlymov.ston[tmpi][tmpj] == 2) {
-                pain.drawImage(tmpi * 30 + 16, tmpj * 30 + 16, imgw);
+                QRect target(win_xlb + tmpi * win_gap + win_gap * 11 / 20,
+                             win_ylb + tmpj * win_gap + win_gap * 11 / 20,
+                             win_gap * 9 / 10,
+                             win_gap * 9 / 10);
+                //pain.drawImage(tmpi * win_gap + win_xlb, tmpj * win_gap + win_ylb, imgb);
+                pain.drawImage(target, imgw);
             }
         }
     } // finished for
+
     if (curmov >= 0) {
-        brushs.setColor(Qt::blue);
+        brushs.setColor(Qt::cyan);
         pain.setBrush(brushs);
-        pain.drawImage(curmov / 100 * 30 + 30, curmov % 100 * 30 + 30, imgcur);
+        QPolygon pts;
+        pts.setPoints(3,
+                      win_xlb + curmov / 100 * win_gap + win_gap,
+                      win_ylb + curmov % 100 * win_gap + win_gap,
+                      win_xlb + curmov / 100 * win_gap + win_gap,
+                      win_ylb + curmov % 100 * win_gap + win_gap * 29 / 20,
+                      win_xlb + curmov / 100 * win_gap + win_gap * 29 / 20,
+                      win_ylb + curmov % 100 * win_gap + win_gap);
+        //pain.drawImage(curmov / 100 * 30 + 30, curmov % 100 * 30 + 30, imgcur);
         //pain.drawRect(curmov / 100 * 30 + 24, curmov % 100 * 30 + 24, 12, 12);
+        pain.drawPolygon(pts); // 畫三角形
     }
 }
 
 void QtLancifolium::paintEvent(QPaintEvent *) {
     QPainter pain(this);
-    pain.drawImage(QPoint(0, 0), imgbord); // 棋盤
+    QRect target(win_xlb, win_ylb, win_size, win_size);
+    pain.drawImage(target, imgbord); // 棋盤
     brushs.setStyle(Qt::SolidPattern); // 填充模式
 
     //drawbord(); // 繪製棋盤
@@ -157,11 +186,59 @@ void QtLancifolium::wheelEvent(QWheelEvent *eve) {
     }
 }
 
+void QtLancifolium::resizeEvent(QResizeEvent *resize) { // 獲取更改後的棋盤大小
+    int widt, heit, allsize;
+    heit = resize->size().height();
+    widt = resize->size().width();
+    allsize = heit < widt ? heit : widt; // 選擇小者
+    printf("# resize [%d, %d]\n", widt, heit);
+    switch (allsize / 200) {
+    case 0:
+    case 1:
+    case 2: // 400x400
+        win_size = 400;
+        break;
+    case 3: // 600x600
+        win_size = 600;
+        break;
+    case 4: // 800x800
+        win_size = 800;
+        break;
+    case 5: // 1000x1000
+        win_size = 1000;
+        break;
+    case 6: // 1200x1200
+        win_size = 1200;
+        break;
+    case 7: // 1400x1400
+        win_size = 1400;
+        break;
+    case 8: // 1600x1600
+        win_size = 1600;
+        break;
+    default:
+        win_size = 600;
+        break;
+    }
+    win_gap = win_size / 20;
+    if (heit - win_size < 40) { // 此處考慮工具欄
+        win_ylb = 20;
+    }
+    else win_ylb = (heit - win_size) / 2;
+    if (widt < win_size) win_xlb = 0;
+    else win_xlb = (widt - win_size) / 2;
+    update(); // 重畫棋盤
+}
+
 void QtLancifolium::moveSimpleApp(int movx, int movy) {
     int tmpx, tmpy;
-    if ((movx >= 15) && (movx < 585) && (movy >= 15) && (movy < 585)) {
-        tmpx = (movx - 15) / 30;
-        tmpy = (movy - 15) / 30;
+    if ((movx >= win_xlb) &&
+        (movx < win_xlb + win_size) &&
+        (movy >= win_ylb) &&
+        (movy < win_ylb + win_size)
+    ) {
+        tmpx = (movx - win_xlb - win_gap / 2) / win_gap;
+        tmpy = (movy - win_ylb - win_gap / 2) / win_gap;
         switch (onlymov.configDropStone(player, tmpx * 100 + tmpy)) { // 著子
         case 0: break;
         case 1:

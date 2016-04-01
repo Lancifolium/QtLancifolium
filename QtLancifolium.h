@@ -9,6 +9,8 @@
 #include <QMessageBox>
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QPolygon>
+#include <QRect>
 #include <QPen>
 #include <QFileDialog>
 #include <QString>
@@ -30,12 +32,14 @@ public:
     explicit QtLancifolium(QWidget *parent = 0);
     ~QtLancifolium();
 
+    void moveSimpleApp(int movx, int movy);
+    void drawmoveapp(); //
+
+private:
     void paintEvent(QPaintEvent *);
     void mouseReleaseEvent(QMouseEvent *);
     void wheelEvent(QWheelEvent *);
-
-    void moveSimpleApp(int movx, int movy);
-    void drawmoveapp();
+    void resizeEvent(QResizeEvent *);
 
 private slots:
     void on_openfile_released();
@@ -58,6 +62,11 @@ private:
     QImage imgb; // 黑子
     QImage imgw; // 白子
     QImage imgcur; //
+
+    int win_size; // 棋盤尺寸
+    int win_gap; // = win_size / 20
+    int win_xlb; // 棋盤左上角的橫坐標
+    int win_ylb; // 棋盤左上角的縱坐標
 
     int player;
     int cac; // 0 起始, 1 自戰, 2 打譜。
