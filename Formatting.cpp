@@ -7,6 +7,19 @@ Formatting::Formatting(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle("Lancifolium Formatting");
+
+    QPalette qpalref;// = ui->formopenfile->palette();
+    qpalref.setColor(QPalette::ButtonText, Qt::blue);
+    ui->formopenfile->setPalette(qpalref);
+    ui->formsavefile->setPalette(qpalref);
+
+    ui->formopenfile->setFlat(true); // 按鈕透明背景
+    ui->formsavefile->setFlat(true);
+
+    QIcon fopenfil(":/images/folder_blue_open.png");
+    ui->formopenfile->setIcon(fopenfil);
+    QIcon fsavefil(":/images/filesave.png");
+    ui->formsavefile->setIcon(fsavefil);
 }
 
 Formatting::~Formatting()

@@ -42,11 +42,12 @@ private:
     void resizeEvent(QResizeEvent *);
 
 private slots:
-    void on_openfile_released();
 
-    void on_Refresh_released();
+    void on_actionRefresh_triggered();
 
-    void on_formatfile_released();
+    void on_actionOpen_File_triggered();
+
+    void on_actionFormat_File_triggered();
 
 private:
     Ui::QtLancifolium *ui;

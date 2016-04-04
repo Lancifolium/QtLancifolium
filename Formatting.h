@@ -6,6 +6,7 @@
 #include <QApplication>
 #include <QString>
 #include <QMessageBox>
+#include <QPalette>
 #include "FunLancifolium.h"
 
 namespace Ui {

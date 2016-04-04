@@ -25,14 +25,14 @@ QtLancifolium::QtLancifolium(QWidget *parent) :
     current = NULL;
 
     // 按鈕字的顏色
-    QPalette qpalref = ui->Refresh->palette();
-    qpalref.setColor(QPalette::ButtonText, Qt::blue);
-    ui->Refresh->setPalette(qpalref);
-    ui->openfile->setPalette(qpalref);
+    //QPalette qpalref = ui->Refresh->palette();
+    //qpalref.setColor(QPalette::ButtonText, Qt::blue);
+    //ui->Refresh->setPalette(qpalref);
+    //ui->openfile->setPalette(qpalref);
 
     // 按鈕透明背景
-    ui->Refresh->setFlat(true);
-    ui->openfile->setFlat(true);
+    //ui->Refresh->setFlat(true);
+    //ui->openfile->setFlat(true);
 }
 
 QtLancifolium::~QtLancifolium()
@@ -252,7 +252,22 @@ void QtLancifolium::moveSimpleApp(int movx, int movy) {
     }
 }
 
-void QtLancifolium::on_openfile_released()
+void QtLancifolium::on_actionRefresh_triggered()
+{
+    if (cac == 0) cac = 1;
+    else if (cac == 2) {
+        current = sgf.root;
+        //system("pause");
+        //memset(sgf.ston, 0, sizeof(char) * 676);
+        //system("pause");
+    }
+    onlymov.init();
+    curmov = -1;
+    //system("pause");
+    update();
+}
+
+void QtLancifolium::on_actionOpen_File_triggered()
 {
     QString filename;
     filename = QFileDialog::getOpenFileName(this, tr("Open Text"), ".", tr("Image Files(*.sgf)"));
@@ -274,23 +289,8 @@ void QtLancifolium::on_openfile_released()
     //system("pause");
 }
 
-void QtLancifolium::on_Refresh_released()
-{
-    if (cac == 0) cac = 1;
-    else if (cac == 2) {
-        current = sgf.root;
-        //system("pause");
-        //memset(sgf.ston, 0, sizeof(char) * 676);
-        //system("pause");
-    }
-    onlymov.init();
-    curmov = -1;
-    //system("pause");
-    update();
-}
-
-void QtLancifolium::on_formatfile_released()
-{
+void QtLancifolium::on_actionFormat_File_triggered()
+{ // Two ways are okay
     //Formatting *format;
     //format = new Formatting;
     //format->show();

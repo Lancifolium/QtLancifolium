@@ -55,6 +55,21 @@
     <string>save file</string>
    </property>
   </widget>
+  <action name="actionFool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="Nothing">
+     <normaloff>../../Pictures/Task/LeeSedol.360x270.png</normaloff>../../Pictures/Task/LeeSedol.360x270.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fool</string>
+   </property>
+   <property name="toolTip">
+    <string>Foolish</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections>
