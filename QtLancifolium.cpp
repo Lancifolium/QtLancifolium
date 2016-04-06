@@ -276,6 +276,7 @@ void QtLancifolium::on_actionRefresh_triggered()
 void QtLancifolium::on_actionOpen_File_triggered()
 {
     QString filename;
+    sgf.clearall();
     filename = QFileDialog::getOpenFileName(this, tr("Open Text"), ".", tr("Image Files(*.sgf)"));
     if (filename.isEmpty()) ;
     else {

@@ -55,5 +55,10 @@ struct Funs { // Some functions
     }
 };
 
+inline int iswhite(char tmpc) { // 判斷空白符號
+	if (tmpc == ' ' || tmpc == '\n' || tmpc == '\t' || tmpc == 13) return 1;
+	return 0;
+}
+
 #endif // FUNLANCIFOLIUM
 

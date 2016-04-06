@@ -110,11 +110,14 @@
    <property name="checkable">
     <bool>true</bool>
    </property>
+   <property name="icon">
+    <iconset theme="Nothing"/>
+   </property>
    <property name="text">
     <string>TestOnly</string>
    </property>
    <property name="toolTip">
-    <string>aaaaaaaaaaaaa</string>
+    <string>Only for test. </string>
    </property>
   </action>
  </widget>
