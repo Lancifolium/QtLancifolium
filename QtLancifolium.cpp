@@ -24,6 +24,10 @@ QtLancifolium::QtLancifolium(QWidget *parent) :
     curmov = -1;
     current = NULL;
 
+    abstention = new QPushButton("&Abstention", this); // 棄權按鈕，注意parent是本框體
+    abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size,
+                            72, 24);
+
     // 按鈕字的顏色
     //QPalette qpalref = ui->Refresh->palette();
     //qpalref.setColor(QPalette::ButtonText, Qt::blue);
@@ -227,6 +231,8 @@ void QtLancifolium::resizeEvent(QResizeEvent *resize) { // 獲取更改後的棋
     else win_ylb = (heit - win_size) / 2;
     if (widt < win_size) win_xlb = 0;
     else win_xlb = (widt - win_size) / 2;
+    abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size,
+                            72, 24);
     update(); // 重畫棋盤
 }
 
@@ -295,5 +301,11 @@ void QtLancifolium::on_actionFormat_File_triggered()
     //format = new Formatting;
     //format->show();
     static Formatting format;
+    format.show();
+}
+
+void QtLancifolium::on_actionTestOnly_triggered()
+{
+    static QtWithoutForm format;
     format.show();
 }

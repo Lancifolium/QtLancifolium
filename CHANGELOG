@@ -1,3 +1,6 @@
 The research plan of Qt Lancifolium distribution: 
 1, there is a need to change the architecture of moving stack; 
 
+2016.04.06:
+1，修改DevLancifolium的結構，將comment之類的量用C++方式改寫；
+2，修復恢復棧無法刪除提子後落子的bug；

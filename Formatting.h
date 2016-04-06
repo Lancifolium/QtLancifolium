@@ -7,6 +7,8 @@
 #include <QString>
 #include <QMessageBox>
 #include <QPalette>
+#include <QPushButton>
+#include <QResizeEvent>
 #include "FunLancifolium.h"
 
 namespace Ui {
@@ -25,6 +27,8 @@ private slots:
     void on_formopenfile_released();
 
     void on_formsavefile_released();
+
+    void resizeEvent(QResizeEvent * resize);
 
 private:
     Ui::Formatting *ui;

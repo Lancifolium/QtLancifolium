@@ -18,14 +18,16 @@ SOURCES += main.cpp\
     DevLancifolium.cpp \
     GnCalculate.cpp \
     GnNode.cpp \
-    Formatting.cpp
+    Formatting.cpp \
+    QtWithoutForm.cpp
 
 HEADERS  += QtLancifolium.h \
     DevLancifolium.h \
     GnCalculate.h \
     GnNode.h \
     FunLancifolium.h \
-    Formatting.h
+    Formatting.h \
+    QtWithoutForm.h
 
 FORMS    += QtLancifolium.ui \
     Formatting.ui
@@ -34,4 +36,5 @@ RESOURCES += \
     images.qrc
 
 DISTFILES += \
-    README.md
+    README.md \
+    CHANGELOG

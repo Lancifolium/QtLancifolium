@@ -35,6 +35,7 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionRefresh"/>
+   <addaction name="actionTestOnly"/>
   </widget>
   <widget class="QToolBar" name="toolbar">
    <property name="windowTitle">
@@ -103,6 +104,17 @@
    </property>
    <property name="shortcut">
     <string>Alt+F</string>
+   </property>
+  </action>
+  <action name="actionTestOnly">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>TestOnly</string>
+   </property>
+   <property name="toolTip">
+    <string>aaaaaaaaaaaaa</string>
    </property>
   </action>
  </widget>

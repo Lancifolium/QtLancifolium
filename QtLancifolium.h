@@ -17,8 +17,11 @@
 #include <QTextBrowser>
 #include <QFile>
 #include <QTextStream>
+#include <QPushButton>
+#include <QResizeEvent>
 #include "DevLancifolium.h"
 #include "Formatting.h"
+#include "QtWithoutForm.h"
 
 namespace Ui {
 class QtLancifolium;
@@ -49,6 +52,8 @@ private slots:
 
     void on_actionFormat_File_triggered();
 
+    void on_actionTestOnly_triggered();
+
 private:
     Ui::QtLancifolium *ui;
 
@@ -73,6 +78,8 @@ private:
     int cac; // 0 起始, 1 自戰, 2 打譜。
     int curmov;
     GnNode *current;
+
+    QPushButton *abstention; // 棄權
 };
 
 #endif // QTLANCIFOLIUM_H

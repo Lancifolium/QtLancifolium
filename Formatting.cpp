@@ -46,3 +46,8 @@ void Formatting::on_formsavefile_released()
         else QMessageBox::information(this, "Formatting result", "Failed! ");
     }
 }
+
+void Formatting::resizeEvent(QResizeEvent *resize) {
+    //int wid = resize->size().width();
+    //int hei = resize->size().height();
+}
