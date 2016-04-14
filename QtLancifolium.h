@@ -20,6 +20,7 @@
 #include <QPushButton>
 #include <QResizeEvent>
 #include "DevLancifolium.h"
+#include "MovLancifolium.h"
 #include "Formatting.h"
 #include "QtWithoutForm.h"
 
@@ -58,7 +59,7 @@ private:
     Ui::QtLancifolium *ui;
 
     DevLancifolium sgf; // 棋譜文件
-    GnCalculate onlymov; //
+    MovLancifolium onlymov; //
 
     //QPainter pain;
     QBrush brushs;

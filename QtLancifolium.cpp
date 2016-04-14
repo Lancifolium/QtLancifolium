@@ -27,16 +27,6 @@ QtLancifolium::QtLancifolium(QWidget *parent) :
     abstention = new QPushButton("&Abstention", this); // 棄權按鈕，注意parent是本框體
     abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size,
                             72, 24);
-
-    // 按鈕字的顏色
-    //QPalette qpalref = ui->Refresh->palette();
-    //qpalref.setColor(QPalette::ButtonText, Qt::blue);
-    //ui->Refresh->setPalette(qpalref);
-    //ui->openfile->setPalette(qpalref);
-
-    // 按鈕透明背景
-    //ui->Refresh->setFlat(true);
-    //ui->openfile->setFlat(true);
 }
 
 QtLancifolium::~QtLancifolium()
@@ -82,8 +72,6 @@ void QtLancifolium::drawmoveapp() {
                       win_ylb + curmov % 100 * win_gap + win_gap * 29 / 20,
                       win_xlb + curmov / 100 * win_gap + win_gap * 29 / 20,
                       win_ylb + curmov % 100 * win_gap + win_gap);
-        //pain.drawImage(curmov / 100 * 30 + 30, curmov % 100 * 30 + 30, imgcur);
-        //pain.drawRect(curmov / 100 * 30 + 24, curmov % 100 * 30 + 24, 12, 12);
         pain.drawPolygon(pts); // 畫三角形
     }
 }
@@ -126,65 +114,23 @@ void QtLancifolium::wheelEvent(QWheelEvent *eve) {
         if ((numDegrees > 0) && (current != NULL)) {
             curmov = current->mov;
             if (onlymov.configDropStone(current->stoneProp, current->mov)) update();
-            if (current->next != NULL) current = current->next;
+            if (current->nxt.size() > 0) current = current->nxt[0];
         }
         else if (numDegrees < 0) {
-            if (onlymov.moveList.empty()) {
-                current = sgf.root;
-                while (!onlymov.bordList.empty()) onlymov.bordList.pop_back();
+
+            if (current == NULL) {
+
                 return;
             }
-            int tmpcurr = onlymov.moveList.back(); // 先取出棧頂沒錯，這是當前move
-
-            if (tmpcurr > 10000) {
-                onlymov.regainMove(); // 恢復棋盤
-                tmpcurr %= 10000;
-            }
-
-            onlymov.ston[tmpcurr / 100][tmpcurr % 100] = 0; // 撤銷著子
-
-            onlymov.moveList.pop_back(); // 彈出棧頂
-
-            if (onlymov.moveList.empty()) {
-                curmov = -1;
-                player = 1;
-            }
-            else {
-                curmov = onlymov.moveList.back();
-                player = player == 1 ? 2 : 1;
-            }
-
-            if (current != NULL && current->parent != NULL) current = current->parent; //
-
+            onlymov.regainMove();
+            current = onlymov.curNode;
             update();
         }
     }
     else if (cac == 1) { // 自戰模式
         if (numDegrees < 0) {
-            if (onlymov.moveList.empty()) {
-                printf("Empty!!!!!!\n");
-                return;
-            }
-            int tmpcurr = onlymov.moveList.back(); // 先取出棧頂沒錯，這是當前move
-
-            if (tmpcurr > 10000) {
-                onlymov.regainMove(); // 恢復棋盤
-                tmpcurr %= 10000;
-            }
-
-            onlymov.ston[tmpcurr / 100][tmpcurr % 100] = 0; // 撤銷著子
-
-            onlymov.moveList.pop_back(); // 彈出棧頂
-
-            if (onlymov.moveList.empty()) {
-                curmov = -1;
-                player = 1;
-            }
-            else {
-                curmov = onlymov.moveList.back();
-                player = player == 1 ? 2 : 1;
-            }
-
+            onlymov.regainMove(); //
+            printf("After update: %d\n", onlymov.curNode);
             update();
         }
     }
@@ -263,13 +209,9 @@ void QtLancifolium::on_actionRefresh_triggered()
     if (cac == 0) cac = 1;
     else if (cac == 2) {
         current = sgf.root;
-        //system("pause");
-        //memset(sgf.ston, 0, sizeof(char) * 676);
-        //system("pause");
     }
     onlymov.init();
     curmov = -1;
-    //system("pause");
     update();
 }
 
@@ -288,7 +230,7 @@ void QtLancifolium::on_actionOpen_File_triggered()
         while (current != NULL) {
             current->printing();
             printf("|%d|", tmpk++);
-            current = current->next;
+            if (current->nxt.size() > 0) current = current->nxt[0];
         }
         current = sgf.root;
         onlymov.init();
@@ -298,9 +240,6 @@ void QtLancifolium::on_actionOpen_File_triggered()
 
 void QtLancifolium::on_actionFormat_File_triggered()
 { // Two ways are okay
-    //Formatting *format;
-    //format = new Formatting;
-    //format->show();
     static Formatting format;
     format.show();
 }
