@@ -108,31 +108,30 @@ void QtLancifolium::mouseReleaseEvent(QMouseEvent *las) {
     }
 }
 
-void QtLancifolium::wheelEvent(QWheelEvent *eve) {
+void QtLancifolium::wheelEvent(QWheelEvent *eve) { // 滾動鼠標事件
     int numDegrees = eve->delta();
-    if (cac == 2) { // 前提是讀譜模式
+    switch (cac) {
+    case 1: // 自戰模式
+        if (numDegrees < 0) {
+            onlymov.regainMove(); //
+            printf("After update: %p\n", onlymov.curNode);
+            update();
+        }
+        break;
+    case 2: // 讀譜模式
         if ((numDegrees > 0) && (current != NULL)) {
             curmov = current->mov;
             if (onlymov.configDropStone(current->stoneProp, current->mov)) update();
             if (current->nxt.size() > 0) current = current->nxt[0];
         }
         else if (numDegrees < 0) {
-
-            if (current == NULL) {
-
-                return;
-            }
-            onlymov.regainMove();
+            if (onlymov.regainMove()) return;
             current = onlymov.curNode;
             update();
         }
-    }
-    else if (cac == 1) { // 自戰模式
-        if (numDegrees < 0) {
-            onlymov.regainMove(); //
-            printf("After update: %d\n", onlymov.curNode);
-            update();
-        }
+        break;
+    default:
+        break;
     }
 }
 
