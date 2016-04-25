@@ -19,8 +19,8 @@
 #include <QTextStream>
 #include <QPushButton>
 #include <QResizeEvent>
-#include "DevLancifolium.h"
-#include "MovLancifolium.h"
+#include "Lancifolium/DevLancifolium.h"
+#include "Lancifolium/MovLancifolium.h"
 #include "Formatting.h"
 #include "QtWithoutForm.h"
 

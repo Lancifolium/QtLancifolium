@@ -12,30 +12,34 @@ TARGET = QtLancifolium
 TEMPLATE = app
 RC_ICONS = images/Lancifolium.ico
 
+SUBDIRS = Lancifolium \
+    QtLancifolium
+
 
 SOURCES += main.cpp\
-        QtLancifolium.cpp \
-    DevLancifolium.cpp \
-    GnCalculate.cpp \
-    GnNode.cpp \
-    Formatting.cpp \
-    QtWithoutForm.cpp \
-    MovLancifolium.cpp \
-    UniLancifolium.cpp
+    Lancifolium/DevLancifolium.cpp \
+    Lancifolium/GnCalculate.cpp \
+    Lancifolium/GnNode.cpp \
+    Lancifolium/MovLancifolium.cpp \
+    Lancifolium/UniLancifolium.cpp \
+    QtLancifolium/Formatting.cpp \
+    QtLancifolium/QtLancifolium.cpp \
+    QtLancifolium/QtWithoutForm.cpp
 
-HEADERS  += QtLancifolium.h \
-    DevLancifolium.h \
-    GnCalculate.h \
-    GnNode.h \
-    FunLancifolium.h \
-    Formatting.h \
-    QtWithoutForm.h \
-    MovLancifolium.h \
-    UniLancifolium.h \
-    testing.h
+HEADERS  += \
+    Lancifolium/DevLancifolium.h \
+    Lancifolium/FunLancifolium.h \
+    Lancifolium/GnCalculate.h \
+    Lancifolium/GnNode.h \
+    Lancifolium/MovLancifolium.h \
+    Lancifolium/UniLancifolium.h \
+    QtLancifolium/Formatting.h \
+    QtLancifolium/QtLancifolium.h \
+    QtLancifolium/QtWithoutForm.h \
+    QtLancifolium/testing.h
+    
 
-FORMS    += QtLancifolium.ui \
-    Formatting.ui
+FORMS    += QtLancifolium.ui
 
 RESOURCES += \
     images.qrc

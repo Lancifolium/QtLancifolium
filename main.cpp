@@ -1,4 +1,4 @@
-#include "QtLancifolium.h"
+#include "QtLancifolium/QtLancifolium.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

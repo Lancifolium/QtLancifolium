@@ -9,7 +9,7 @@
 #include <QPalette>
 #include <QPushButton>
 #include <QResizeEvent>
-#include "FunLancifolium.h"
+#include "Lancifolium/FunLancifolium.h"
 
 namespace Ui {
 class Formatting;
