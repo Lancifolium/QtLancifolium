@@ -11,6 +11,7 @@
 #include <QPalette>
 #include <QPushButton>
 #include <QResizeEvent>
+#include "testing.h"
 
 //struct Burtton : public
 

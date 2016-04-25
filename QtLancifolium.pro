@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     GnNode.cpp \
     Formatting.cpp \
     QtWithoutForm.cpp \
-    MovLancifolium.cpp
+    MovLancifolium.cpp \
+    UniLancifolium.cpp
 
 HEADERS  += QtLancifolium.h \
     DevLancifolium.h \
@@ -29,7 +30,9 @@ HEADERS  += QtLancifolium.h \
     FunLancifolium.h \
     Formatting.h \
     QtWithoutForm.h \
-    MovLancifolium.h
+    MovLancifolium.h \
+    UniLancifolium.h \
+    testing.h
 
 FORMS    += QtLancifolium.ui \
     Formatting.ui

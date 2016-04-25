@@ -207,7 +207,7 @@ void QtLancifolium::on_actionRefresh_triggered()
 {
     if (cac == 0) cac = 1;
     else if (cac == 2) {
-        current = sgf.root;
+        current = sig.root;
     }
     onlymov.init();
     curmov = -1;
@@ -217,24 +217,25 @@ void QtLancifolium::on_actionRefresh_triggered()
 void QtLancifolium::on_actionOpen_File_triggered()
 {
     QString filename;
-    sgf.clearall();
+    sig.clearall();
     filename = QFileDialog::getOpenFileName(this, tr("Open Text"), ".", tr("Image Files(*.sgf)"));
     if (filename.isEmpty()) ;
     else {
         char *cfilename = filename.toLatin1().data();
-        sgf.configManual(cfilename);
+        sig.configManual(cfilename);
         cac = 2;
-        current = sgf.root;
+        current = sig.root;
         int tmpk = 0;
-        while (current != NULL) {
+        while (true) { // 之前此處的終止條件錯誤
             current->printing();
             printf("|%d|", tmpk++);
             if (current->nxt.size() > 0) current = current->nxt[0];
+            else break;
         }
-        current = sgf.root;
+        system("pause");
+        current = sig.root;
         onlymov.init();
     }
-    //system("pause");
 }
 
 void QtLancifolium::on_actionFormat_File_triggered()

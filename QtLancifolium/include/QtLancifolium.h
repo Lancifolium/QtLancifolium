@@ -24,6 +24,10 @@
 #include "Formatting.h"
 #include "QtWithoutForm.h"
 
+#define CAC_MOV 1 // 自戰
+#define CAC_SIG 2 // 打譜
+#define CAC_EDT 3 // 編輯
+
 namespace Ui {
 class QtLancifolium;
 }
@@ -58,8 +62,8 @@ private slots:
 private:
     Ui::QtLancifolium *ui;
 
-    DevLancifolium sgf; // 棋譜文件
-    MovLancifolium onlymov; //
+    DevLancifolium sig; // 棋譜文件
+    MovLancifolium onlymov; // 用以打譜
 
     //QPainter pain;
     QBrush brushs;

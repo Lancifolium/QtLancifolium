@@ -14,6 +14,7 @@ void QtWithoutForm::resizeEvent(QResizeEvent *risize) {
     int wid = risize->size().width();
     int hei = risize->size().height();
     button->setGeometry(wid / 2, hei / 2, 80, 20);
+    testprint();
     printf("qt without form resize. \n");
 }
 

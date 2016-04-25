@@ -212,7 +212,7 @@ int DevLancifolium::configManual(char *filename) {
 		}
 		else if (reader == ')') { // ')'
 			if (branchStack.empty()) { // 根節點的')'，讀譜結束
-				printf("\nFinished Reading Manual. \n");
+                printf("\nFinished Reading Manual. \n");
 				break;
 			}
 			else {
