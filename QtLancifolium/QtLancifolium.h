@@ -33,22 +33,25 @@ struct QtLancifolium : public QMainWindow {
 
 public:
     QtLancifolium(QWidget *parent = 0);
+    void setbuttons();
     ~QtLancifolium();
 
     void simplemoving(int movx, int movy); /* 簡單打譜程序 */
-    void drawingbord(); /* 畫出盤面 */
+    void drawingbord(int bordsiz); /* 畫出盤面 */
 
 private:
     void paintEvent(QPaintEvent *);
-    void mouseReleaseEvent(QMouseEvent *);
-    void wheelEvent(QWheelEvent *);
-    void resizeEvent(QResizeEvent *);
+    void mouseReleaseEvent(QMouseEvent *las);
+    void wheelEvent(QWheelEvent *eve);
+    void resizeEvent(QResizeEvent *resize);
 
 private slots:
-
+    void on_abstention();
+    void on_formatting();
+    void on_openfile();
+    void on_refresh();
 
 private:
-
     DevLancifolium sig; /* 棋譜文件 */
     MovLancifolium onlymov; /* 用以打譜 */
 
@@ -71,10 +74,10 @@ private:
     GnNode *current;
 
     /* 按鈕 */
+    QPushButton *butt_abstention; /* 棄權 */
+    QPushButton *butt_format; /* 格式化棋譜文件 */
     QPushButton *butt_openfile;
     QPushButton *butt_refresh; /* 格式化棋譜文件 */
-    QPushButton *butt_format; /* 格式化棋譜文件 */
-    QPushButton *butt_abstention; /* 棄權 */
 };
 
 #endif // QTLANCIFOLIUM_H

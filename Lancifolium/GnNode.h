@@ -39,7 +39,7 @@ typedef struct GnNode { // 讀取棋譜文件所用節點，亦當可用於戰�
 	int insertAddStones(int tmpmov, int colour);
 
 	/* 判斷 */
-	inline bool operator==(const GnNode &tmpnode) const;
+	bool operator==(const GnNode &tmpnode) const;
 
 	int joinsame(const GnNode &tmpnode);
 

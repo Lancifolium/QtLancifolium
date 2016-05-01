@@ -43,7 +43,7 @@ int GnNode::insertAddStones(int tmpmov, int colour) {
 	}
 }
 
-inline bool GnNode::operator==(const GnNode &tmpnode) const {
+bool GnNode::operator==(const GnNode &tmpnode) const {
 	if (this->stoneProp != tmpnode.stoneProp) return false;
 	if (this->mov != tmpnode.mov) return false;
 	/* add black stones */

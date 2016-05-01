@@ -43,7 +43,7 @@ void Formatting::on_formsavefile_released() {
     else {
         char *infile = infilename.toLatin1().data();
         char *oufile = oufilename.toLatin1().data();
-        if (Funs::ManualAdjustment(infile, oufile)) {
+        if (ManualAdjustment(infile, oufile)) {
             QMessageBox::information(this, "Formatting result", "Formatting successful! ");
         }
         else QMessageBox::information(this, "Formatting result", "Failed! ");

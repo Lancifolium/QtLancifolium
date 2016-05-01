@@ -1,53 +1,73 @@
 #include "QtLancifolium.h"
-#include "ui_QtLancifolium.h"
 
-QtLancifolium::QtLancifolium(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::QtLancifolium)
-{
-    ui->setupUi(this);
-
-    cac = 1; // 默認爲自戰模式
-    onlymov.init();
+/* 初始和結束的函數 */
+QtLancifolium::QtLancifolium(QWidget *parent) : QMainWindow(parent) {
+    /* 加載圖片 */
     imgbord.load(":/images/bord.png");
-    imgcur.load(":/images/move.png");
+    imgcur.load(":/images/cur_mov.png");
     imgb.load(":/images/movblack.png");
     imgw.load(":/images/movwhite.png");
+
     setWindowTitle("Lancifolium");
+    setMinimumSize(490, 430);  /* 設置最小窗口大小 */
+    resize(720, 660); /* 初始化的大小 */
 
     win_gap = 30;
     win_size = 600;
     win_xlb = 10;
     win_ylb = 20;
 
-    player = 1;
+    player = BLACKSTONE; /* 初始黑子 */
     curmov = -1;
     current = NULL;
 
-    abstention = new QPushButton("&Abstention", this); // 棄權按鈕，注意parent是本框體
-    abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size,
-                            72, 24);
+    butt_abstention = new QPushButton("&Abstention", this);
+    butt_abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size, 72, 24);
+    connect(butt_abstention, SIGNAL(clicked(bool)), this, SLOT(on_abstention()));
+
+    butt_format = new QPushButton("&Formatting", this);
+    butt_format->setGeometry(win_xlb + win_size, win_ylb + 120, 72, 24);
+    connect(butt_format, SIGNAL(clicked(bool)), this, SLOT(on_formatting()));
+
+    butt_openfile = new QPushButton("&Open File", this);
+    butt_openfile->setGeometry(win_xlb + win_size, win_ylb + 160, 72, 24);
+    connect(butt_openfile, SIGNAL(clicked(bool)), this, SLOT(on_openfile()));
+
+    butt_refresh = new QPushButton("Formatting", this);
+    butt_refresh->setGeometry(win_xlb + win_size, win_ylb + 200, 72, 24);
+    connect(butt_refresh, SIGNAL(clicked(bool)), this, SLOT(on_refresh()));
+
+    cac = CAC_MOV; /* 默認爲自戰模式 */
+    onlymov.init(); /* init moving app */
 }
 
-QtLancifolium::~QtLancifolium()
-{
-    delete ui;
+void QtLancifolium::setbuttons() { /* init buttons */
+    butt_abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size, 72, 24);
+    butt_format->setGeometry(win_xlb + win_size, win_ylb + 120, 72, 24);
+    butt_openfile->setGeometry(win_xlb + win_size, win_ylb + 160, 72, 24);
+    butt_refresh->setGeometry(win_xlb + win_size, win_ylb + 200, 72, 24);
 }
 
-void QtLancifolium::drawmoveapp() {
+QtLancifolium::~QtLancifolium() {
+    delete butt_abstention;
+    delete butt_format;
+    delete butt_openfile;
+    delete butt_refresh;
+}
+
+/* 繪圖程序 */
+void QtLancifolium::drawingbord(int bordsiz) {
     QPainter pain(this);
     pain.setRenderHint(QPainter::Antialiasing, true); // 使得邊緣柔和
 
     int tmpi, tmpj;
-    //QRect source(0, 0, 66, 66);
-    for (tmpi = 0; tmpi < 19; tmpi++) {
-        for (tmpj = 0; tmpj < 19; tmpj++) {
+    for (tmpi = 0; tmpi < bordsiz; tmpi++) {
+        for (tmpj = 0; tmpj < bordsiz; tmpj++) {
             if (onlymov.ston[tmpi][tmpj] == 1) {
                 QRect target(win_xlb + tmpi * win_gap + win_gap * 11 / 20,
                              win_ylb + tmpj * win_gap + win_gap * 11 / 20,
                              win_gap * 9 / 10,
                              win_gap * 9 / 10);
-                //pain.drawImage(tmpi * win_gap + win_xlb, tmpj * win_gap + win_ylb, imgb);
                 pain.drawImage(target, imgb);
             }
             else if (onlymov.ston[tmpi][tmpj] == 2) {
@@ -55,7 +75,6 @@ void QtLancifolium::drawmoveapp() {
                              win_ylb + tmpj * win_gap + win_gap * 11 / 20,
                              win_gap * 9 / 10,
                              win_gap * 9 / 10);
-                //pain.drawImage(tmpi * win_gap + win_xlb, tmpj * win_gap + win_ylb, imgb);
                 pain.drawImage(target, imgw);
             }
         }
@@ -64,32 +83,24 @@ void QtLancifolium::drawmoveapp() {
     if (curmov >= 0) {
         brushs.setColor(Qt::cyan);
         pain.setBrush(brushs);
-        QPolygon pts;
-        pts.setPoints(3,
-                      win_xlb + curmov / 100 * win_gap + win_gap,
-                      win_ylb + curmov % 100 * win_gap + win_gap,
-                      win_xlb + curmov / 100 * win_gap + win_gap,
-                      win_ylb + curmov % 100 * win_gap + win_gap * 29 / 20,
-                      win_xlb + curmov / 100 * win_gap + win_gap * 29 / 20,
-                      win_ylb + curmov % 100 * win_gap + win_gap);
-        pain.drawPolygon(pts); // 畫三角形
+
+
     }
 }
 
+/* system events */
 void QtLancifolium::paintEvent(QPaintEvent *) {
     QPainter pain(this);
     QRect target(win_xlb, win_ylb, win_size, win_size);
     pain.drawImage(target, imgbord); // 棋盤
     brushs.setStyle(Qt::SolidPattern); // 填充模式
 
-    //drawbord(); // 繪製棋盤
-
     switch (cac) {
-    case 1:
-        drawmoveapp();
+    case CAC_MOV:
+        drawingbord(19);
         break;
-    case 2:
-        drawmoveapp();
+    case CAC_SIG:
+        drawingbord(19);
         break;
     default: break;
     }
@@ -97,114 +108,67 @@ void QtLancifolium::paintEvent(QPaintEvent *) {
 
 void QtLancifolium::mouseReleaseEvent(QMouseEvent *las) {
     switch (cac) {
-    case 0: break;
-    case 1: // 自戰
-        moveSimpleApp(las->x(), las->y());
+    case CAC_MOV: // 自戰
+        simplemoving(las->x(), las->y());
         break;
-    case 2: // 簡單讀譜
+    case CAC_SIG: // 簡單讀譜
         if (onlymov.configDropStone(current->stoneProp, current->mov)) update();
         break;
     default: break;
     }
 }
 
-void QtLancifolium::wheelEvent(QWheelEvent *eve) { // 滾動鼠標事件
+void QtLancifolium::wheelEvent(QWheelEvent *eve) { /* 滾動鼠標事件 */
     int numDegrees = eve->delta();
     switch (cac) {
-    case 1: // 自戰模式
+    case CAC_MOV: /* 自戰模式 */
         if (numDegrees < 0) {
             onlymov.regainMove(); //
             printf("After update: %p\n", onlymov.curNode);
             update();
         }
         break;
-    case 2: // 讀譜模式
-        if ((numDegrees > 0) && (current != NULL)) {
+    case CAC_SIG: /* 讀譜模式 */
+        if ((numDegrees > 0) && (current != NULL)) { /* 向前讀譜 */
             curmov = current->mov;
             if (onlymov.configDropStone(current->stoneProp, current->mov)) update();
             if (current->nxt.size() > 0) current = current->nxt[0];
         }
-        else if (numDegrees < 0) {
+        else if (numDegrees < 0) { /* 回溯棋譜 */
             if (onlymov.regainMove()) return;
             current = onlymov.curNode;
             update();
         }
         break;
-    default:
-        break;
+    default: break;
     }
 }
 
-void QtLancifolium::resizeEvent(QResizeEvent *resize) { // 獲取更改後的棋盤大小
+void QtLancifolium::resizeEvent(QResizeEvent *resize) { /* 獲取更改後的棋盤大小 */
     int widt, heit, allsize;
     heit = resize->size().height();
     widt = resize->size().width();
-    allsize = heit < widt ? heit : widt; // 選擇小者
-    printf("# resize [%d, %d]\n", widt, heit);
-    switch (allsize / 200) {
-    case 0:
-    case 1:
-    case 2: // 400x400
-        win_size = 400;
-        break;
-    case 3: // 600x600
-        win_size = 600;
-        break;
-    case 4: // 800x800
-        win_size = 800;
-        break;
-    case 5: // 1000x1000
-        win_size = 1000;
-        break;
-    case 6: // 1200x1200
-        win_size = 1200;
-        break;
-    case 7: // 1400x1400
-        win_size = 1400;
-        break;
-    case 8: // 1600x1600
-        win_size = 1600;
-        break;
-    default:
-        win_size = 600;
-        break;
-    }
+    allsize = heit < widt ? heit : widt; /* 選擇小者 */
+    printf("# resize [%d, %d]\n", widt, heit); /////////////////////
+
+    win_size = allsize / 200 * 200;
     win_gap = win_size / 20;
-    if (heit - win_size < 40) { // 此處考慮工具欄
-        win_ylb = 20;
-    }
+    if (heit - win_size < 60) win_ylb = 29;
     else win_ylb = (heit - win_size) / 2;
     if (widt < win_size) win_xlb = 0;
     else win_xlb = (widt - win_size) / 2;
-    abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size,
-                            72, 24);
-    update(); // 重畫棋盤
+
+    butt_abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size, 72, 24);
+    butt_format->setGeometry(win_xlb + win_size, win_ylb + 120, 72, 24);
+    butt_openfile->setGeometry(win_xlb + win_size, win_ylb + 160, 72, 24);
+    butt_refresh->setGeometry(win_xlb + win_size, win_ylb + 200, 72, 24);
+
+    update(); /* 重畫棋盤 */
 }
 
-void QtLancifolium::moveSimpleApp(int movx, int movy) {
-    int tmpx, tmpy;
-    if ((movx >= win_xlb) &&
-        (movx < win_xlb + win_size) &&
-        (movy >= win_ylb) &&
-        (movy < win_ylb + win_size)
-    ) {
-        tmpx = (movx - win_xlb - win_gap / 2) / win_gap;
-        tmpy = (movy - win_ylb - win_gap / 2) / win_gap;
-        switch (onlymov.configDropStone(player, tmpx * 100 + tmpy)) { // 著子
-        case 0: break;
-        case 1:
-        case 2:
-        case 3:
-            curmov = tmpx * 100 + tmpy;
-            player = player == 1 ? 2 : 1;
-            update(); break;
-        default: break;
-        }
-    }
-}
 
-void QtLancifolium::on_actionRefresh_triggered()
-{
+/* 按鈕關聯動作 */
+void QtLancifolium::on_refresh() {
     if (cac == 0) cac = 1;
     else if (cac == 2) {
         current = sig.root;
@@ -214,8 +178,7 @@ void QtLancifolium::on_actionRefresh_triggered()
     update();
 }
 
-void QtLancifolium::on_actionOpen_File_triggered()
-{
+void QtLancifolium::on_openfile() {
     QString filename;
     sig.clearall();
     filename = QFileDialog::getOpenFileName(this, tr("Open Text"), ".", tr("Image Files(*.sgf)"));
@@ -238,14 +201,32 @@ void QtLancifolium::on_actionOpen_File_triggered()
     }
 }
 
-void QtLancifolium::on_actionFormat_File_triggered()
-{ // Two ways are okay
+void QtLancifolium::on_formatting() { // Two ways are okay
     static Formatting format;
     format.show();
 }
 
-void QtLancifolium::on_actionTestOnly_triggered()
-{
+void QtLancifolium::on_abstention() {
     static QtWithoutForm format;
     format.show();
 }
+
+/* 功能函數 */
+void QtLancifolium::simplemoving(int movx, int movy) {
+    int tmpx, tmpy;
+    if ((movx >= win_xlb) && (movx < win_xlb + win_size) &&
+          (movy >= win_ylb) && (movy < win_ylb + win_size)) {
+        tmpx = (movx - win_xlb - win_gap / 2) / win_gap;
+        tmpy = (movy - win_ylb - win_gap / 2) / win_gap;
+        switch (onlymov.configDropStone(player, tmpx * 100 + tmpy)) { // 著子
+        case CAC_MOV:
+        case CAC_SIG:
+        case CAC_EDT:
+            curmov = tmpx * 100 + tmpy;
+            player = player == BLACKSTONE ? WHITESTONE : BLACKSTONE;
+            update(); break;
+        default: break;
+        }
+    }
+}
+

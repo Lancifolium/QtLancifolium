@@ -9,5 +9,6 @@
         <file>images/movwhite.png</file>
         <file>images/filesave.png</file>
         <file>images/folder_blue_open.png</file>
+        <file>images/cur_mov.png</file>
     </qresource>
 </RCC>

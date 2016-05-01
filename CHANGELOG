@@ -14,3 +14,6 @@ The research plan of Qt Lancifolium distribution:
 3，情況：對於某下一步mov，可能存在不同添子情況，這個時候，在棋譜中表現一組有相同下一步的分支。如何選擇？ ###
 4，savetree分兩步就行了，一步是如果GnNode爲NULL，則賦給root，下一步就是直接判斷next和nxt了；
 5，不行，要去掉next，只保留nxt，因爲在sig譜中第一個分支就是主分支，所以搞個列表就夠了。
+
+2016.05.01:
+1，圖片可以事先加載進去，那麼文件是否也可以呢？也就是搞個內置棋譜庫；
