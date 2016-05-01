@@ -1,0 +1,47 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2016-03-04T00:23:47
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = QtLancifolium
+TEMPLATE = app
+RC_ICONS = images/Lancifolium.ico
+
+
+SOURCES += main.cpp\
+    QtLancifolium/src/QtLancifolium.cpp \
+    QtLancifolium/src/Formatting.cpp \
+    QtLancifolium/src/QtWithoutForm.cpp \
+    Lancifolium/src/DevLancifolium.cpp \
+    Lancifolium/src/GnCalculate.cpp \
+    Lancifolium/src/GnNode.cpp \
+    Lancifolium/src/MovLancifolium.cpp \
+    Lancifolium/src/UniLancifolium.cpp
+
+HEADERS  += QtLancifolium/include/QtLancifolium.h \
+    QtLancifolium/include/Formatting.h \
+    QtLancifolium/include/QtWithoutForm.h \
+    QtLancifolium/include/testing.h \
+    Lancifolium/include/DevLancifolium.h \
+    Lancifolium/include/GnCalculate.h \
+    Lancifolium/include/GnNode.h \
+    Lancifolium/include/FunLancifolium.h \
+    Lancifolium/include/MovLancifolium.h \
+    Lancifolium/include/UniLancifolium.h \
+    Lancifolium/include/FunLancifolium.h
+    
+
+FORMS    += QtLancifolium.ui \
+    Formatting.ui
+
+RESOURCES += \
+    images.qrc
+
+DISTFILES += \
+    README.md \
+    CHANGELOG

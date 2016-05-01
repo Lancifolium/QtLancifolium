@@ -11,12 +11,7 @@
 #include <QResizeEvent>
 #include "Lancifolium/FunLancifolium.h"
 
-namespace Ui {
-class Formatting;
-}
-
-class Formatting : public QDialog
-{
+class Formatting : public QDialog {
     Q_OBJECT
 
 public:
@@ -25,16 +20,15 @@ public:
 
 private slots:
     void on_formopenfile_released();
-
     void on_formsavefile_released();
-
     void resizeEvent(QResizeEvent * resize);
 
 private:
-    Ui::Formatting *ui;
+    QString infilename; /* insert filename */
+    QString oufilename; /* output filename */
 
-    QString infilename; // insert filename
-    QString oufilename; // output filename
+    QPushButton *formopenfile;
+    QPushButton *formsavefile;
 };
 
 #endif // FORMATTING_H

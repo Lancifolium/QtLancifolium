@@ -17,14 +17,14 @@ SUBDIRS = Lancifolium \
 
 
 SOURCES += main.cpp\
+    QtLancifolium/Formatting.cpp \
+    QtLancifolium/QtLancifolium.cpp \
+    QtLancifolium/QtWithoutForm.cpp \
     Lancifolium/DevLancifolium.cpp \
     Lancifolium/GnCalculate.cpp \
     Lancifolium/GnNode.cpp \
     Lancifolium/MovLancifolium.cpp \
-    Lancifolium/UniLancifolium.cpp \
-    QtLancifolium/Formatting.cpp \
-    QtLancifolium/QtLancifolium.cpp \
-    QtLancifolium/QtWithoutForm.cpp
+    Lancifolium/UniLancifolium.cpp
 
 HEADERS  += \
     Lancifolium/DevLancifolium.h \
