@@ -1,11 +1,6 @@
 #include "QtLancifolium.h"
 
-QtLancifolium::QtLancifolium(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::QtLancifolium)
-{
-    ui->setupUi(this);
-
+QtLancifolium::QtLancifolium(QWidget *parent) : QMainWindow(parent) {
     cac = 1; // 默認爲自戰模式
     onlymov.init();
     imgbord.load(":/images/bord.png");

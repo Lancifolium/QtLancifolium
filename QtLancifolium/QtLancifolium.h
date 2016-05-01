@@ -24,24 +24,19 @@
 #include "Formatting.h"
 #include "QtWithoutForm.h"
 
-#define CAC_MOV 1 // 自戰
-#define CAC_SIG 2 // 打譜
-#define CAC_EDT 3 // 編輯
+#define CAC_MOV 1 /* 自戰 */
+#define CAC_SIG 2 /* 打譜 */
+#define CAC_EDT 3 /* 編輯 */
 
-namespace Ui {
-class QtLancifolium;
-}
-
-class QtLancifolium : public QMainWindow
-{
+struct QtLancifolium : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit QtLancifolium(QWidget *parent = 0);
+    QtLancifolium(QWidget *parent = 0);
     ~QtLancifolium();
 
-    void moveSimpleApp(int movx, int movy);
-    void drawmoveapp(); //
+    void simplemoving(int movx, int movy); /* 簡單打譜程序 */
+    void drawingbord(); /* 畫出盤面 */
 
 private:
     void paintEvent(QPaintEvent *);
@@ -51,40 +46,35 @@ private:
 
 private slots:
 
-    void on_actionRefresh_triggered();
-
-    void on_actionOpen_File_triggered();
-
-    void on_actionFormat_File_triggered();
-
-    void on_actionTestOnly_triggered();
 
 private:
-    Ui::QtLancifolium *ui;
 
-    DevLancifolium sig; // 棋譜文件
-    MovLancifolium onlymov; // 用以打譜
+    DevLancifolium sig; /* 棋譜文件 */
+    MovLancifolium onlymov; /* 用以打譜 */
 
-    //QPainter pain;
+    /* 繪圖 */
     QBrush brushs;
     QPen pen;
-    QImage img;
-    QImage imgbord; // 棋盤
-    QImage imgb; // 黑子
-    QImage imgw; // 白子
-    QImage imgcur; //
+    QImage imgbord; /* 棋盤 */
+    QImage imgb; /* 黑子 */
+    QImage imgw; /* 白子 */
+    QImage imgcur; /* 當前落子 */
 
-    int win_size; // 棋盤尺寸
-    int win_gap; // = win_size / 20
-    int win_xlb; // 棋盤左上角的橫坐標
-    int win_ylb; // 棋盤左上角的縱坐標
+    int win_size; /* 棋盤尺寸 */
+    int win_gap; /* = win_size / 20 */
+    int win_xlb; /* 棋盤左上角的橫坐標 */
+    int win_ylb; /* 棋盤左上角的縱坐標 */
 
     int player;
-    int cac; // 0 起始, 1 自戰, 2 打譜。
-    int curmov;
+    int cac; /* 0 起始 1 自戰 2 打譜 */
+    int curmov; /* 當前落子 */
     GnNode *current;
 
-    QPushButton *abstention; // 棄權
+    /* 按鈕 */
+    QPushButton *butt_openfile;
+    QPushButton *butt_refresh; /* 格式化棋譜文件 */
+    QPushButton *butt_format; /* 格式化棋譜文件 */
+    QPushButton *butt_abstention; /* 棄權 */
 };
 
 #endif // QTLANCIFOLIUM_H

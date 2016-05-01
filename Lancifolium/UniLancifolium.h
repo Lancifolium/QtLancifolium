@@ -3,9 +3,8 @@
 
 #include "DevLancifolium.h" /* 實現合併棋譜文件功能 */
 
-struct UniLancifolium {
-
+typedef struct UniLancifolium : public DevLancifolium {
     UniLancifolium();
-};
+} UniLancifolium;
 
 #endif // UNILANCIFOLIUM_H

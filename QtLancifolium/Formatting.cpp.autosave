@@ -2,9 +2,7 @@
 
 Formatting::Formatting(QWidget *parent) : QDialog(parent) {
     setWindowTitle("Lancifolium Formatting");
-
-    QPalette qpalref;// = ui->formopenfile->palette();
-    qpalref.setColor(QPalette::ButtonText, Qt::blue);
+    setFixedSize(400, 247);
 
     formopenfile = new QPushButton(this);
     formopenfile->setObjectName(QStringLiteral("formopenfile"));
@@ -12,7 +10,9 @@ Formatting::Formatting(QWidget *parent) : QDialog(parent) {
     formsavefile = new QPushButton(this);
     formsavefile->setObjectName(QStringLiteral("formsavefile"));
     formsavefile->setGeometry(QRect(70, 140, 75, 23));
-
+    
+    QPalette qpalref;
+    qpalref.setColor(QPalette::ButtonText, Qt::blue);
     formopenfile->setPalette(qpalref);
     formsavefile->setPalette(qpalref);
     formopenfile->setFlat(true); // 按鈕透明背景
@@ -25,11 +25,11 @@ Formatting::Formatting(QWidget *parent) : QDialog(parent) {
 
     connect(formopenfile, SIGNAL(released()), this, SLOT(on_formopenfile_released()));
     connect(formsavefile, SIGNAL(released()), this, SLOT(on_formsavefile_released()));
-
 }
 
 Formatting::~Formatting() {
-    delete ui;
+    delete formopenfile;
+    delete formsavefile;
 }
 
 void Formatting::on_formopenfile_released() {
