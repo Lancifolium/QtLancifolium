@@ -21,19 +21,19 @@ QtLancifolium::QtLancifolium(QWidget *parent) : QMainWindow(parent) {
     curmov = -1;
     current = NULL;
 
-    butt_abstention = new QPushButton("&Abstention", this);
+    butt_abstention = new QPushButton("Abstention", this);
     butt_abstention->setGeometry(win_xlb + win_size / 2 - 36, win_ylb + win_size, 72, 24);
     connect(butt_abstention, SIGNAL(clicked(bool)), this, SLOT(on_abstention()));
 
-    butt_format = new QPushButton("&Formatting", this);
+    butt_format = new QPushButton("Formatting", this);
     butt_format->setGeometry(win_xlb + win_size, win_ylb + 120, 72, 24);
     connect(butt_format, SIGNAL(clicked(bool)), this, SLOT(on_formatting()));
 
-    butt_openfile = new QPushButton("&Open File", this);
+    butt_openfile = new QPushButton("Open File", this);
     butt_openfile->setGeometry(win_xlb + win_size, win_ylb + 160, 72, 24);
     connect(butt_openfile, SIGNAL(clicked(bool)), this, SLOT(on_openfile()));
 
-    butt_refresh = new QPushButton("Formatting", this);
+    butt_refresh = new QPushButton("Refresh", this);
     butt_refresh->setGeometry(win_xlb + win_size, win_ylb + 200, 72, 24);
     connect(butt_refresh, SIGNAL(clicked(bool)), this, SLOT(on_refresh()));
 
@@ -122,10 +122,21 @@ void QtLancifolium::wheelEvent(QWheelEvent *eve) { /* 滾動鼠標事件 */
     int numDegrees = eve->delta();
     switch (cac) {
     case CAC_MOV: /* 自戰模式 */
-        if (numDegrees < 0) {
-            onlymov.regainMove(); //
+        if (numDegrees < 0) { /* 回退 */
+            onlymov.regainMove();
             printf("After update: %p\n", onlymov.curNode);
+            curmov = onlymov.curNode->mov;
             update();
+        }
+        else if (numDegrees > 0) { /* 前進 與讀譜模式還是有區別的，因爲這是回滾來的 */
+            if (onlymov.curNode->nxt.size() > 0) {
+                onlymov.curNode = onlymov.curNode->nxt[0];
+                player = onlymov.curNode->stoneProp;
+                curmov = onlymov.curNode->mov;
+                onlymov.configDropStone(player, curmov);
+                update();
+            }
+            
         }
         break;
     case CAC_SIG: /* 讀譜模式 */

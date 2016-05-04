@@ -11,7 +11,7 @@
 #include <QResizeEvent>
 #include "Lancifolium/FunLancifolium.h"
 
-class Formatting : public QDialog {
+struct Formatting : public QDialog {
     Q_OBJECT
 
 public:

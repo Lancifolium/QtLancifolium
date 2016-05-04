@@ -1,8 +1,7 @@
 #include "QtWithoutForm.h"
 #include <cstdio>
 
-QtWithoutForm::QtWithoutForm(QWidget *parent)
-{
+QtWithoutForm::QtWithoutForm(QWidget *parent) {
     resize(600, 600);
     button = new QPushButton("&Download", this);
     button->setGeometry(10, 10, 90, 30);

@@ -15,10 +15,8 @@
 
 //struct Burtton : public
 
-class QtWithoutForm : public QWidget
-{
+struct QtWithoutForm : public QWidget {
 public:
-    //QPushButton
     QtWithoutForm(QWidget *parent = 0);
     QPushButton *button;
 

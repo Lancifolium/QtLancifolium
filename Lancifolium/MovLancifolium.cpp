@@ -5,9 +5,8 @@ void MovLancifolium::init() {
 	conflict = confmove = 0;
 	memset(ston, 0, sizeof(char) * 676);
 	memset(calcbord, 0, sizeof(char) * 676);
-    //root = NULL;
     root = new GnNode();
-	curNode = NULL;
+	curNode = root; /* 初始指向root */
 	conflict = 0;
 }
 
@@ -266,6 +265,7 @@ int MovLancifolium::regainMove() { // 恢復提子
         return 1;
 	}
 	else {
+        if (curNode == NULL) curNode = root; /* 必須的 */
 		if (curNode->addblacks.size() > 0) { // 撤銷置子
 			for (int tmpi = 0; tmpi < curNode->addblacks.size(); tmpi++) {
 				ston[curNode->addblacks[tmpi] / 100][curNode->addblacks[tmpi] % 100] = 0;

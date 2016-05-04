@@ -28,7 +28,7 @@
 #define CAC_SIG 2 /* 打譜 */
 #define CAC_EDT 3 /* 編輯 */
 
-struct QtLancifolium : public QMainWindow {
+typedef struct QtLancifolium : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -54,6 +54,10 @@ private slots:
 private:
     DevLancifolium sig; /* 棋譜文件 */
     MovLancifolium onlymov; /* 用以打譜 */
+    int player;
+    int cac; /* 0 起始 1 自戰 2 打譜 */
+    int curmov; /* 當前落子 */
+    GnNode *current;
 
     /* 繪圖 */
     QBrush brushs;
@@ -68,16 +72,11 @@ private:
     int win_xlb; /* 棋盤左上角的橫坐標 */
     int win_ylb; /* 棋盤左上角的縱坐標 */
 
-    int player;
-    int cac; /* 0 起始 1 自戰 2 打譜 */
-    int curmov; /* 當前落子 */
-    GnNode *current;
-
     /* 按鈕 */
     QPushButton *butt_abstention; /* 棄權 */
     QPushButton *butt_format; /* 格式化棋譜文件 */
     QPushButton *butt_openfile;
     QPushButton *butt_refresh; /* 格式化棋譜文件 */
-};
+} QtLancifolium;
 
 #endif // QTLANCIFOLIUM_H
