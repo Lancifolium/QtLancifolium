@@ -72,7 +72,7 @@ int DevLancifolium::dealAddStones(struct GnNode *tmpnode, int colour) {
 	}
 } // finished dealAddStones
 
-int DevLancifolium::dealMove(struct GnNode *tmpnode, int colour) {
+int DevLancifolium::dealMove(GnNode *tmpnode, int colour) {
 	int tmpx, tmpy;
 	reader = toupper(fgetc(filebuff));
 	while (!isalpha(reader) && reader != EOF) reader = fgetc(filebuff);
@@ -88,9 +88,13 @@ int DevLancifolium::dealMove(struct GnNode *tmpnode, int colour) {
 	return 1;
 }
 
-int DevLancifolium::dealCommentNodename(struct GnNode *tmpnode, int tmpkind) {
+int DevLancifolium::dealCommentNodename(GnNode *tmpnode, int tmpkind) {
+	printf("-----------------in deal commentnodename\n");
 	char tmpsave, buff[9999999];
 	int tmpi = 0;
+	printf("-----------------in deal commentnodename\n");
+	system("pause"); /////////////////////
+
 	reader = fgetc(filebuff); // 棄了'['
 	tmpsave = '\0';
 	while ((reader != ']') || (tmpsave == '\\')) {
@@ -106,19 +110,24 @@ int DevLancifolium::dealCommentNodename(struct GnNode *tmpnode, int tmpkind) {
 		reader = fgetc(filebuff); // 下一個
 	}
 	buff[tmpi] = '\0';
+	printf("$$buff: %s", buff); ////////////
 	if (tmpkind == 1) tmpnode->comment = buff; // 評論
 	else tmpnode->nodename = buff; // 節點名稱
 	reader = fgetc(filebuff); // 棄了']'
 } // finished dealCommentNodename
 
 int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
+	/*
+	 * labels can be LB[ab][cd]... MA[ab][cd]
+	 * however, labels can also be: [pg:A]
+	**/
 	int tmpform;
 	int tmplab;
 	while (reader == '[') {
 		tmplab = toupper(fgetc(filebuff)) - 'A';
 		tmplab *= 100;
 		tmplab += toupper(fgetc(filebuff)) - 'A';
-		reader = fgetc(filebuff); // ']'
+		while (reader != ']') reader = fgetc(filebuff); // ']'
 		reader = fgetc(filebuff); // '[' or not
 		tmpnode->labels.push_back(tmplab);
 	}
@@ -159,6 +168,7 @@ int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 		while (reader != '[' && reader != EOF) reader = fgetc(filebuff); // 找到'['
 		if (reader == EOF) return 0; // EOF
 		printf("[%s]", operate); //////////////////////
+		system("pause");
 
 		if (strcmp(operate, "LB") == 0) dealLabels(curNode, 0); // 字母 0
 		else if (strcmp(operate, "TR") == 0) dealLabels(curNode, TRIANGLE); // 三角 1
@@ -166,7 +176,11 @@ int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 		else if (strcmp(operate, "MA") == 0) dealLabels(curNode, FORK); // 叉 3
 		else if (strcmp(operate, "CR") == 0) dealLabels(curNode, CIRCLE); // 圓 4
 		else if (strcmp(operate, "C") == 0) dealCommentNodename(curNode, 1); /* comment */
-		else if (strcmp(operate, "N") == 0) dealCommentNodename(curNode, 2); /* nodename */
+		else if (strcmp(operate, "N") == 0) {
+			printf("before entering deal CN\n"); /////////
+			printf("[]%d, %p\n", curNode->mov, curNode);
+			dealCommentNodename(curNode, 2); /* nodename */
+		}
 		else if (strcmp(operate, "AB") == 0) dealAddStones(curNode, BLACKSTONE);
 		else if (strcmp(operate, "AW") == 0) dealAddStones(curNode, WHITESTONE);
 		else if (strcmp(operate, "SZ") == 0) dealSize();
@@ -185,16 +199,16 @@ int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 } // finished configNode
 
 int DevLancifolium::configManual(char *filename) {
-	if (!openfile(filename)) return 0; // 文件讀取失敗
-	if (root != NULL) return 0; // 棋譜樹不爲空
-	init(); // 初始化
+	if (!openfile(filename)) return 0; /* 文件讀取失敗 */
+	if (root != NULL) return 0; /* 棋譜樹不爲空 */
+	this->init(); /* init */
 	root = new struct GnNode;
 	root->init(NULL);
 	while (!branchStack.empty()) branchStack.pop(); // 清空棧
 
 	reader = fgetc(filebuff);
-	while (reader != '(' && reader != EOF) reader = fgetc(filebuff); // 找到第一個左括號
-	while (reader != ';' && reader != EOF) reader = fgetc(filebuff); // 找到分號
+	while (reader != '(' && reader != EOF) reader = fgetc(filebuff); /* 找到第一個左括號 */
+	while (reader != ';' && reader != EOF) reader = fgetc(filebuff); /* 找到分號 */
 	curNode = root; /**/
 	configNode();
 
@@ -217,7 +231,7 @@ int DevLancifolium::configManual(char *filename) {
 		}
 		else if (reader == ')') { // ')'
 			if (branchStack.empty()) { // 根節點的')'，讀譜結束
-                printf("\nFinished Reading Manual. \n");
+				printf("\nFinished Reading Manual. \n");
 				break;
 			}
 			else {
@@ -251,7 +265,7 @@ int DevLancifolium::adjustnxtlist(vector<GnNode *> &nxt) {
 }
 
 int DevLancifolium::adjustManual(GnNode *tmpnode) {
-    if (tmpnode == NULL) return 0;
+	if (tmpnode == NULL) return 0;
 	adjustnxtlist(tmpnode->nxt); /* 調整當前節點的子節點列表 */
 	for (vector<GnNode *>::iterator tmpi = tmpnode->nxt.begin();
 			tmpi != tmpnode->nxt.end(); tmpi++) {

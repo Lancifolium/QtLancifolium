@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1462363955 source:d:\code\qtlancifolium\lancifolium\gncalculate.cpp
+	"GnCalculate.h"
+
+1462363951 d:\code\qtlancifolium\lancifolium\gncalculate.h
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cctype>
+	<stack>
+	<list>
+	"GnNode.h"
+
+1462363951 d:\code\qtlancifolium\lancifolium\gnnode.h
+	"FunLancifolium.h"
+
+1462365382 d:\code\qtlancifolium\lancifolium\funlancifolium.h
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<string>
+	<cctype>
+	<vector>
+	<stack>
+	<algorithm>
+
+1462363804 source:d:\code\qtlancifolium\lancifolium\gnnode.cpp
+	"GnNode.h"
+
+1462373405 source:d:\code\qtlancifolium\lancifolium\main.cpp
+	"DevLancifolium.h"
+
+1462363804 d:\code\qtlancifolium\lancifolium\devlancifolium.h
+	<algorithm>
+	"GnCalculate.h"
+	"GnNode.h"
+	"FunLancifolium.h"
+
+1462366801 d:\code\qtlancifolium\lancifolium\devlancifolium.cpp
+
+1462363951 source:d:\code\qtlancifolium\lancifolium\movlancifolium.cpp
+	"MovLancifolium.h"
+
+1460294139 d:\code\qtlancifolium\lancifolium\movlancifolium.h
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cctype>
+	<stack>
+	<list>
+	"GnNode.h"
+
+1461377614 source:d:\code\qtlancifolium\lancifolium\unilancifolium.cpp
+	"UniLancifolium.h"
+
+1461377973 d:\code\qtlancifolium\lancifolium\unilancifolium.h
+	"DevLancifolium.h"
+
+1462366801 source:d:\code\qtlancifolium\lancifolium\devlancifolium.cpp
+

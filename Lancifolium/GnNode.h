@@ -58,11 +58,11 @@ struct GnLift { // 保存提子信息，GnNode中已經包含了這個功能
     vector<int> bordsave; // 提子列表
     int colour; // 提子顏色
     void init() {
-        bordsave.reserve(0);
-    }
+	    bordsave.reserve(0);
+	}
     GnLift() {
-        init();
-    }
+	    init();
+	}
 }; // only for GnCalculate
 
 #endif // !GNNODE_H

@@ -33,8 +33,8 @@ typedef struct QtLancifolium : public QMainWindow {
 
 public:
     QtLancifolium(QWidget *parent = 0);
-    void setbuttons();
-    ~QtLancifolium();
+	void setbuttgeometry();
+	~QtLancifolium();
 
     void simplemoving(int movx, int movy); /* 簡單打譜程序 */
     void drawingbord(int bordsiz); /* 畫出盤面 */
@@ -59,7 +59,7 @@ private:
     int curmov; /* 當前落子 */
     GnNode *current;
 
-    /* 繪圖 */
+	/* 繪圖 */
     QBrush brushs;
     QPen pen;
     QImage imgbord; /* 棋盤 */
@@ -72,7 +72,7 @@ private:
     int win_xlb; /* 棋盤左上角的橫坐標 */
     int win_ylb; /* 棋盤左上角的縱坐標 */
 
-    /* 按鈕 */
+	/* 按鈕 */
     QPushButton *butt_abstention; /* 棄權 */
     QPushButton *butt_format; /* 格式化棋譜文件 */
     QPushButton *butt_openfile;

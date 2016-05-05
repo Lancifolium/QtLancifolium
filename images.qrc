@@ -1,14 +1,14 @@
 <RCC>
-    <qresource prefix="/">
-        <file>images/bord.png</file>
-        <file>images/Lancifolium.png</file>
-        <file>images/stb.png</file>
-        <file>images/stw.png</file>
-        <file>images/Lancifolium.ico</file>
-        <file>images/movblack.png</file>
-        <file>images/movwhite.png</file>
-        <file>images/filesave.png</file>
-        <file>images/folder_blue_open.png</file>
-        <file>images/cur_mov.png</file>
-    </qresource>
+	<qresource prefix="/">
+		<file>images/bord.png</file>
+		<file>images/Lancifolium.png</file>
+		<file>images/stb.png</file>
+		<file>images/stw.png</file>
+		<file>images/Lancifolium.ico</file>
+		<file>images/movblack.png</file>
+		<file>images/movwhite.png</file>
+		<file>images/filesave.png</file>
+		<file>images/folder_blue_open.png</file>
+		<file>images/cur_mov.png</file>
+	</qresource>
 </RCC>

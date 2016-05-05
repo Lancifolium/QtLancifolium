@@ -26,7 +26,7 @@ GnNode::GnNode() {
 }
 
 GnNode::GnNode(struct GnNode *par) {
-    init(par);
+	init(par);
 }
 
 int GnNode::insertNextNode(struct GnNode *tmpnxt) { // 挿入後續節點

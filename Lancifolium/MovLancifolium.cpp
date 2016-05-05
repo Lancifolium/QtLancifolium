@@ -183,7 +183,7 @@ int MovLancifolium::configDropStone(int colour, int mov) { // 著子判斷，0�
 	}
 	if (lift == 1 && bnum == 1) { // 提子並形成劫爭
 		savetree(colour, mov); // 新建節點
-        curNode->liftcolour = (colour == 1 ? 2 : 1); // 當前死子顏色
+	    curNode->liftcolour = (colour == 1 ? 2 : 1); // 當前死子顏色
 		if (tmpx > 0 && calcbord[tmpx - 1][tmpy] == TB_LIFTSTONES) {
 			ston[tmpx - 1][tmpy] = 0;
 			confmove = (tmpx - 1) * 100 + tmpy;
@@ -222,7 +222,7 @@ int MovLancifolium::configDropStone(int colour, int mov) { // 著子判斷，0�
 		}
 		return 2; // 需要提子
 	}
-    // default case 程序這裡存在構造缺陷，使得發現不了bug
+	// default case 程序這裡存在構造缺陷，使得發現不了bug
 	conflict = 0; // 撤銷劫爭
     savetree(colour, mov); //
 	return 3; // 無需提子
@@ -230,27 +230,27 @@ int MovLancifolium::configDropStone(int colour, int mov) { // 著子判斷，0�
 
 int MovLancifolium::savetree(int colour, int mov) { // 
     if (curNode == NULL) curNode = root; // 防止curNode懸垂
-        struct GnNode *tmpnode = curNode; // 暫存當前節點
+	    struct GnNode *tmpnode = curNode; // 暫存當前節點
     if (curNode->nxt.size() > 0) { // 有次分支
-        int tmpi;
-        for (tmpi = 0; tmpi < tmpnode->nxt.size(); tmpi++) { // 查找看看有沒有坐標相同的節點
-            if (tmpnode->nxt[tmpi]->mov == mov) break; // 找到
-        }
-        if (tmpi == tmpnode->nxt.size()) { // 沒找到
-            curNode = new GnNode(tmpnode);
-            curNode->mov = mov;
-            tmpnode->nxt.push_back(curNode);
+	    int tmpi;
+	    for (tmpi = 0; tmpi < tmpnode->nxt.size(); tmpi++) { // 查找看看有沒有坐標相同的節點
+		    if (tmpnode->nxt[tmpi]->mov == mov) break; // 找到
+		}
+	    if (tmpi == tmpnode->nxt.size()) { // 沒找到
+		    curNode = new GnNode(tmpnode);
+		    curNode->mov = mov;
+		    tmpnode->nxt.push_back(curNode);
 			tmpnode->nxt[tmpi] = tmpnode->nxt[0];
 			tmpnode->nxt[0] = curNode;
-        }
-        else { // 找到了
-            curNode = tmpnode->nxt[tmpi];
-            tmpnode->nxt[tmpi] = tmpnode->nxt[0]; // 交換主分支
-            tmpnode->nxt[0] = curNode;
-            curNode->liftsave.clear();
-        }
-        return 1;
-    }
+		}
+	    else { // 找到了
+		    curNode = tmpnode->nxt[tmpi];
+		    tmpnode->nxt[tmpi] = tmpnode->nxt[0]; // 交換主分支
+		    tmpnode->nxt[0] = curNode;
+		    curNode->liftsave.clear();
+		}
+	    return 1;
+	}
 	else {
 		curNode = new GnNode(tmpnode);
 		curNode->mov = mov;
@@ -261,11 +261,11 @@ int MovLancifolium::savetree(int colour, int mov) { //
 int MovLancifolium::regainMove() { // 恢復提子
     printf("-----------\n");
     if (curNode == root) { // 到達根
-        printf("Reaching top. \n");
-        return 1;
+	    printf("Reaching top. \n");
+	    return 1;
 	}
 	else {
-        if (curNode == NULL) curNode = root; /* 必須的 */
+	    if (curNode == NULL) curNode = root; /* 必須的 */
 		if (curNode->addblacks.size() > 0) { // 撤銷置子
 			for (int tmpi = 0; tmpi < curNode->addblacks.size(); tmpi++) {
 				ston[curNode->addblacks[tmpi] / 100][curNode->addblacks[tmpi] % 100] = 0;
@@ -282,9 +282,9 @@ int MovLancifolium::regainMove() { // 恢復提子
 			}
 		}
 		ston[curNode->mov / 100][curNode->mov % 100] = 0; // 撤銷落子
-        printf(" @ mov: %d $ [%p] ", curNode->mov, curNode);
+	    printf(" @ mov: %d $ [%p] ", curNode->mov, curNode);
 		curNode = curNode->parent; // 回溯一個節點
-        printf("$ [%p]\n", curNode);
-        return 0;
+	    printf("$ [%p]\n", curNode);
+	    return 0;
 	}
 }

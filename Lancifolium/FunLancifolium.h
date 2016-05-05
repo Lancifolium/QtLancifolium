@@ -20,7 +20,7 @@ inline int iswhite(char tmpc) { /* 判斷空白字符 */
 /* 升序排序所用比較函數 */
 inline bool sortcmp(const int &tmpa, const int &tmpb) {
 	return tmpa < tmpb;
-}
+} /* 此函數多處用到，不可刪除 */
 
 /* 棋譜格式調整函數 */
 inline int ManualAdjustment(char *infile, char *oufile) {
@@ -60,8 +60,9 @@ inline int ManualAdjustment(char *infile, char *oufile) {
 		else fprintf(wrl, "%c", tmpc);
 
 		tmpb = tmpc;
-		printf("|%c|%d|", tmpc, tmpc); //system("pause");
+		//printf("|%c|%d|", tmpc, tmpc); //system("pause");
 	}
+	fclose(fil); fclose(wrl); /* 關閉文件 */
 	return 1;
 } /* finished ManualAdjustment */
 

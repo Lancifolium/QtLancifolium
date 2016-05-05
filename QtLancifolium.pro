@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT 	  += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -37,13 +37,15 @@ HEADERS  += \
     QtLancifolium/QtLancifolium.h \
     QtLancifolium/QtWithoutForm.h \
     QtLancifolium/testing.h
-    
 
-FORMS    += QtLancifolium.ui
+
+FORMS
 
 RESOURCES += \
     images.qrc
 
 DISTFILES += \
     README.md \
-    CHANGELOG
+    CHANGELOG \
+    formula.sgf \
+    tmp.sgf

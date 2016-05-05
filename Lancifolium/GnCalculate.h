@@ -32,8 +32,8 @@ struct GnCalculate { // 計算相關函數
 	char ston[MAXBORDSIZE][MAXBORDSIZE];
     char calcbord[MAXBORDSIZE][MAXBORDSIZE];
 
-    //struct GnSave currsave;
-    //std::list<struct GnSave> bordList; // 保存棋盤
+	//struct GnSave currsave;
+	//std::list<struct GnSave> bordList; // 保存棋盤
     std::list<int> moveList; // 保存move，個十位縱坐標，百千位橫坐標，萬位表示有棋盤變化
 
     std::list<struct GnLift> bordList; // Save movs

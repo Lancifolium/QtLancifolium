@@ -16,7 +16,7 @@ struct Formatting : public QDialog {
 
 public:
     explicit Formatting(QWidget *parent = 0);
-    ~Formatting();
+	~Formatting();
 
 private slots:
     void on_formopenfile_released();

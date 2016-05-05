@@ -41,13 +41,14 @@ void Formatting::on_formsavefile_released() {
     if (oufilename.isEmpty()) ;
     else if (infilename.isEmpty()) ;
     else {
-        char *infile = infilename.toLatin1().data();
-        char *oufile = oufilename.toLatin1().data();
-        if (ManualAdjustment(infile, oufile)) {
-            QMessageBox::information(this, "Formatting result", "Formatting successful! ");
-        }
-        else QMessageBox::information(this, "Formatting result", "Failed! ");
-    }
+		char *infile = infilename.toLatin1().data();
+		char *oufile = oufilename.toLatin1().data();
+		printf("%s___%s\n", infile, oufile);
+		if (ManualAdjustment(infile, oufile)) {
+			QMessageBox::information(this, "Formatting result", "Formatting successful! ");
+		}
+		else QMessageBox::information(this, "Formatting result", "Failed! ");
+	}
 }
 
 void Formatting::resizeEvent(QResizeEvent *resize) {

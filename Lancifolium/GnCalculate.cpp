@@ -10,7 +10,7 @@ void GnCalculate::init() {
 }
 
 int GnCalculate::findStoneBlock(int colour, int tmpcolour, int pos, int tmpsiz, int &stonnum) { // 找一片棋，返回氣數
-    ;// colour是棋盤上子之顏色；tmpcolour是calcbord上該片棋之顏色
+	;// colour是棋盤上子之顏色；tmpcolour是calcbord上該片棋之顏色
 	;// siz是棋盤規格減一
 	int tmpmov, breath;
 	int tmpx, tmpy;
@@ -21,34 +21,34 @@ int GnCalculate::findStoneBlock(int colour, int tmpcolour, int pos, int tmpsiz, 
 	while (!movStack.empty()) { // 棧不空
 		tmpmov = movStack.top(); movStack.pop(); // 取出棧頂
 		tmpx = tmpmov / 100; tmpy = tmpmov % 100; // 坐標
-        if ((tmpx > 0) && (calcbord[tmpx - 1][tmpy] != tmpcolour)) {
+		if ((tmpx > 0) && (calcbord[tmpx - 1][tmpy] != tmpcolour)) {
 			if (ston[tmpx - 1][tmpy] == colour) { // 同色
 				movStack.push(tmpmov - 100); // 入棧
-                calcbord[tmpx - 1][tmpy] = tmpcolour; // 標記
+				calcbord[tmpx - 1][tmpy] = tmpcolour; // 標記
 				stonnum++;
 			}
 			else if (ston[tmpx - 1][tmpy] == 0) breath++; // 無子，異色不用考慮
 		}
-        if ((tmpx < tmpsiz) && (calcbord[tmpx + 1][tmpy] != tmpcolour)) {
+		if ((tmpx < tmpsiz) && (calcbord[tmpx + 1][tmpy] != tmpcolour)) {
 			if (ston[tmpx + 1][tmpy] == colour) { // 同色
 				movStack.push(tmpmov + 100); // 入棧
-                calcbord[tmpx + 1][tmpy] = tmpcolour; // 標記
+				calcbord[tmpx + 1][tmpy] = tmpcolour; // 標記
 				stonnum++;
 			}
 			else if (ston[tmpx + 1][tmpy] == 0) breath++; // 無子，異色不用考慮
 		}
-        if ((tmpy > 0) && (calcbord[tmpx][tmpy - 1] != tmpcolour)) {
+		if ((tmpy > 0) && (calcbord[tmpx][tmpy - 1] != tmpcolour)) {
 			if (ston[tmpx][tmpy - 1] == colour) { // 同色
 				movStack.push(tmpmov - 1); // 入棧
-                calcbord[tmpx][tmpy - 1] = tmpcolour; // 標記
+				calcbord[tmpx][tmpy - 1] = tmpcolour; // 標記
 				stonnum++;
 			}
 			else if (ston[tmpx][tmpy - 1] == 0) breath++; // 無子，異色不用考慮
 		}
-        if ((tmpy < tmpsiz) && (calcbord[tmpx][tmpy + 1] != tmpcolour)) {
+		if ((tmpy < tmpsiz) && (calcbord[tmpx][tmpy + 1] != tmpcolour)) {
 			if (ston[tmpx][tmpy + 1] == colour) { // 同色
 				movStack.push(tmpmov + 1); // 入棧
-                calcbord[tmpx][tmpy + 1] = tmpcolour; // 標記
+				calcbord[tmpx][tmpy + 1] = tmpcolour; // 標記
 				stonnum++;
 			}
 			else if (ston[tmpx][tmpy + 1] == 0) breath++; // 無子，異色不用考慮
@@ -58,7 +58,7 @@ int GnCalculate::findStoneBlock(int colour, int tmpcolour, int pos, int tmpsiz, 
 } // finished findStoneBlock
 
 int GnCalculate::configDropStone(int colour, int mov) { // 著子判斷，0不可落子，1有提子，2無提子
-    ;// calcbord標記原則：3同色，4異色，5提子，6異色但非提子
+	;// calcbord標記原則：3同色，4異色，5提子，6異色但非提子
 	;// tmpx處千百位，tmpy處個十位
 	;// 返回：0禁著點（包括劫爭熱點），1提子並形成劫爭，2提子，3無需提子
 
@@ -80,76 +80,76 @@ int GnCalculate::configDropStone(int colour, int mov) { // 著子判斷，0不�
 	;// 必須先行判斷異色子有否可被提者
 	lift = 0; // 提子數目
 	if ((tmpx > 0) && (ston[tmpx - 1][tmpy] == opcolour)) { // 上
-        calcbord[tmpx - 1][tmpy] = TB_DIFFCOLOUR;
+		calcbord[tmpx - 1][tmpy] = TB_DIFFCOLOUR;
 		if (findStoneBlock(opcolour, TB_DIFFCOLOUR, mov - 100, tmpsiz, tmpi) == 0) { // 無氣，需要提子
 			lift += tmpi;
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
 				}
 			}
 		}
 		else { // 有氣，無需提子
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
 				}
 			}
 		}
 	}
 	if ((tmpx < tmpsiz) && (ston[tmpx + 1][tmpy] == opcolour) &&
-        (calcbord[tmpx + 1][tmpy] != TB_LIFTSTONES) && (calcbord[tmpx + 1][tmpy] != TB_DIFFNOLIFT)) { // 下
-        calcbord[tmpx + 1][tmpy] = TB_DIFFCOLOUR;
+		(calcbord[tmpx + 1][tmpy] != TB_LIFTSTONES) && (calcbord[tmpx + 1][tmpy] != TB_DIFFNOLIFT)) { // 下
+		calcbord[tmpx + 1][tmpy] = TB_DIFFCOLOUR;
 		if (findStoneBlock(opcolour, TB_DIFFCOLOUR, mov + 100, tmpsiz, tmpi) == 0) { // 無氣，需要提子
 			lift += tmpi;
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
 				}
 			}
 		}
 		else { // 有氣，無需提子
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
 				}
 			}
 		}
 	}
 	if ((tmpy > 0) && (ston[tmpx][tmpy - 1] == opcolour) &&
-        (calcbord[tmpx][tmpy - 1] != TB_LIFTSTONES) && (calcbord[tmpx][tmpy - 1] != TB_DIFFNOLIFT)) { // 左
-        calcbord[tmpx][tmpy - 1] = TB_DIFFCOLOUR;
+		(calcbord[tmpx][tmpy - 1] != TB_LIFTSTONES) && (calcbord[tmpx][tmpy - 1] != TB_DIFFNOLIFT)) { // 左
+		calcbord[tmpx][tmpy - 1] = TB_DIFFCOLOUR;
 		if (findStoneBlock(opcolour, TB_DIFFCOLOUR, mov - 1, tmpsiz, tmpi) == 0) { // 無氣，需要提子
 			lift += tmpi;
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
 				}
 			}
 		}
 		else { // 有氣，無需提子
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
 				}
 			}
 		}
 	}
 	if ((tmpy < tmpsiz) && (ston[tmpx][tmpy + 1] == opcolour) &&
-        (calcbord[tmpx][tmpy + 1] != TB_LIFTSTONES) && (calcbord[tmpx][tmpy + 1] != TB_DIFFNOLIFT)) { // 右
-        calcbord[tmpx][tmpy + 1] = TB_DIFFCOLOUR;
+		(calcbord[tmpx][tmpy + 1] != TB_LIFTSTONES) && (calcbord[tmpx][tmpy + 1] != TB_DIFFNOLIFT)) { // 右
+		calcbord[tmpx][tmpy + 1] = TB_DIFFCOLOUR;
 		if (findStoneBlock(opcolour, TB_DIFFCOLOUR, mov + 1, tmpsiz, tmpi) == 0) { // 無氣，需要提子
 			lift += tmpi;
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_LIFTSTONES;
 				}
 			}
 		}
 		else { // 有氣，無需提子
 			for (tmpi = 0; tmpi <= tmpsiz; tmpi++) {
 				for (tmpj = 0; tmpj <= tmpsiz; tmpj++) {
-                    if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
+					if (calcbord[tmpi][tmpj] == TB_DIFFCOLOUR) calcbord[tmpi][tmpj] = TB_DIFFNOLIFT;
 				}
 			}
 		}
@@ -164,19 +164,19 @@ int GnCalculate::configDropStone(int colour, int mov) { // 著子判斷，0不�
 	}
 	if (lift == 1 && bnum == 1) { // 提子並形成劫爭
 		saveCurrBord(colour, mov); // 保存棋盤
-        if (tmpx > 0 && calcbord[tmpx - 1][tmpy] == TB_LIFTSTONES) {
+		if (tmpx > 0 && calcbord[tmpx - 1][tmpy] == TB_LIFTSTONES) {
 			ston[tmpx - 1][tmpy] = 0;
 			confmove = (tmpx - 1) * 100 + tmpy;
 		}
-        if (tmpx < tmpsiz && calcbord[tmpx + 1][tmpy] == TB_LIFTSTONES) {
+		if (tmpx < tmpsiz && calcbord[tmpx + 1][tmpy] == TB_LIFTSTONES) {
 			ston[tmpx + 1][tmpy] = 0;
 			confmove = (tmpx + 1) * 100 + tmpy;
 		}
-        if (tmpy > 0 && calcbord[tmpx][tmpy - 1] == TB_LIFTSTONES) {
+		if (tmpy > 0 && calcbord[tmpx][tmpy - 1] == TB_LIFTSTONES) {
 			ston[tmpx][tmpy - 1] = 0;
 			confmove = tmpx * 100 + tmpy - 1;
 		}
-        if (tmpy < tmpsiz && calcbord[tmpx][tmpy + 1] == TB_LIFTSTONES) {
+		if (tmpy < tmpsiz && calcbord[tmpx][tmpy + 1] == TB_LIFTSTONES) {
 			ston[tmpx][tmpy + 1] = 0;
 			confmove = tmpx * 100 + tmpy + 1;
 		}
@@ -189,7 +189,7 @@ int GnCalculate::configDropStone(int colour, int mov) { // 著子判斷，0不�
 		conflict = 0; // 撤銷劫爭
 		for (tmpi = 0; tmpi < siz; tmpi++) { // 提子操作
 			for (tmpj = 0; tmpj < siz; tmpj++) {
-                if (calcbord[tmpi][tmpj] == TB_LIFTSTONES) ston[tmpi][tmpj] = 0;
+				if (calcbord[tmpi][tmpj] == TB_LIFTSTONES) ston[tmpi][tmpj] = 0;
 			}
 		}
 		return 2; // 需要提子
@@ -204,28 +204,28 @@ int GnCalculate::saveCurrBord(int colour, int mov) {
     struct GnLift savebord;
     savebord.colour = colour == 1 ? 2 : 1;
     for (int tmpi = 0; tmpi < siz; tmpi++) {
-        for (int tmpj = 0; tmpj < siz; tmpj++) {
-            if (calcbord[tmpi][tmpj] == TB_LIFTSTONES) {
-                savebord.bordsave.push_back(tmpi * 100 + tmpj);
-            }
-        }
-    }
+		for (int tmpj = 0; tmpj < siz; tmpj++) {
+			if (calcbord[tmpi][tmpj] == TB_LIFTSTONES) {
+				savebord.bordsave.push_back(tmpi * 100 + tmpj);
+			}
+		}
+	}
     moveList.push_back(mov + 10000);
     bordList.push_back(savebord);
 }
 
 int GnCalculate::regainMove() { // 根據棧頂恢復
     if (bordList.empty()) {
-        printf("Reach top! \n");
-        return 1;
-    }
+		printf("Reach top! \n");
+		return 1;
+	}
     else {
-        int tmpi, tmpj;
-        for (tmpi = 0; tmpi < bordList.back().bordsave.size(); tmpi++) {
-            tmpj = bordList.back().bordsave[tmpi];
-            ston[tmpj / 100][tmpj % 100] = bordList.back().colour;
-        }
-        bordList.pop_back();
-    }
+		int tmpi, tmpj;
+		for (tmpi = 0; tmpi < bordList.back().bordsave.size(); tmpi++) {
+			tmpj = bordList.back().bordsave[tmpi];
+			ston[tmpj / 100][tmpj % 100] = bordList.back().colour;
+		}
+		bordList.pop_back();
+	}
     return 0;
 }
