@@ -22,6 +22,15 @@ inline bool sortcmp(const int &tmpa, const int &tmpb) {
 	return tmpa < tmpb;
 } /* 此函數多處用到，不可刪除 */
 
+inline int operatecase(char *operate) { /* 專門用來 switch 操縱符的 */
+	int tmpi = 0; int tmpj = 0;
+	while (operate[tmpi] != '\0') {
+		tmpj = tmpj * 100 + operate[tmpi] - '@'; /* @是A前面的一個字符，令A從1開始 */
+		tmpi++;
+	}
+	return tmpj;
+}
+
 /* 棋譜格式調整函數 */
 inline int ManualAdjustment(char *infile, char *oufile) {
 	FILE *fil, *wrl;

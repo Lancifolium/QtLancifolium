@@ -4,6 +4,12 @@ Formatting::Formatting(QWidget *parent) : QDialog(parent) {
     setWindowTitle("Lancifolium Formatting");
     setFixedSize(400, 247);
 
+	buttonBox = new QDialogButtonBox(this);
+	buttonBox->setObjectName(QStringLiteral("buttonBox"));
+	buttonBox->setGeometry(QRect(30, 240, 341, 32));
+	buttonBox->setOrientation(Qt::Horizontal);
+	buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+
     formopenfile = new QPushButton(this);
     formopenfile->setObjectName(QStringLiteral("formopenfile"));
     formopenfile->setGeometry(QRect(70, 50, 75, 23));
@@ -25,9 +31,12 @@ Formatting::Formatting(QWidget *parent) : QDialog(parent) {
 
     connect(formopenfile, SIGNAL(released()), this, SLOT(on_formopenfile_released()));
     connect(formsavefile, SIGNAL(released()), this, SLOT(on_formsavefile_released()));
+	QObject::connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+	QObject::connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
 }
 
 Formatting::~Formatting() {
+	delete buttonBox;
     delete formopenfile;
     delete formsavefile;
 }

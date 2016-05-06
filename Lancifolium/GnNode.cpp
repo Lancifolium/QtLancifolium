@@ -88,3 +88,12 @@ int GnNode::jud_nextmov(int tmpmov) { /* 判斷下一手是否在子節點中 */
 	} /* 先實現再說，這裡用不著高明算法 */
 	return 0;
 }
+
+void GnNode::printing() {
+	printf("\n|%p|%p|[%d](%d)", parent, this, mov, stoneProp);
+}
+
+void GnNode::printbase() {
+	//printf("|%d|%d|%d|", stoneProp, mov, nxtnum);
+	printf("[%d]", mov);
+}

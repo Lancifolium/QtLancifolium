@@ -6,6 +6,7 @@
 #include <QApplication>
 #include <QString>
 #include <QMessageBox>
+#include <QDialogButtonBox>
 #include <QPalette>
 #include <QPushButton>
 #include <QResizeEvent>
@@ -29,6 +30,7 @@ private:
 
     QPushButton *formopenfile;
     QPushButton *formsavefile;
+	QDialogButtonBox *buttonBox;
 };
 
 #endif // FORMATTING_H

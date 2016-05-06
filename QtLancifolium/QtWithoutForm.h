@@ -13,8 +13,6 @@
 #include <QResizeEvent>
 #include "testing.h"
 
-//struct Burtton : public
-
 struct QtWithoutForm : public QWidget {
 public:
     QtWithoutForm(QWidget *parent = 0);

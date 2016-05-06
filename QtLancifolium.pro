@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     Lancifolium/GnCalculate.cpp \
     Lancifolium/GnNode.cpp \
     Lancifolium/MovLancifolium.cpp \
-    Lancifolium/UniLancifolium.cpp
+    Lancifolium/UniLancifolium.cpp \
+    QtLancifolium/Formula.cpp
 
 HEADERS  += \
     Lancifolium/DevLancifolium.h \
@@ -36,7 +37,8 @@ HEADERS  += \
     QtLancifolium/Formatting.h \
     QtLancifolium/QtLancifolium.h \
     QtLancifolium/QtWithoutForm.h \
-    QtLancifolium/testing.h
+    QtLancifolium/testing.h \
+    QtLancifolium/Formula.h
 
 
 FORMS

@@ -45,13 +45,8 @@ typedef struct GnNode { // 讀取棋譜文件所用節點，亦當可用於戰�
 
     int jud_nextmov(int tmpmov); // 判斷下一個落子是否在nxt中，
 
-	void printing() {
-		printf("\n|%p|%p|[%d](%d)", parent, this, mov, stoneProp);
-	}
-	void printbase() {
-		//printf("|%d|%d|%d|", stoneProp, mov, nxtnum);
-		printf("[%d]", mov);
-	}
+	void printing();
+	void printbase();
 } GnNode;
 
 struct GnLift { // 保存提子信息，GnNode中已經包含了這個功能

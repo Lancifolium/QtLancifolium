@@ -1,10 +1,13 @@
 #include "DevLancifolium.h"
+#include "DevLancifolium.cpp"
+#include "GnNode.h"
+#include "GnNode.cpp"
 
 int main(void) {
 	struct DevLancifolium sig;
 	//sig.openfile("tmp.sgf"); // file
 	char buff[1000];
-	sig.configManual("D:\\Code\\QtLancifolium\\formularygb2312.SGF");
+	sig.configManual("D:\\Code\\QtLancifolium\\formula.SGF");
     sig.printfManual();
 	sig.adjustManual(sig.root);
 	sig.printfManual();
@@ -16,4 +19,5 @@ int main(void) {
 //		sig.clearall();
 //		sigb.clearall();
 //	}
+
 }

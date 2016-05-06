@@ -11,6 +11,8 @@
 #define FORK 3 /* 叉 */
 #define CIRCLE 4 /* 圓 */
 
+#define BUFFER_LENGTH 999999 /* 評論長度 */
+
 struct DevLancifolium { // 全局結構
 	int siz; // 棋盤規格
 
@@ -35,11 +37,7 @@ struct DevLancifolium { // 全局結構
 
 
 	/* 讀取棋譜函數 */
-	int openfile(char *filename) { // 讀入文件
-		filebuff = fopen(filename, "r");
-		if (filebuff == NULL) return 0;
-		else return 1;
-	} // finished openfile
+	int openfile(char *filename);
 
 	/* 讀取處理 */
 	int dealAddStones(struct GnNode *tmpnode, int colour);
