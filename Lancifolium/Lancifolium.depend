@@ -15,7 +15,7 @@
 1462429381 d:\code\qtlancifolium\lancifolium\gnnode.h
 	"FunLancifolium.h"
 
-1462365382 d:\code\qtlancifolium\lancifolium\funlancifolium.h
+1462452223 d:\code\qtlancifolium\lancifolium\funlancifolium.h
 	<iostream>
 	<cstdio>
 	<cstdlib>
@@ -29,7 +29,7 @@
 1462428653 source:d:\code\qtlancifolium\lancifolium\main.cpp
 	"DevLancifolium.h"
 
-1462429210 d:\code\qtlancifolium\lancifolium\devlancifolium.h
+1462430695 d:\code\qtlancifolium\lancifolium\devlancifolium.h
 	<algorithm>
 	"GnCalculate.h"
 	"GnNode.h"
@@ -54,6 +54,8 @@
 1461377973 d:\code\qtlancifolium\lancifolium\unilancifolium.h
 	"DevLancifolium.h"
 
-1462429381 source:d:\code\qtlancifolium\lancifolium\gnnode.cpp
+1462865205 source:d:\code\qtlancifolium\lancifolium\gnnode.cpp
 	"GnNode.h"
+
+1462453045 source:d:\code\qtlancifolium\lancifolium\devlancifolium.cpp
 

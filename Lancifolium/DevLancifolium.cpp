@@ -118,9 +118,10 @@ int DevLancifolium::dealCommentNodename(GnNode *tmpnode, int tmpkind) {
 		reader = fgetc(filebuff); // 下一個
 	}
 	buff[tmpi] = '\0';
-	printf("$$buff: %s", buff); ////////////
+	//printf("$$buff: %s", buff); ////////////
 	if (tmpkind == 1) tmpnode->comment = buff; // 評論
 	else tmpnode->nodename = buff; // 節點名稱
+	//std::cout << "|" << tmpnode->comment << "|" << tmpnode->nodename << "|";
 	reader = fgetc(filebuff); // 棄了']'
 } // finished dealCommentNodename
 
@@ -157,7 +158,6 @@ int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
 	default: break;
 	}
 
-	// std::sort(tmpnode->labels.begin(), tmpnode->labels.end(), sortcmp); /* 升序排序 */
 	return 1;
 }
 

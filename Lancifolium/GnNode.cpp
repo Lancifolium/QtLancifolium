@@ -95,5 +95,6 @@ void GnNode::printing() {
 
 void GnNode::printbase() {
 	//printf("|%d|%d|%d|", stoneProp, mov, nxtnum);
-	printf("[%d]", mov);
+	printf("[%d|", mov);
+	std::cout << this->comment << "|" << this->nodename << "]";
 }

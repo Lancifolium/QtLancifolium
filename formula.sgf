@@ -1,536 +1,532 @@
-
 (
-  ;GM[1]AP[StoneBase:SGFParser.3.0.1]SZ[19]CA[utf-8]HA[0]
+  ;GM[1]AP[StoneBase:SGFParser.3.0.1]SZ[19]CA[Latin1]HA[0]
   (
         ;B[qc]
   )
   (
-        ;B[pd]
+        ;B[pd]()
         (
-
-        )
-        (
-          ;AB[dp]AW[dd][pp];W[qf]LB[pg:A][qh:C]
+          ;AB[dp]AW[dd][pp];W[qf]LB[pg:A][qh:B]
           (
-                ;B[pg]LB[pf:A][oe:B]N[ÂÄíÂûÇËìÆ]C[ÂÄíÂûÇËìÆ]
+                ;B[pg]LB[pf:A][oe:B]N[µπ¥π…è]C[µπ¥π…è]
                 (
-                  ;W[pf]N[A Ë°ùÊñ∑];B[of]LB[og:A][re:B]
+                  ;W[pf]N[A –nî‡];B[of]LB[og:A][re:B]
                   (
-                        ;W[og]LB[qg:A][ph:B]N[A Êñ∑]
+                        ;W[og]LB[qg:A][ph:B]N[A î‡]
                         (
-                          ;B[qg]LB[rg:A][oh:B]N[A Ë≤º]
+                          ;B[qg]LB[rg:A][oh:B]N[A ŸN]
                           (
-                                ;W[rg]LB[rh:A][rf:B]N[A Êâ≥]
+                                ;W[rg]LB[rh:A][rf:B]N[A ∞‚]
                                 (
-                                  ;B[rh]N[A Êìã];W[re]LB[qi:A][sg:B]
+                                  ;B[rh]N[A ìı];W[re]LB[qi:A][sg:B]
                                   (
-                                        ;B[qi]N[A Ëôé];W[pi];B[pe];W[oh];B[qh];W[qc];B[pc];W[qb];B[pb]LB[qk:A][nf:B]
+                                        ;B[qi]N[A ª¢];W[pi];B[pe];W[oh];B[qh];W[qc];B[pc];W[qb];B[pb]LB[qk:A][nf:B]
                                         (
-                                          ;W[qk]N[A ÈÄº];B[qj];W[pk]LB[sb:A][rf:B]
+                                          ;W[qk]N[A ±∆];B[qj];W[pk]LB[sb:A][rf:B]
                                           (
-                                                ;B[sb]N[A Èªû];W[sf];B[rd];W[qd];B[qe];W[rf];B[rb];W[rc];B[sd];W[ra];B[sh]C[ÈªëÂãù„ÄÇ]
+                                                ;B[sb]N[A ¸c];W[sf];B[rd];W[qd];B[qe];W[rf];B[rb];W[rc];B[sd];W[ra];B[sh]C[∫⁄ÑŸ°£]
                                           )
                                           (
-                                                ;B[rf]N[B Êí≤];W[sf];B[rd];W[qd];B[qe];W[rf];B[rc];W[rb];B[sd];W[sa];B[qa];W[sc];B[sb];W[nf];B[oe];W[sc];B[pj]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                ;B[rf]N[B ì‰];W[sf];B[rd];W[qd];B[qe];W[rf];B[rc];W[rb];B[sd];W[sa];B[qa];W[sc];B[sb];W[nf];B[oe];W[sc];B[pj]C[É…∑÷°£]
                                           )
                                         )
                                         (
-                                          ;W[nf]N[B Êâì];B[oe];W[qk];B[qj];W[pk];B[rf];W[sf];B[rd];W[qd];B[qe];W[rf];B[rc];W[rb];B[sd];W[sb];B[qa];W[sc];B[ra];W[se];B[rd];W[rj];B[sh]C[ÈªëÂãù„ÄÇ]
+                                          ;W[nf]N[B ¥Ú];B[oe];W[qk];B[qj];W[pk];B[rf];W[sf];B[rd];W[qd];B[qe];W[rf];B[rc];W[rb];B[sd];W[sb];B[qa];W[sc];B[ra];W[se];B[rd];W[rj];B[sh]C[∫⁄ÑŸ°£]
                                         )
                                   )
                                   (
-                                        ;B[sg]N[B Êâì];W[rf]LB[qi:A][ph:B][pi:C][qh:D]
+                                        ;B[sg]N[B ¥Ú];W[rf]LB[qi:A][ph:B][pi:C][qh:D]
                                         (
-                                          ;B[qi]LB[oh:A][pi:B]N[A Ëôé]
+                                          ;B[qi]LB[oh:A][pi:B]N[A ª¢]
                                           (
-                                                ;W[oh]N[A Èï∑];B[oe]LB[pi:A][qd:B]
+                                                ;W[oh]N[A ÈL];B[oe]LB[pi:A][qd:B]
                                                 (
-                                                  ;W[pi]N[A Ëìã];B[qh];W[qc];B[qd];W[rd];B[qb];W[qk];B[rl];W[rk];B[pj]C[ÈªëÂãù„ÄÇ]
+                                                  ;W[pi]N[A …w];B[qh];W[qc];B[qd];W[rd];B[qb];W[qk];B[rl];W[rk];B[pj]C[∫⁄ÑŸ°£]
                                                 )
                                                 (
-                                                  ;W[qd]N[A È†Ç];B[qk];W[jc];B[qc];W[rc];B[pc];W[mc];B[rb];W[sb];B[sd];W[sc];B[rd];W[se];B[rd];W[sd];B[pe];W[qb];B[ra];W[pa]C[ÁôΩÂãù„ÄÇ]
+                                                  ;W[qd]N[A Ìî];B[qk];W[jc];B[qc];W[rc];B[pc];W[mc];B[rb];W[sb];B[sd];W[sc];B[rd];W[se];B[rd];W[sd];B[pe];W[qb];B[ra];W[pa]C[∞◊ÑŸ°£]
                                                 )
                                           )
                                           (
-                                                ;W[pi]LB[oe:A][qk:B]N[B È£õ]
+                                                ;W[pi]LB[oe:A][qk:B]N[B Ôw]
                                                 (
-                                                  ;B[oe]N[A Èï∑];W[oh];B[qh]LB[qc:A][qd:B]
+                                                  ;B[oe]N[A ÈL];W[oh];B[qh]LB[qc:A][qd:B]
                                                   (
-                                                        ;W[qc]N[A Èªû];B[pb];W[qk];B[pj];W[nd];B[pc];W[qj]C[ÈªëÂãù„ÄÇ]
+                                                        ;W[qc]N[A ¸c];B[pb];W[qk];B[pj];W[nd];B[pc];W[qj]C[∫⁄ÑŸ°£]
                                                   )
                                                   (
-                                                        ;W[qd]N[A Â∞ñÈ†Ç];B[qc];W[rc];B[pc];W[qk];B[pj];W[oj];B[rl]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                        ;W[qd]N[A º‚Ìî];B[qc];W[rc];B[pc];W[qk];B[pj];W[oj];B[rl]C[É…∑÷°£]
                                                   )
                                                 )
                                                 (
-                                                  ;B[qk]N[B Ë∑≥];W[oh];B[qh];W[oe];B[nf];W[od];B[pe];W[qc];B[pc];W[qb];B[nc];W[ne];B[me];W[mf];B[ng];W[md];B[le];W[nd];B[ld];W[mc];B[lc];W[mb];B[nb];W[na];B[oa]C[ÈªëÂãù„ÄÇ]
+                                                  ;B[qk]N[B Ã¯];W[oh];B[qh];W[oe];B[nf];W[od];B[pe];W[qc];B[pc];W[qb];B[nc];W[ne];B[me];W[mf];B[ng];W[md];B[le];W[nd];B[ld];W[mc];B[lc];W[mb];B[nb];W[na];B[oa]C[∫⁄ÑŸ°£]
                                                 )
                                           )
                                         )
                                         (
-                                          ;B[ph]N[B ÂΩé];W[qi];B[pi];W[qd];B[oe];W[qb];B[pb];W[qh];B[qj];W[ri];B[pk];W[ng];B[lc]C[ÈªëÂ•Ω„ÄÇ]
+                                          ;B[ph]N[B èù];W[qi];B[pi];W[qd];B[oe];W[qb];B[pb];W[qh];B[qj];W[ri];B[pk];W[ng];B[lc]C[∫⁄∫√°£]
                                         )
                                         (
-                                          ;B[pi]N[C Èóú];W[qc];B[qd];W[rd];B[qb];W[pc];B[oc];W[pb];B[ob];W[rb];B[oe];W[qh];B[ph];W[qi];B[qj];W[ri];B[pk];W[nd];B[me];W[od];B[mc];W[pe];B[ne]C[ÈªëÂ•Ω„ÄÇ]
+                                          ;B[pi]N[C ÍP];W[qc];B[qd];W[rd];B[qb];W[pc];B[oc];W[pb];B[ob];W[rb];B[oe];W[qh];B[ph];W[qi];B[qj];W[ri];B[pk];W[nd];B[me];W[od];B[mc];W[pe];B[ne]C[∫⁄∫√°£]
                                         )
                                         (
-                                          ;B[qh]N[D Á≤ò];W[oh];B[oe];W[qd];B[qk];W[jc];B[qc];W[rc];B[pc];W[mc];B[rb];W[sb];B[sd];W[sc];B[rd];W[se];B[rd];W[sd];B[pe];W[qb];B[ra];W[qa];B[pb]C[ÈªëÂãù„ÄÇ]
+                                          ;B[qh]N[D ’≥];W[oh];B[oe];W[qd];B[qk];W[jc];B[qc];W[rc];B[pc];W[mc];B[rb];W[sb];B[sd];W[sc];B[rd];W[se];B[rd];W[sd];B[pe];W[qb];B[ra];W[qa];B[pb]C[∫⁄ÑŸ°£]
                                         )
                                   )
                                 )
                                 (
-                                  ;B[rf]N[B Êñ∑];W[re];B[sf]LB[oe:A][se:B]
+                                  ;B[rf]N[B î‡];W[re];B[sf]LB[oe:A][se:B]
                                   (
-                                        ;W[oe]LB[nf:A][pe:B]N[A ‰∏ãÊâì]
+                                        ;W[oe]LB[nf:A][pe:B]N[A œ¬¥Ú]
                                         (
-                                          ;B[nf]N[A Èï∑];W[oh];B[pe];W[qe]LB[qh:A][rh:B]
+                                          ;B[nf]N[A ÈL];W[oh];B[pe];W[qe]LB[qh:A][rh:B]
                                           (
-                                                ;B[qh]N[A Èï∑Âá∫];W[pc];B[od];W[qc];B[rh];W[nd];B[ne];W[nc]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[qh]N[A ÈL≥ˆ];W[pc];B[od];W[qc];B[rh];W[nd];B[ne];W[nc]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[rh]N[B Êâì];W[qh];B[sg];W[ph]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[rh]N[B ¥Ú];W[qh];B[sg];W[ph]C[∞◊ÑŸ°£]
                                           )
                                         )
                                         (
-                                          ;B[pe]N[B Êâì];W[qe];B[nf];W[oh];B[qh];W[pc]LB[qd:A][od:B]
+                                          ;B[pe]N[B ¥Ú];W[qe];B[nf];W[oh];B[qh];W[pc]LB[qd:A][od:B]
                                           (
-                                                ;B[qd]N[A ‰∏ãÊãê];W[rd];B[qc];W[rc];B[qb];W[qi]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[qd]N[A œ¬π’];W[rd];B[qc];W[rc];B[qb];W[qi]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[od]N[B Êâì];W[qd];B[rh];W[ne]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[od]N[B ¥Ú];W[qd];B[rh];W[ne]C[∞◊ÑŸ°£]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[se]N[B ÂêÉ];B[qe];W[sg];B[rf];W[sf];B[pe];W[rf];B[qi]LB[ri:A][pc:B]
+                                        ;W[se]N[B ≥‘];B[qe];W[sg];B[rf];W[sf];B[pe];W[rf];B[qi]LB[ri:A][pc:B]
                                         (
-                                          ;W[ri]LB[rj:A][qj:B]N[A Êâò]
+                                          ;W[ri]LB[rj:A][qj:B]N[A Õ–]
                                           (
-                                                ;B[rj]N[A Êâ≥];W[qh];B[ph];W[pi];B[rh];W[oh]C[Á¨¨ÂçÅ‰∏ÉÂèò ÂÖ±‰∫åÂçÅ‰∫îÁùÄ ÁôΩËÉú]
+                                                ;B[rj]N[A ∞‚];W[qh];B[ph];W[pi];B[rh];W[oh]C[µ⁄ Æ∆ﬂ±‰ π≤∂˛ ÆŒÂ◊≈ ∞◊ §]
                                           )
                                           (
-                                                ;B[qj]N[B Èï∑];W[oe];B[nf];W[pc];B[od];W[qc];B[oc]C[ÈªëÂ•Ω„ÄÇ]
+                                                ;B[qj]N[B ÈL];W[oe];B[nf];W[pc];B[od];W[qc];B[oc]C[∫⁄∫√°£]
                                           )
                                         )
                                         (
-                                          ;W[pc]N[B È†Ç];B[qc];W[oe];B[nf];W[od];B[qd];W[qb];B[rc];W[ob];B[rh];W[rb];B[sd]C[ÈªëÂãù„ÄÇ]
+                                          ;W[pc]N[B Ìî];B[qc];W[oe];B[nf];W[od];B[qd];W[qb];B[rc];W[ob];B[rh];W[rb];B[sd]C[∫⁄ÑŸ°£]
                                         )
                                   )
                                 )
                           )
                           (
-                                ;W[oh]N[B Èï∑];B[rf];W[oe];B[nf];W[re];B[pe];W[qe];B[rg];W[qc];B[pc];W[qb]LB[ne:A][pb:B]
+                                ;W[oh]N[B ÈL];B[rf];W[oe];B[nf];W[re];B[pe];W[qe];B[rg];W[qc];B[pc];W[qb]LB[ne:A][pb:B]
                                 (
-                                  ;B[ne]N[A Êâì];W[pj];B[rj];W[rk];B[qk];W[ri];B[pi]C[ÈªëÂãù„ÄÇ]
+                                  ;B[ne]N[A ¥Ú];W[pj];B[rj];W[rk];B[qk];W[ri];B[pi]C[∫⁄ÑŸ°£]
                                 )
                                 (
-                                  ;B[pb]N[B Êìã];W[qd]LB[qj:A][ne:B]
+                                  ;B[pb]N[B ìı];W[qd]LB[qj:A][ne:B]
                                   (
                                         ;B[qj]LB[oc:A][ne:B]
                                         (
-                                          ;W[oc]N[A Èóú];B[ne];W[od];B[ob];W[nc];B[mc];W[nb];B[mb];W[pa];B[oj]C[ÈªëÂèñÂ§ñÂã¢„ÄÇ]
+                                          ;W[oc]N[A ÍP];B[ne];W[od];B[ob];W[nc];B[mc];W[nb];B[mb];W[pa];B[oj]C[∫⁄»°Õ‚Ñ›°£]
                                         )
                                         (
-                                          ;W[ne]N[B Èï∑];B[me];W[mf];B[ng];W[nd];B[md];W[nc];B[mc];W[mb];B[lb];W[nb];B[kc]C[ÈªëÂèñÂ§ñÂã¢„ÄÇ]
+                                          ;W[ne]N[B ÈL];B[me];W[mf];B[ng];W[nd];B[md];W[nc];B[mc];W[mb];B[lb];W[nb];B[kc]C[∫⁄»°Õ‚Ñ›°£]
                                         )
                                   )
                                   (
-                                        ;B[ne]N[B Êâì];W[qi];B[ri]LB[rj:A][qj:B]
+                                        ;B[ne]N[B ¥Ú];W[qi];B[ri]LB[rj:A][qj:B]
                                         (
-                                          ;W[rj]N[A Êâ≥];B[qj];W[pj];B[qk];W[rh];B[pi];W[si];B[oi]C[ÈªëÂ•Ω„ÄÇ]
+                                          ;W[rj]N[A ∞‚];B[qj];W[pj];B[qk];W[rh];B[pi];W[si];B[oi]C[∫⁄∫√°£]
                                         )
                                         (
-                                          ;W[qj]N[B Èï∑];B[rj];W[rk];B[qk];W[rl];B[ql];W[qm];B[pm];W[qn];B[pi];W[ph];B[qh];W[pj];B[oi]C[ÈªëÂ•Ω„ÄÇ]
+                                          ;W[qj]N[B ÈL];B[rj];W[rk];B[qk];W[rl];B[ql];W[qm];B[pm];W[qn];B[pi];W[ph];B[qh];W[pj];B[oi]C[∫⁄∫√°£]
                                         )
                                   )
                                 )
                           )
                         )
                         (
-                          ;B[ph]N[B Èï∑];W[oe];B[nf];W[od];B[md];W[pc];B[lf];W[rh];B[qi]C[ÂÖ©ÂàÜ„ÄÇ]
+                          ;B[ph]N[B ÈL];W[oe];B[nf];W[od];B[md];W[pc];B[lf];W[rh];B[qi]C[É…∑÷°£]
                         )
                   )
                   (
-                        ;W[re]N[B Â∞ñ]C[Ê≠§‰πÉÊôâÂ£´ÊòéÊâÄÂºàËÆäÂåñ„ÄÇ];B[rg];W[qg];B[qh];W[ph];B[og];W[qi];B[rh];W[pj];B[ri];W[rj];B[qk];W[qj];B[oh];W[pi];B[rf];W[qd];B[qc];W[rc];B[pe];W[qe];B[se];W[rd];B[rb];W[qb];B[pc];W[sb];B[ra];W[qa];B[sd];W[sa];B[rb];W[ra];B[sf]
+                        ;W[re]N[B º‚]C[¥ÀƒÀïx ø√˜À˘ﬁƒ◊ÉªØ°£];B[rg];W[qg];B[qh];W[ph];B[og];W[qi];B[rh];W[pj];B[ri];W[rj];B[qk];W[qj];B[oh];W[pi];B[rf];W[qd];B[qc];W[rc];B[pe];W[qe];B[se];W[rd];B[rb];W[qb];B[pc];W[sb];B[ra];W[qa];B[sd];W[sa];B[rb];W[ra];B[sf]
                   )
                 )
                 (
-                  ;W[oe]LB[pe:A][qg:B]N[B È£õË∑®]
+                  ;W[oe]LB[pe:A][qg:B]N[B ÔwøÁ]
                   (
-                        ;B[pe]N[A Ë°ù];W[pf];B[of]LB[og:A][ph:B]
+                        ;B[pe]N[A –n];W[pf];B[of]LB[og:A][ph:B]
                         (
-                          ;W[og]N[A ‰∏ãÊâì];B[nf];W[ph];B[ng]LB[oh:A][qg:B]
+                          ;W[og]N[A œ¬¥Ú];B[nf];W[ph];B[ng]LB[oh:A][qg:B]
                           (
-                                ;W[oh]N[A Á≤ò];B[rf];W[qe];B[qd];W[re];B[rd];W[rg];B[mc]C[ÈªëÂ•Ω„ÄÇ]
+                                ;W[oh]N[A ’≥];B[rf];W[qe];B[qd];W[re];B[rd];W[rg];B[mc]C[∫⁄∫√°£]
                           )
                           (
-                                ;W[qg]N[B Êèê];B[oi]LB[od:A][qj:B]
+                                ;W[qg]N[B Ã·];B[oi]LB[od:A][qj:B]
                                 (
-                                  ;W[od]N[A Ë≤º];B[oc];W[nd];B[nc];W[md];B[qc];W[mc];B[qj]C[ÈªëÂ•Ω„ÄÇ]
+                                  ;W[od]N[A ŸN];B[oc];W[nd];B[nc];W[md];B[qc];W[mc];B[qj]C[∫⁄∫√°£]
                                 )
                                 (
-                                  ;W[qj]N[B È£õ];B[re]C[ÈªëÂ•Ω„ÄÇ]
+                                  ;W[qj]N[B Ôw];B[re]C[∫⁄∫√°£]
                                 )
                           )
                         )
                         (
-                          ;W[ph]N[B Â§æ];B[og];W[qg];B[re];W[qi];B[rh];W[qh];B[ne];W[mc];B[nb]C[ÈªëÂ•Ω„ÄÇ]
+                          ;W[ph]N[B äA];B[og];W[qg];B[re];W[qi];B[rh];W[qh];B[ne];W[mc];B[nb]C[∫⁄∫√°£]
                         )
                   )
                   (
-                        ;B[qg]N[B Êìã]C[ÊôâÂ£´ÊòéÂ•™ËßíÂèñÂãù‰πãËÆä„ÄÇ];W[re];B[rg];W[od];B[pe];W[pc]
+                        ;B[qg]N[B ìı]C[ïx ø√˜äZΩ«»°ÑŸ÷Æ◊É°£];W[re];B[rg];W[od];B[pe];W[pc]
                   )
                 )
           )
           (
-                ;B[of]N[B ÈéÆÁ•ûÈ†≠];W[ph];B[oh];W[oi];B[nh];W[ni];B[mi];W[mh];B[mj];W[oe];B[pe];W[og]C[Ëá≥Ê≠§‰πÉË≥àÁéÑ‰∏ÉËëó„ÄÇ]
+                ;B[of]N[B ÊÇ…ÒÓ^];W[ph];B[oh];W[oi];B[nh];W[ni];B[mi];W[mh];B[mj];W[oe];B[pe];W[og]C[÷¡¥ÀƒÀŸZ–˛∆ﬂ÷¯°£]
           )
           (
-                ;B[qh]N[C Â§æ];W[of];B[oh]
+                ;B[qh]N[C äA];W[of];B[oh]
                 (
-                  ;W[nd]LB[ne:A][rd:B][oe:C]N[Èáë‰∫ïÊ¨Ñ]
+                  ;W[nd]LB[ne:A][rd:B][oe:C]N[ΩæÆô⁄]
                   (
-                        ;B[ne]N[A Ë∑®]
+                        ;B[ne]N[A øÁ]
                         (
                           ;W[oe];B[od];W[nc]LB[qe:A][nf:B]
                           (
-                                ;B[qe]N[A Â∞ñÈ†Ç]C[ËìÆËä±ËßíÂúñÔºåÂá°‰∫îËÆä„ÄÇ];W[re];B[rd];W[rf]LB[nf:A][ob:B]
+                                ;B[qe]N[A º‚Ìî]C[…èª®Ω«àD£¨∑≤ŒÂ◊É°£];W[re];B[rd];W[rf]LB[nf:A][ob:B]
                                 (
-                                  ;B[nf]N[A Ë≤º];W[ng];B[mg];W[og];B[nh];W[qg];B[rh];W[qc];B[qd];W[rc];B[pb];W[sd];B[ob];W[qb];B[nb];W[lc];B[le];W[mb]C[ÁôΩÂãù„ÄÇ]
+                                  ;B[nf]N[A ŸN];W[ng];B[mg];W[og];B[nh];W[qg];B[rh];W[qc];B[qd];W[rc];B[pb];W[sd];B[ob];W[qb];B[nb];W[lc];B[le];W[mb]C[∞◊ÑŸ°£]
                                 )
                                 (
-                                  ;B[ob]LB[nb:A][me:B]N[B Ë∑≥‰∏ã]
+                                  ;B[ob]LB[nb:A][me:B]N[B Ã¯œ¬]
                                   (
-                                        ;W[nb]N[A Êìã];B[nf];W[ng];B[mg];W[og];B[nh];W[qg];B[rh];W[rc];B[sd];W[qc];B[qd]LB[pb:A][oc:B]
+                                        ;W[nb]N[A ìı];B[nf];W[ng];B[mg];W[og];B[nh];W[qg];B[rh];W[rc];B[sd];W[qc];B[qd]LB[pb:A][oc:B]
                                         (
-                                          ;W[pb]N[A Â§æ];B[pg];W[pf];B[ph];W[oc];B[sf]C[ÈªëÂãù„ÄÇ]
+                                          ;W[pb]N[A äA];B[pg];W[pf];B[ph];W[oc];B[sf]C[∫⁄ÑŸ°£]
                                         )
                                         (
-                                          ;W[oc]N[B Ë°ù];B[pc];W[pb]LB[qb:A][sf:B]
+                                          ;W[oc]N[B –n];B[pc];W[pb]LB[qb:A][sf:B]
                                           (
-                                                ;B[qb]N[A Êâì];W[oa];B[rb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb];B[sf];W[pg];B[ph];W[la]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[qb]N[A ¥Ú];W[oa];B[rb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb];B[sf];W[pg];B[ph];W[la]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[sf]N[B Êâò];W[ph];B[pi];W[pg];B[se];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[mh];B[lg];W[kf];B[rg]C[ÈªëÂãù„ÄÇ]
+                                                ;B[sf]N[B Õ–];W[ph];B[pi];W[pg];B[se];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[mh];B[lg];W[kf];B[rg]C[∫⁄ÑŸ°£]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[me]N[B Êâì];B[nf];W[ng];B[mf];W[og];B[le];W[lc];B[nb];W[mg];B[lf];W[jc]C[ÂÖ©ÂàÜ„ÄÇ]
+                                        ;W[me]N[B ¥Ú];B[nf];W[ng];B[mf];W[og];B[le];W[lc];B[nb];W[mg];B[lf];W[jc]C[É…∑÷°£]
                                   )
                                 )
                           )
                           (
-                                ;B[nf]LB[qd:A][ng:B]N[B Ë≤º]
+                                ;B[nf]LB[qd:A][ng:B]N[B ŸN]
                                 (
-                                  ;W[qd]N[A È†Ç];B[pe];W[pf];B[qe]LB[re:A][rd:B]
+                                  ;W[qd]N[A Ìî];B[pe];W[pf];B[qe]LB[re:A][rd:B]
                                   (
-                                        ;W[re]N[A Êìã];B[rd];W[pc];B[qc];W[oc];B[qd];W[rf]LB[qb:A][rb:B]
+                                        ;W[re]N[A ìı];B[rd];W[pc];B[qc];W[oc];B[qd];W[rf]LB[qb:A][rb:B]
                                         (
                                           ;B[qb];W[sd];B[sc];W[rb];B[ra];W[sb];B[se];W[pb];B[rg];W[sf];B[og];W[sd]
                                         )
                                         (
-                                          ;B[rb]N[B Â∞ñ];W[rh];B[ri];W[ng];B[mg];W[ph]LB[pi:A][og:B]
+                                          ;B[rb]N[B º‚];W[rh];B[ri];W[ng];B[mg];W[ph]LB[pi:A][og:B]
                                           (
                                                 ;B[pi];W[nh];B[og];W[oi];B[pg];W[mh]LB[qg:A][ni:B][lh:C]
                                                 (
-                                                  ;B[qg]N[A];W[le]C[ÁôΩÂãù„ÄÇ]
+                                                  ;B[qg]N[A];W[le]C[∞◊ÑŸ°£]
                                                 )
                                                 (
-                                                  ;B[ni]N[B Êâì];W[lf];B[me];W[le];B[md];W[lc]C[ÁôΩÂãù„ÄÇ]
+                                                  ;B[ni]N[B ¥Ú];W[lf];B[me];W[le];B[md];W[lc]C[∞◊ÑŸ°£]
                                                 )
                                                 (
-                                                  ;B[lh]N[C Êâ≥];W[qg];B[ph];W[pj];B[qi];W[lg];B[me];W[le];B[md];W[ld];B[mc];W[mb];B[lc];W[kc];B[lb];W[kb];B[nb];W[mf];B[ma];W[qj];B[sh];W[rg]C[ÁôΩÂãù„ÄÇ]
+                                                  ;B[lh]N[C ∞‚];W[qg];B[ph];W[pj];B[qi];W[lg];B[me];W[le];B[md];W[ld];B[mc];W[mb];B[lc];W[kc];B[lb];W[kb];B[nb];W[mf];B[ma];W[qj];B[sh];W[rg]C[∞◊ÑŸ°£]
                                                 )
                                           )
                                           (
-                                                ;B[og]N[B Ë°ùÊñ∑];W[qi];B[oi];W[rj]
+                                                ;B[og]N[B –nî‡];W[qi];B[oi];W[rj]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[rd]N[B Á´ã];B[re];W[rf]LB[se:A][sf:B]
+                                        ;W[rd]N[B ¡¢];B[re];W[rf]LB[se:A][sf:B]
                                         (
-                                          ;B[se]N[A Á´ã];W[qb];B[pb];W[ob]LB[pa:A][pc:B][qc:C]
+                                          ;B[se]N[A ¡¢];W[qb];B[pb];W[ob]LB[pa:A][pc:B][qc:C]
                                           (
-                                                ;B[pa]N[A Á´ã];W[pc];B[oc];W[qc];B[nb];W[mb];B[oa];W[sd]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[pa]N[A ¡¢];W[pc];B[oc];W[qc];B[nb];W[mb];B[oa];W[sd]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[pc]N[B Êé•];W[pa];B[qc];W[rb];B[rc];W[sb];B[rg];W[sf];B[og];W[sc]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[pc]N[B Ω”];W[pa];B[qc];W[rb];B[rc];W[sb];B[rg];W[sf];B[og];W[sc]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[qc]N[C Êåñ];W[rc];B[pc];W[rb];B[rg];W[sf];B[pa];W[oa]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[qc]N[C Õ⁄];W[rc];B[pc];W[rb];B[rg];W[sf];B[pa];W[oa]C[∞◊ÑŸ°£]
                                           )
                                         )
                                         (
-                                          ;B[sf]N[B Êâ≥];W[sg]
+                                          ;B[sf]N[B ∞‚];W[sg]
                                           (
                                                 ;B[se];W[ng];B[mg];W[og];B[nh];W[rh]LB[ob:A][pb:B]
                                                 (
-                                                  ;B[ob]N[A];W[qi];B[ph];W[rj];B[lf];W[le];B[kf];W[qb];B[pb];W[nb];B[rb];W[qa];B[sc];W[qc];B[sd];W[sb];B[sa];W[ra];B[pc];W[oa];B[pa];W[sb];B[rg];W[qg];B[sa];W[md];B[mf];W[sb];B[pg];W[rg];B[sa];W[jd];B[rc]C[ÈªëÂ•Ω„ÄÇ]
+                                                  ;B[ob]N[A];W[qi];B[ph];W[rj];B[lf];W[le];B[kf];W[qb];B[pb];W[nb];B[rb];W[qa];B[sc];W[qc];B[sd];W[sb];B[sa];W[ra];B[pc];W[oa];B[pa];W[sb];B[rg];W[qg];B[sa];W[md];B[mf];W[sb];B[pg];W[rg];B[sa];W[jd];B[rc]C[∫⁄∫√°£]
                                                 )
                                                 (
-                                                  ;B[pb]N[A];W[qi];B[ph];W[rj];B[mh];W[kc]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                  ;B[pb]N[A];W[qi];B[ph];W[rj];B[mh];W[kc]C[É…∑÷°£]
                                                 )
                                           )
                                         )
                                   )
                                 )
                                 (
-                                  ;W[ng]N[B Êâ≥];B[mg]LB[og:A][rd:B]
+                                  ;W[ng]N[B ∞‚];B[mg]LB[og:A][rd:B]
                                   (
-                                        ;W[og]N[A Êé•];B[nh]LB[rd:A][qd:B]
+                                        ;W[og]N[A Ω”];B[nh]LB[rd:A][qd:B]
                                         (
-                                          ;W[rd]LB[qe:A][rc:B][qd:C]N[A È£õ]
+                                          ;W[rd]LB[qe:A][rc:B][qd:C]N[A Ôw]
                                           (
                                                 ;B[qe];W[re]LB[pf:A][rf:B]
                                                 (
-                                                  ;B[pf]N[A Êåñ];W[pg];B[rf];W[pe];B[qd];W[mh];B[lf];W[ph];B[pi];W[oi];B[ni];W[qi];B[oj];W[rg];B[qj];W[ri]C[ÁôΩÂãù„ÄÇ]
+                                                  ;B[pf]N[A Õ⁄];W[pg];B[rf];W[pe];B[qd];W[mh];B[lf];W[ph];B[pi];W[oi];B[ni];W[qi];B[oj];W[rg];B[qj];W[ri]C[∞◊ÑŸ°£]
                                                 )
                                                 (
-                                                  ;B[rf]N[B Êñ∑];W[pf];B[rg];W[qd];B[pc];W[qc];B[pb];W[pe];B[qb];W[rb];B[ra];W[ob];B[sb];W[rc]C[ÁôΩÂãù„ÄÇ]
-                                                )
-                                          )
-                                          (
-                                                ;B[rc]N[B Á¢∞];W[qd];B[qc];W[rh];B[ri];W[nb]LB[pb:A][ob:B]
-                                                (
-                                                  ;B[pb]N[A Ëôé];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb];B[pe];W[pf];B[rf];W[rg];B[qe];W[re];B[sf];W[qg];B[ph];W[sg];B[ob];W[la]C[ÁôΩÂãù„ÄÇ]
-                                                )
-                                                (
-                                                  ;B[ob]N[B Èóú];W[rg];B[qi];W[oc];B[pc];W[pb]C[ÁôΩÂãù„ÄÇ]
+                                                  ;B[rf]N[B î‡];W[pf];B[rg];W[qd];B[pc];W[qc];B[pb];W[pe];B[qb];W[rb];B[ra];W[ob];B[sb];W[rc]C[∞◊ÑŸ°£]
                                                 )
                                           )
                                           (
-                                                ;B[qd]LB[qg:A][rc:B]N[C È†Ç]
+                                                ;B[rc]N[B ≈ˆ];W[qd];B[qc];W[rh];B[ri];W[nb]LB[pb:A][ob:B]
                                                 (
-                                                  ;W[qg]LB[rh:A][rc:B]N[A Èõô]
+                                                  ;B[pb]N[A ª¢];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb];B[pe];W[pf];B[rf];W[rg];B[qe];W[re];B[sf];W[qg];B[ph];W[sg];B[ob];W[la]C[∞◊ÑŸ°£]
+                                                )
+                                                (
+                                                  ;B[ob]N[B ÍP];W[rg];B[qi];W[oc];B[pc];W[pb]C[∞◊ÑŸ°£]
+                                                )
+                                          )
+                                          (
+                                                ;B[qd]LB[qg:A][rc:B]N[C Ìî]
+                                                (
+                                                  ;W[qg]LB[rh:A][rc:B]N[A Îp]
                                                   (
-                                                        ;B[rh]N[A Á´ã];W[rc];B[re];W[qe];B[rf];W[rg];B[pg];W[sg];B[sh];W[pe]C[ÁôΩÂãù„ÄÇ]
+                                                        ;B[rh]N[A ¡¢];W[rc];B[re];W[qe];B[rf];W[rg];B[pg];W[sg];B[sh];W[pe]C[∞◊ÑŸ°£]
                                                   )
                                                   (
-                                                        ;B[rc]N[B Êâ≥];W[rh];B[qi];W[ri];B[qk];W[rj];B[pl];W[rb]LB[re:A][qc:B]
+                                                        ;B[rc]N[B ∞‚];W[rh];B[qi];W[ri];B[qk];W[rj];B[pl];W[rb]LB[re:A][qc:B]
                                                         (
-                                                          ;B[re]N[A Êâì];W[qc];B[sd];W[pb];B[rf];W[rg];B[rk];W[qe]C[ÁôΩÂãù„ÄÇ]
+                                                          ;B[re]N[A ¥Ú];W[qc];B[sd];W[pb];B[rf];W[rg];B[rk];W[qe]C[∞◊ÑŸ°£]
                                                         )
                                                         (
-                                                          ;B[qc]N[B Êé•];W[re];B[sb];W[pb];B[qb];W[nb]LB[ra:A][le:B]
+                                                          ;B[qc]N[B Ω”];W[re];B[sb];W[pb];B[qb];W[nb]LB[ra:A][le:B]
                                                           (
-                                                                ;B[ra];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb]C[ÁôΩÂãù„ÄÇ]
+                                                                ;B[ra];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kd];B[lc];W[kc];B[lb];W[kb]C[∞◊ÑŸ°£]
                                                           )
                                                           (
-                                                                ;B[le]N[B Êé•];W[kc];B[ra]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                                ;B[le]N[B Ω”];W[kc];B[ra]C[É…∑÷°£]
                                                           )
                                                         )
                                                   )
                                                 )
                                                 (
-                                                  ;W[rc]N[B Èï∑];B[re];W[qg];B[qe];W[rh];B[qi];W[ri];B[qk];W[rj];B[pl];W[pb];B[ob];W[qb];B[oc];W[nb]C[ÁôΩÂãù„ÄÇ]
+                                                  ;W[rc]N[B ÈL];B[re];W[qg];B[qe];W[rh];B[qi];W[ri];B[qk];W[rj];B[pl];W[pb];B[ob];W[qb];B[oc];W[nb]C[∞◊ÑŸ°£]
                                                 )
                                           )
                                         )
                                         (
-                                          ;W[qd]N[B È†Ç];B[pe];W[qg];B[qe];W[rh];B[qi];W[re];B[rd];W[ri]LB[rj:A][qk:B]
+                                          ;W[qd]N[B Ìî];B[pe];W[qg];B[qe];W[rh];B[qi];W[re];B[rd];W[ri]LB[rj:A][qk:B]
                                           (
-                                                ;B[rj]N[A Êâ≥];W[mh];B[lf];W[qj];B[rk];W[qk];B[ql];W[pl];B[qm];W[ni];B[ph];W[mj];B[oj];W[ok];B[nk];W[nl];B[pi];W[pk];B[mk];W[nj];B[lh];W[mi];B[lj];W[lk];B[ml];W[li];B[pm];W[nm];B[pf];W[pg];B[rg];W[rf];B[sg]C[Ê≠§‰πÉÂõõ?]
+                                                ;B[rj]N[A ∞‚];W[mh];B[lf];W[qj];B[rk];W[qk];B[ql];W[pl];B[qm];W[ni];B[ph];W[mj];B[oj];W[ok];B[nk];W[nl];B[pi];W[pk];B[mk];W[nj];B[lh];W[mi];B[lj];W[lk];B[ml];W[li];B[pm];W[nm];B[pf];W[pg];B[rg];W[rf];B[sg]C[¥ÀƒÀÀƒ?]
                                           )
                                           (
-                                                ;B[qk]N[B Èóú];W[rj];B[pl];W[qc];B[rf];W[rg];B[se];W[pb];B[rc];W[rb];B[rk];W[pc]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[qk]N[B ÍP];W[rj];B[pl];W[qc];B[rf];W[rg];B[se];W[pb];B[rc];W[rb];B[rk];W[pc]C[∞◊ÑŸ°£]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[rd]N[B È£õ];B[qe];W[pe];B[og];W[pf];B[qd];W[re];B[rf];W[rg];B[sf];W[sg];B[qg];W[se];B[rf];W[sf];B[pg];W[rf];B[qb];W[rc];B[ob];W[nb];B[rb];W[ri];B[rh];W[sh];B[qj];W[rj];B[rk];W[qk];B[rl];W[qi];B[pj];W[oi]C[Ê≠§‰πÉÊôâÂ£´ÊòéÊâÄÂºàËÆäÂåñ„ÄÇ]
+                                        ;W[rd]N[B Ôw];B[qe];W[pe];B[og];W[pf];B[qd];W[re];B[rf];W[rg];B[sf];W[sg];B[qg];W[se];B[rf];W[sf];B[pg];W[rf];B[qb];W[rc];B[ob];W[nb];B[rb];W[ri];B[rh];W[sh];B[qj];W[rj];B[rk];W[qk];B[rl];W[qi];B[pj];W[oi]C[¥ÀƒÀïx ø√˜À˘ﬁƒ◊ÉªØ°£]
                                   )
                                 )
                           )
                         )
                   )
                   (
-                        ;B[rd]LB[re:A][qe:B]N[B Èóú]
+                        ;B[rd]LB[re:A][qe:B]N[B ÍP]
                         (
-                          ;W[re]LB[nc:A][ob:B]N[A Â∞ñ]
+                          ;W[re]LB[nc:A][ob:B]N[A º‚]
                           (
-                                ;B[nc]N[A Êâò];W[mc];B[md]LB[ne:A][od:B][oc:C]
+                                ;B[nc]N[A Õ–];W[mc];B[md]LB[ne:A][od:B][oc:C]
                                 (
-                                  ;W[ne]N[A ÈÄÄ];B[lc];W[mb];B[oc];W[lb];B[kc];W[jc];B[kb];W[ld];B[me];W[mf];B[le];W[kd];B[lf];W[jb];B[ng];W[nf];B[mg];W[rc];B[sd]LB[qc:A][qd:B]
+                                  ;W[ne]N[A ÕÀ];B[lc];W[mb];B[oc];W[lb];B[kc];W[jc];B[kb];W[ld];B[me];W[mf];B[le];W[kd];B[lf];W[jb];B[ng];W[nf];B[mg];W[rc];B[sd]LB[qc:A][qd:B]
                                   (
-                                        ;W[qc];B[qd];W[pb];B[pf];W[pg];B[pe];W[og];B[ph];W[qg];B[rg];W[rf];B[rh];W[ob];B[sf];W[se];B[od]C[ÈªëÂãù„ÄÇ]
+                                        ;W[qc];B[qd];W[pb];B[pf];W[pg];B[pe];W[og];B[ph];W[qg];B[rg];W[rf];B[rh];W[ob];B[sf];W[se];B[od]C[∫⁄ÑŸ°£]
                                   )
                                   (
-                                        ;W[qd]N[B Êåñ];B[pe];W[qc];B[pf]C[ÈªëÂ•Ω„ÄÇ]
+                                        ;W[qd]N[B Õ⁄];B[pe];W[qc];B[pf]C[∫⁄∫√°£]
                                   )
                                 )
                                 (
-                                  ;W[od]N[B Èï∑];B[oc];W[pc]LB[pb:A][qc:B]
+                                  ;W[od]N[B ÈL];B[oc];W[pc]LB[pb:A][qc:B]
                                   (
-                                        ;B[pb]N[A ‰∏ãÊâì];W[qc];B[qd];W[qb];B[ob];W[sb];B[ra];W[sd];B[me];W[nf];B[lc];W[mb];B[lb];W[mf]C[ÂÖ©ÂàÜ„ÄÇ]
+                                        ;B[pb]N[A œ¬¥Ú];W[qc];B[qd];W[qb];B[ob];W[sb];B[ra];W[sd];B[me];W[nf];B[lc];W[mb];B[lb];W[mf]C[É…∑÷°£]
                                   )
                                   (
-                                        ;B[qc]N[B ‰∏äÊâì];W[pb];B[mb];W[lc];B[ob];W[pe];B[qd];W[lb];B[na];W[le]C[ÂÖ©ÂàÜ„ÄÇ]
+                                        ;B[qc]N[B …œ¥Ú];W[pb];B[mb];W[lc];B[ob];W[pe];B[qd];W[lb];B[na];W[le]C[É…∑÷°£]
                                   )
                                 )
                                 (
-                                  ;W[oc]LB[od:A][pe:B]N[C ‰∏äÊâì]
+                                  ;W[oc]LB[od:A][pe:B]N[C …œ¥Ú]
                                   (
-                                        ;B[od]N[A Êâì];W[ne];B[nb];W[lc];B[pc];W[le]C[ÂÖ©ÂàÜ„ÄÇ]
+                                        ;B[od]N[A ¥Ú];W[ne];B[nb];W[lc];B[pc];W[le]C[É…∑÷°£]
                                   )
                                   (
-                                        ;B[pe]N[B Âπ∂];W[nb];B[pf];W[qc];B[pc];W[pb];B[rc];W[qb];B[qd]C[ÂÖ©ÂàÜ„ÄÇ]
+                                        ;B[pe]N[B ≤¢];W[nb];B[pf];W[qc];B[pc];W[pb];B[rc];W[qb];B[qd]C[É…∑÷°£]
                                   )
                                 )
                           )
                           (
-                                ;B[ob]N[B È£õ‰∏ã];W[rc];B[sd];W[nb];B[nc];W[oc];B[mc];W[pc];B[od];W[qd];B[ne];W[lc];B[pb];W[qc];B[mb];W[md];B[ld];W[me];B[kc]C[ÂÖ©ÂàÜ„ÄÇ]
+                                ;B[ob]N[B Ôwœ¬];W[rc];B[sd];W[nb];B[nc];W[oc];B[mc];W[pc];B[od];W[qd];B[ne];W[lc];B[pb];W[qc];B[mb];W[md];B[ld];W[me];B[kc]C[É…∑÷°£]
                           )
                         )
                         (
-                          ;W[qe]N[B Âπ∂];B[nc];W[oc];B[od];W[qd];B[qc];W[nb];B[mc];W[pc]C[ÁôΩÂãù„ÄÇ]
+                          ;W[qe]N[B ≤¢];B[nc];W[oc];B[od];W[qd];B[qc];W[nb];B[mc];W[pc]C[∞◊ÑŸ°£]
                         )
                   )
                   (
-                        ;B[oe]LB[pe:A][ne:B]N[C Â∞ñÈ†Ç]
+                        ;B[oe]LB[pe:A][ne:B]N[C º‚Ìî]
                         (
-                          ;W[pe]N[A Êì†]C[Ë¢´Á∂ΩËßíÂúñÔºåÂá°‰∫îËÆä„ÄÇ];B[ne];W[od]LB[md:A][qd:B]
+                          ;W[pe]N[A îD]C[±ªæbΩ«àD£¨∑≤ŒÂ◊É°£];B[ne];W[od]LB[md:A][qd:B]
                           (
-                                ;B[md]N[A Êâ≥];W[pc];B[qd]LB[ng:A][qc:B]
+                                ;B[md]N[A ∞‚];W[pc];B[qd]LB[ng:A][qc:B]
                                 (
-                                  ;W[ng]LB[me:A][nf:B]N[A Â∞ñ]
+                                  ;W[ng]LB[me:A][nf:B]N[A º‚]
                                   (
-                                        ;B[me]N[A Êé•]
+                                        ;B[me]N[A Ω”]
                                         (
                                           ;W[qb]LB[rf:A][qe:B]
                                           (
-                                                ;B[rf]N[A Êâò];W[qe];B[oc];W[nc];B[qc];W[rc];B[rd];W[re]C[ÁôΩÂãù„ÄÇ]
+                                                ;B[rf]N[A Õ–];W[qe];B[oc];W[nc];B[qc];W[rc];B[rd];W[re]C[∞◊ÑŸ°£]
                                           )
                                           (
-                                                ;B[qe]N[B Êâì];W[pf];B[rf];W[rg];B[re];W[qg];B[rb];W[ob];B[rc];W[mc];B[lc];W[mb]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                ;B[qe]N[B ¥Ú];W[pf];B[rf];W[rg];B[re];W[qg];B[rb];W[ob];B[rc];W[mc];B[lc];W[mb]C[É…∑÷°£]
                                           )
                                         )
                                   )
                                   (
-                                        ;B[nf]N[B Êì†];W[qc];B[re];W[rf];B[rc];W[mc];B[og];W[rb];B[pf];W[qe];B[rd];W[rh];B[ri];W[rg];B[lc];W[ld];B[me];W[nc];B[qg];W[sc];B[sh];W[sd];B[kc]C[ÈªëÂ•Ω„ÄÇ]
+                                        ;B[nf]N[B îD];W[qc];B[re];W[rf];B[rc];W[mc];B[og];W[rb];B[pf];W[qe];B[rd];W[rh];B[ri];W[rg];B[lc];W[ld];B[me];W[nc];B[qg];W[sc];B[sh];W[sd];B[kc]C[∫⁄∫√°£]
                                   )
                                 )
                                 (
-                                  ;W[qc]N[B Èï∑];B[re];W[rf];B[rc];W[nb];B[qb];W[pb];B[pa];W[nc];B[sb];W[ra];B[qa];W[oa];B[rb];W[ng];B[me];W[kc]C[ÂÖ©ÂàÜ„ÄÇ]
+                                  ;W[qc]N[B ÈL];B[re];W[rf];B[rc];W[nb];B[qb];W[pb];B[pa];W[nc];B[sb];W[ra];B[qa];W[oa];B[rb];W[ng];B[me];W[kc]C[É…∑÷°£]
                                 )
                           )
                           (
-                                ;B[qd]N[B Èï∑];W[ng];B[me];W[lc];B[md];W[mc];B[ob];W[nc];B[ke];W[ic]C[ÂÖ©ÂàÜ„ÄÇ]
+                                ;B[qd]N[B ÈL];W[ng];B[me];W[lc];B[md];W[mc];B[ob];W[nc];B[ke];W[ic]C[É…∑÷°£]
                           )
                         )
                         (
-                          ;W[ne]N[B Êîî];B[pf];W[pg];B[pe];W[ph];B[og];W[nf];B[pi];W[qg]LB[ri:A][qi:B][rh:C]C[A„ÄÅBÁà≤Á©øÂøÉËßíÂúñÔºåCÁ´ãÁà≤Á´ã‰ªÅËßíÂúñÔºåÂêÑÂçÅ‰∏ÄËÆä„ÄÇ]
+                          ;W[ne]N[B îr];B[pf];W[pg];B[pe];W[ph];B[og];W[nf];B[pi];W[qg]LB[ri:A][qi:B][rh:C]C[A°¢B†ë¥©–ƒΩ«àD£¨C¡¢†ë¡¢» Ω«àD£¨∏˜ Æ“ª◊É°£]
                           (
-                                ;B[ri]LB[oi:A][rd:B][rh:C]N[A Ëôé]
+                                ;B[ri]LB[oi:A][rd:B][rh:C]N[A ª¢]
                                 (
-                                  ;W[oi]N[A Êñ∑];B[nh];W[rd];B[rg];W[rf];B[qd];W[sg];B[rh];W[pj];B[qi];W[re];B[rc];W[ni];B[mh];W[qj];B[rj];W[rk];B[qk];W[rl];B[oj];W[pk];B[nj];W[sj];B[oc];W[si];B[mi];W[oi];B[ni];W[sh];B[oi];W[nc];B[nb];W[mb];B[ob];W[ol]C[ÂÖ©ÂàÜ„ÄÇ]
+                                  ;W[oi]N[A î‡];B[nh];W[rd];B[rg];W[rf];B[qd];W[sg];B[rh];W[pj];B[qi];W[re];B[rc];W[ni];B[mh];W[qj];B[rj];W[rk];B[qk];W[rl];B[oj];W[pk];B[nj];W[sj];B[oc];W[si];B[mi];W[oi];B[ni];W[sh];B[oi];W[nc];B[nb];W[mb];B[ob];W[ol]C[É…∑÷°£]
                                 )
                                 (
-                                  ;W[rd]LB[rg:A][qd:B]N[B È£õ]
+                                  ;W[rd]LB[rg:A][qd:B]N[B Ôw]
                                   (
-                                        ;B[rg]N[A Êâ≥];W[rf];B[qd];W[oi];B[nh];W[sg];B[rh];W[pj];B[qi];W[re];B[rc];W[ni];B[mh];W[qj];B[rj];W[rk];B[qk];W[rl];B[sh];W[qc];B[pc];W[qb];B[rb];W[pb];B[ob];W[oj];B[sf];W[oc];B[qa];W[se];B[pa];W[sj]
+                                        ;B[rg]N[A ∞‚];W[rf];B[qd];W[oi];B[nh];W[sg];B[rh];W[pj];B[qi];W[re];B[rc];W[ni];B[mh];W[qj];B[rj];W[rk];B[qk];W[rl];B[sh];W[qc];B[pc];W[qb];B[rb];W[pb];B[ob];W[oj];B[sf];W[oc];B[qa];W[se];B[pa];W[sj]
                                   )
                                   (
-                                        ;B[qd]N[B È†Ç];W[re];B[rc];W[oi];B[nh];W[rg];B[oj];W[oc];B[pb];W[rb];B[qc];W[sb];B[sc];W[qb];B[ob];W[nb];B[qa];W[oa];B[ra];W[sf]C[ÁôΩÂãù„ÄÇ]
+                                        ;B[qd]N[B Ìî];W[re];B[rc];W[oi];B[nh];W[rg];B[oj];W[oc];B[pb];W[rb];B[qc];W[sb];B[sc];W[qb];B[ob];W[nb];B[qa];W[oa];B[ra];W[sf]C[∞◊ÑŸ°£]
                                   )
                                 )
                                 (
-                                  ;W[rh]N[C Êâì]C[ÂÖ©ÁÑ°ÂÖ•Âúñ„ÄÇ];B[qi];W[rd];B[rc];W[qd];B[pc];W[qc];B[qb];W[rb];B[qe];W[re];B[rf];W[rg];B[sf]
+                                  ;W[rh]N[C ¥Ú]C[É…üo»ÎàD°£];B[qi];W[rd];B[rc];W[qd];B[pc];W[qc];B[qb];W[rb];B[qe];W[re];B[rf];W[rg];B[sf]
                                 )
                           )
                           (
-                                ;B[qi]N[B Êé•];W[rd];B[qd];W[re];B[rc];W[oi];B[nh];W[rh];B[ri];W[rg];B[sf];W[oj]LB[si:A][rk:B]
+                                ;B[qi]N[B Ω”];W[rd];B[qd];W[re];B[rc];W[oi];B[nh];W[rh];B[ri];W[rg];B[sf];W[oj]LB[si:A][rk:B]
                                 (
                                   ;B[si];W[rb];B[qb];W[sc];B[qc];W[sb];B[ra];W[qj]LB[qk:A][pj:B][rj:C]
                                   (
                                         ;B[qk];W[ok]LB[rk:A][mi:B]
                                         (
-                                          ;B[rk]N[A Âπ∂];W[mh];B[ni];W[mj];B[mg];W[mi];B[ng];W[lg];B[mf];W[le]C[ÁôΩÂãù„ÄÇ]
+                                          ;B[rk]N[A ≤¢];W[mh];B[ni];W[mj];B[mg];W[mi];B[ng];W[lg];B[mf];W[le]C[∞◊ÑŸ°£]
                                         )
                                         (
-                                          ;B[mi]N[B Â∞ñ];W[rk];B[pj];W[pk];B[rj];W[ql];B[nb];W[rl];B[lc]C[ÂÖ©ÂàÜ„ÄÇ]
+                                          ;B[mi]N[B º‚];W[rk];B[pj];W[pk];B[rj];W[ql];B[nb];W[rl];B[lc]C[É…∑÷°£]
                                         )
                                   )
                                   (
-                                        ;B[pj]N[B Ë°ùÊñ≠];W[pk];B[qk];W[ok];B[qe];W[rf];B[se];W[sd];B[qa];W[mh];B[ni];W[mj];B[sa];W[rj];B[rk];W[mi]C[ÁôΩÂãù„ÄÇ]
+                                        ;B[pj]N[B –n∂œ];W[pk];B[qk];W[ok];B[qe];W[rf];B[se];W[sd];B[qa];W[mh];B[ni];W[mj];B[sa];W[rj];B[rk];W[mi]C[∞◊ÑŸ°£]
                                   )
                                   (
-                                        ;B[rj]N[C Èï∑Âá∫];W[ok];B[mi];W[qk];B[rk];W[rl];B[nb]C[ÁôΩÂ•Ω„ÄÇ]
+                                        ;B[rj]N[C ÈL≥ˆ];W[ok];B[mi];W[qk];B[rk];W[rl];B[nb]C[∞◊∫√°£]
                                   )
                                 )
                                 (
-                                  ;B[rk]LB[qc:A][pk:B]N[B Ë∑≥]
+                                  ;B[rk]LB[qc:A][pk:B]N[B Ã¯]
                                   (
-                                        ;W[qc]N[A Êñ∑];B[qb];W[rb];B[pc];W[sc];B[qc];W[sb];B[ra];W[oc]LB[sh:A][sd:B]
+                                        ;W[qc]N[A î‡];B[qb];W[rb];B[pc];W[sc];B[qc];W[sb];B[ra];W[oc]LB[sh:A][sd:B]
                                         (
-                                          ;B[sh]N[A Êâ≥];W[sg];B[si];W[pa];B[qa];W[od];B[ob];W[nb];B[oa];W[na];B[pb]C[ÂÖ©ÂàÜ„ÄÇ]
+                                          ;B[sh]N[A ∞‚];W[sg];B[si];W[pa];B[qa];W[od];B[ob];W[nb];B[oa];W[na];B[pb]C[É…∑÷°£]
                                         )
                                         (
-                                          ;B[sd]N[B Êí≤];W[se];B[qa];W[pa];B[ob];W[nb];B[sa];W[od];B[sd];W[sc];B[sb];W[oa];B[sh];W[sg];B[si];W[pb]
+                                          ;B[sd]N[B ì‰];W[se];B[qa];W[pa];B[ob];W[nb];B[sa];W[od];B[sd];W[sc];B[sb];W[oa];B[sh];W[sg];B[si];W[pb]
                                         )
                                   )
                                   (
-                                        ;W[pk]N[B Â∞ñ];B[sd];W[qc];B[qb];W[rj];B[qj];W[oc];B[pc];W[mi];B[mh];W[lh];B[mg];W[lg];B[mf];W[le];B[sh];W[lf];B[sg];W[rl]C[ÁôΩÊ£ÑÂ≠êÂèñÂ§ñÂã¢„ÄÇ]
+                                        ;W[pk]N[B º‚];B[sd];W[qc];B[qb];W[rj];B[qj];W[oc];B[pc];W[mi];B[mh];W[lh];B[mg];W[lg];B[mf];W[le];B[sh];W[lf];B[sg];W[rl]C[∞◊óâ◊”»°Õ‚Ñ›°£]
                                   )
                                 )
                           )
                           (
-                                ;B[rh]N[C Á´ã];W[oi]LB[nh:A][mg:B]
+                                ;B[rh]N[C ¡¢];W[oi]LB[nh:A][mg:B]
                                 (
-                                  ;B[nh]N[A Èï∑Âá∫];W[qi];B[pj];W[ri];B[rj];W[rg];B[qj];W[sh];B[re];W[rc];B[rd];W[pc];B[oc];W[pb];B[od];W[ob];B[nc];W[mc];B[nb];W[mb];B[ma];W[kb];B[rb];W[sc];B[oa];W[qc];B[pa];W[qa];B[na];W[se];B[sd];W[qe];B[qd];W[la]C[ÁôΩÂãù„ÄÇ]
+                                  ;B[nh]N[A ÈL≥ˆ];W[qi];B[pj];W[ri];B[rj];W[rg];B[qj];W[sh];B[re];W[rc];B[rd];W[pc];B[oc];W[pb];B[od];W[ob];B[nc];W[mc];B[nb];W[mb];B[ma];W[kb];B[rb];W[sc];B[oa];W[qc];B[pa];W[qa];B[na];W[se];B[sd];W[qe];B[qd];W[la]C[∞◊ÑŸ°£]
                                 )
                                 (
-                                  ;B[mg]N[B Ë∑≥Âá∫];W[qi];B[pj];W[ri];B[rj]LB[rg:A][re:B]
+                                  ;B[mg]N[B Ã¯≥ˆ];W[qi];B[pj];W[ri];B[rj]LB[rg:A][re:B]
                                   (
-                                        ;W[rg]N[A ÂêÉ];B[qj];W[sh]LB[re:A][qc:B]
+                                        ;W[rg]N[A ≥‘];B[qj];W[sh]LB[re:A][qc:B]
                                         (
-                                          ;B[re]N[A Ë∑≥‰∏ã];W[rc]LB[qe:A][rd:B][qd:C]
+                                          ;B[re]N[A Ã¯œ¬];W[rc]LB[qe:A][rd:B][qd:C]
                                           (
-                                                ;B[qe]N[A Êé•];W[pc];B[oc];W[pb];B[od];W[nc];B[ob];W[nb];B[oa];W[pa];B[qc];W[qb];B[rb];W[qd];B[ra];W[sb];B[rd];W[na];B[qc];W[ng];B[nh];W[qd];B[sc];W[sd];B[qc];W[mh];B[ni];W[qd];B[se];W[qc];B[sc];W[nj];B[mi];W[sd];B[lh]C[ÁôΩÂãùËßíÔºåÈªëÂèñÂ§ñÂã¢„ÄÇ]
+                                                ;B[qe]N[A Ω”];W[pc];B[oc];W[pb];B[od];W[nc];B[ob];W[nb];B[oa];W[pa];B[qc];W[qb];B[rb];W[qd];B[ra];W[sb];B[rd];W[na];B[qc];W[ng];B[nh];W[qd];B[sc];W[sd];B[qc];W[mh];B[ni];W[qd];B[se];W[qc];B[sc];W[nj];B[mi];W[sd];B[lh]C[∞◊ÑŸΩ«£¨∫⁄»°Õ‚Ñ›°£]
                                           )
                                           (
-                                                ;B[rd]N[B Èõô];W[pc];B[oc];W[pb];B[od];W[ob];B[nc];W[mc];B[mb];W[lc];B[nb];W[lb]LB[rb:A][sc:B]
+                                                ;B[rd]N[B Îp];W[pc];B[oc];W[pb];B[od];W[ob];B[nc];W[mc];B[mb];W[lc];B[nb];W[lb]LB[rb:A][sc:B]
                                                 (
-                                                  ;B[rb]N[A Â§æ];W[sc];B[oa];W[qc]LB[pa:A][sb:B]
+                                                  ;B[rb]N[A äA];W[sc];B[oa];W[qc]LB[pa:A][sb:B]
                                                   (
-                                                        ;B[pa]N[A Èï∑ÂÖ•];W[na];B[ma];W[qa];B[na];W[se]C[ÁôΩÂãù„ÄÇ]
+                                                        ;B[pa]N[A ÈL»Î];W[na];B[ma];W[qa];B[na];W[se]C[∞◊ÑŸ°£]
                                                   )
                                                   (
-                                                        ;B[sb]N[B Á´ã];W[na];B[ma];W[ra];B[pa];W[rf];B[qd];W[qa];B[na]C[ÈªëÂãù„ÄÇ]
+                                                        ;B[sb]N[B ¡¢];W[na];B[ma];W[ra];B[pa];W[rf];B[qd];W[qa];B[na]C[∫⁄ÑŸ°£]
                                                   )
                                                 )
                                                 (
-                                                  ;B[sc]N[B Êâ≥];W[rb];B[sb];W[qc];B[qa];W[sd];B[se];W[ra];B[oa];W[pa];B[qd];W[rf];B[sd];W[sf];B[sa];W[na];B[ma];W[ng];B[nh];W[mh];B[ni];W[la];B[oa];W[mi];B[qb];W[nj];B[qn]C[ÈªëÂãùËßíÔºåÁôΩÂèñÂ§ñÂã¢„ÄÇ]
+                                                  ;B[sc]N[B ∞‚];W[rb];B[sb];W[qc];B[qa];W[sd];B[se];W[ra];B[oa];W[pa];B[qd];W[rf];B[sd];W[sf];B[sa];W[na];B[ma];W[ng];B[nh];W[mh];B[ni];W[la];B[oa];W[mi];B[qb];W[nj];B[qn]C[∫⁄ÑŸΩ«£¨∞◊»°Õ‚Ñ›°£]
                                                 )
                                           )
                                           (
-                                                ;B[qd]N[C ÈÄ£];W[rd];B[qe];W[qb]LB[oc:A][pb:B]
+                                                ;B[qd]N[C ﬂB];W[rd];B[qe];W[qb]LB[oc:A][pb:B]
                                                 (
-                                                  ;B[oc]N[A Â∞ñ];W[nb]LB[sf:A][pc:B]
+                                                  ;B[oc]N[A º‚];W[nb]LB[sf:A][pc:B]
                                                   (
-                                                        ;B[sf]N[A Â∞ñ];W[pc]C[ÁôΩÂãù„ÄÇ]
+                                                        ;B[sf]N[A º‚];W[pc]C[∞◊ÑŸ°£]
                                                   )
                                                   (
-                                                        ;B[pc]N[B Âúò];W[sf];B[se];W[rf];B[pa];W[sb];B[ra];W[qa];B[sd];W[pb];B[ob];W[nc]C[ÁôΩÂãù„ÄÇ]
+                                                        ;B[pc]N[B àF];W[sf];B[se];W[rf];B[pa];W[sb];B[ra];W[qa];B[sd];W[pb];B[ob];W[nc]C[∞◊ÑŸ°£]
                                                   )
                                                 )
                                                 (
-                                                  ;B[pb]N[B Èù†‰∏ã];W[ob];B[pa];W[se];B[sf];W[sd];B[rf];W[qa];B[oc];W[nb];B[sb];W[rb];B[qc];W[oa];B[pc];W[nc];B[ra];W[sa]
+                                                  ;B[pb]N[B øøœ¬];W[ob];B[pa];W[se];B[sf];W[sd];B[rf];W[qa];B[oc];W[nb];B[sb];W[rb];B[qc];W[oa];B[pc];W[nc];B[ra];W[sa]
                                                 )
                                           )
                                         )
                                         (
-                                          ;B[qc]N[B Â∞ñ];W[re];B[oc];W[nc];B[nb];W[mb];B[ob]C[ÂÖ©ÂàÜ„ÄÇ]
+                                          ;B[qc]N[B º‚];W[re];B[oc];W[nc];B[nb];W[mb];B[ob]C[É…∑÷°£]
                                         )
                                   )
                                   (
-                                        ;W[re]LB[rg:A][rd:B]N[B Â∞ñ]
+                                        ;W[re]LB[rg:A][rd:B]N[B º‚]
                                         (
-                                          ;B[rg]N[A Ê©´Èï∑];W[rf];B[rd];W[sg];B[qj];W[sh];B[oc];W[nc];B[nb];W[mb];B[ob]C[ÂÖ©ÂàÜ„ÄÇ]
+                                          ;B[rg]N[A ôMÈL];W[rf];B[rd];W[sg];B[qj];W[sh];B[oc];W[nc];B[nb];W[mb];B[ob]C[É…∑÷°£]
                                         )
                                         (
-                                          ;B[rd]N[B Êîî];W[rg];B[qj];W[qc];B[qd];W[pc];B[si];W[sd];B[rc];W[rb];B[sb];W[qb];B[sg];W[od];B[sf];W[se]C[ÁôΩÂãù„ÄÇ]
+                                          ;B[rd]N[B îr];W[rg];B[qj];W[qc];B[qd];W[pc];B[si];W[sd];B[rc];W[rb];B[sb];W[qb];B[sg];W[od];B[sf];W[se]C[∞◊ÑŸ°£]
                                         )
                                   )
                                 )
@@ -540,7 +536,7 @@
                 )
           )
           (
-                ;B[mc]LB[kc:A][jc:B]N[Â§ßÈ£õ]
+                ;B[mc]LB[kc:A][jc:B]N[¥ÛÔw]
                 (
                   ;W[kc]N[A];B[qe];W[pf];B[qk];W[qc];B[rf];W[rg];B[pc];W[ob];B[pb];W[re];B[rd];W[sf];B[qd];W[mb];B[cf]
                 )
@@ -549,287 +545,287 @@
                 )
           )
           (
-                ;B[pf]N[ÂÄöËìã]
+                ;B[pf]N[“–…w]
           )
         )
         (
           ;AB[dp]
           (
-                ;AB[jj]N[Âèó‰∏âÂ≠êË≠ú]
+                ;AB[jj]N[ ‹»˝◊”◊V]
                 (
                   ;W[qf]
                   (
-                        ;B[pg]LB[pf:A][oe:B]N[ÂÄíÂûÇËìÆ]C[ÂÄíÂûÇËìÆ Ê≠§Ê£ÑÈÇäÂèñËÖπ‰πãÂºèÔºåÂõ†Êúâ‰∏≠Â≠êÔºåÊîîÁôΩ‰∏çËÆìÂá∫È†≠ÔºåÂâáËÖπÂã¢ÂèØÂºµ„ÄÇÂèóÂ≠êÁî®‰πãÊõ¥Âà©Ôºå‰ΩÜÈ†àÂñÑÊáâËÄ≥„ÄÇÂ≠∏ËÄÖÁ¥∞Âä†Áé©Âë≥ÔºåÁÜüË®òÂú®ËÉ∏ÔºåÁ•ûËÄåÊòé‰πãÔºåËÆäÂåñÂú®‰∫∫ÔºåÁôΩËá™ÁÑ°ÊâÄÊñΩÂÖ∂Â∑ßÁü£„ÄÇ]
+                        ;B[pg]LB[pf:A][oe:B]N[µπ¥π…è]C[µπ¥π…è ¥ÀóâﬂÖ»°∏π÷Æ Ω£¨“Ú”–÷–◊”£¨îr∞◊≤ª◊å≥ˆÓ^£¨Ñt∏πÑ›ø…èà°£ ‹◊””√÷Æ∏¸¿˚£¨µ´Ìö…∆ë™∂˙°£åW’ﬂºöº”ÕÊŒ∂£¨ Ï”õ‘⁄–ÿ£¨…Ò∂¯√˜÷Æ£¨◊ÉªØ‘⁄»À£¨∞◊◊‘üoÀ˘ ©∆‰«…“”°£]
                         (
-                          ;W[pf]N[A Ê≤ñÊñ∑];B[of];W[og]LB[qg:A][oh:B]
+                          ;W[pf]N[A õ_î‡];B[of];W[og]LB[qg:A][oh:B]
                           (
-                                ;B[qg]N[A Ë≤º];W[rg]LB[rh:A][oh:B][rf:C]
+                                ;B[qg]N[A ŸN];W[rg]LB[rh:A][oh:B][rf:C]
                                 (
-                                  ;B[rh]N[A Êìã];W[re];B[sg]LB[rf:A][sf:B]
+                                  ;B[rh]N[A ìı];W[re];B[sg]LB[rf:A][sf:B]
                                   (
-                                        ;W[rf]N[A Êé•];B[qi]LB[pi:A][oh:B]
+                                        ;W[rf]N[A Ω”];B[qi]LB[pi:A][oh:B]
                                         (
-                                          ;W[pi]N[A È£õ];B[oh];W[ng];B[nf];W[mf];B[mg];W[nh];B[oi]LB[ph:A][ni:B][mh:C]
+                                          ;W[pi]N[A Ôw];B[oh];W[ng];B[nf];W[mf];B[mg];W[nh];B[oi]LB[ph:A][ni:B][mh:C]
                                           (
-                                                ;W[ph]N[A Ê≤ñÊñ∑];B[qh];W[pj];B[oj];W[ok];B[pk];W[qj];B[rj];W[qk];B[mh];W[ni];B[nj];W[mi];B[nk]C[Â¶ô„ÄÇ];W[lh];B[ql]C[Â¶ô„ÄÇ];W[me];B[nd]LB[md:A][qd:B][qc:C]
+                                                ;W[ph]N[A õ_î‡];B[qh];W[pj];B[oj];W[ok];B[pk];W[qj];B[rj];W[qk];B[mh];W[ni];B[nj];W[mi];B[nk]C[√Ó°£];W[lh];B[ql]C[√Ó°£];W[me];B[nd]LB[md:A][qd:B][qc:C]
                                                 (
-                                                  ;W[md]LB[qc:A][qd:B]N[A Èï∑]
+                                                  ;W[md]LB[qc:A][qd:B]N[A ÈL]
                                                   (
-                                                        ;B[qc]LB[oe:A][qd:B]N[A Â∞ñ]
+                                                        ;B[qc]LB[oe:A][qd:B]N[A º‚]
                                                         (
-                                                          ;W[oe]N[A Êâì];B[ne];W[od];B[nc];W[oc]LB[ob:A][mc:B]
+                                                          ;W[oe]N[A ¥Ú];B[ne];W[od];B[nc];W[oc]LB[ob:A][mc:B]
                                                           (
-                                                                ;B[ob]N[A Êâ≥];W[nb];B[mc];W[pb]LB[lc:A][pe:B][mb:C]
+                                                                ;B[ob]N[A ∞‚];W[nb];B[mc];W[pb]LB[lc:A][pe:B][mb:C]
                                                                 (
-                                                                  ;B[lc]N[A Èï∑];W[kd];B[pe];W[pc];B[ld];W[ke];B[le];W[lf];B[kc]LB[jc:B][qd:A]
+                                                                  ;B[lc]N[A ÈL];W[kd];B[pe];W[pc];B[ld];W[ke];B[le];W[lf];B[kc]LB[jc:B][qd:A]
                                                                   (
-                                                                        ;W[qd]N[A Êñ∑ÂêÉ];B[kf];W[lg];B[je]
+                                                                        ;W[qd]N[A î‡≥‘];B[kf];W[lg];B[je]
                                                                   )
                                                                   (
-                                                                        ;W[jc]N[B Êâ≥];B[jb];W[ic];B[ib];W[hc];B[qb];W[oa];B[qd];W[mb];B[kb];W[sb];B[rd];W[sd];B[se];W[sf];B[sh];W[sc];B[ra];W[pa];B[qe];W[se];B[rb];W[qa];B[hb];W[gc];B[gb];W[lb];B[kf];W[lg];B[jf];W[ie];B[fc];W[fd];B[ed];W[ec];B[fb];W[fe];B[jh];W[mk]C[Â•Ω„ÄÇ];B[dd]C[Â§ß„ÄÇ]
+                                                                        ;W[jc]N[B ∞‚];B[jb];W[ic];B[ib];W[hc];B[qb];W[oa];B[qd];W[mb];B[kb];W[sb];B[rd];W[sd];B[se];W[sf];B[sh];W[sc];B[ra];W[pa];B[qe];W[se];B[rb];W[qa];B[hb];W[gc];B[gb];W[lb];B[kf];W[lg];B[jf];W[ie];B[fc];W[fd];B[ed];W[ec];B[fb];W[fe];B[jh];W[mk]C[∫√°£];B[dd]C[¥Û°£]
                                                                   )
                                                                 )
                                                                 (
-                                                                  ;B[pe]N[B Êñ∑];W[pc];B[mb]LB[oa:A][lc:B]
+                                                                  ;B[pe]N[B î‡];W[pc];B[mb]LB[oa:A][lc:B]
                                                                   (
-                                                                        ;W[oa]N[A Êèê];B[ld];W[ke];B[qd];W[rd];B[qb];W[qa];B[ra];W[rc];B[pa];W[rk];B[rl];W[qa];B[rb];W[sb];B[pa];W[sk];B[sl];W[qa];B[ma];W[qe];B[pa];W[pl];B[sj];W[qa];B[le];W[lf];B[pa];W[po];B[pm];W[qa];B[kf];W[lg];B[pa];W[ol];B[nl];W[qa];B[kd];W[sa];B[je]
+                                                                        ;W[oa]N[A Ã·];B[ld];W[ke];B[qd];W[rd];B[qb];W[qa];B[ra];W[rc];B[pa];W[rk];B[rl];W[qa];B[rb];W[sb];B[pa];W[sk];B[sl];W[qa];B[ma];W[qe];B[pa];W[pl];B[sj];W[qa];B[le];W[lf];B[pa];W[po];B[pm];W[qa];B[kf];W[lg];B[pa];W[ol];B[nl];W[qa];B[kd];W[sa];B[je]
                                                                   )
                                                                   (
-                                                                        ;W[lc]N[B Êâ≥];B[kc]LB[ld:A][lb:B]C[Â¶ô„ÄÇ]
+                                                                        ;W[lc]N[B ∞‚];B[kc]LB[ld:A][lb:B]C[√Ó°£]
                                                                         (
-                                                                          ;W[ld]N[A Êé•];B[qd];W[oa];B[lb];W[rd];B[qb];W[rb];B[kd];W[lg];B[qa];W[pa];B[ma];W[kb];B[jb];W[ka];B[ja];W[rc];B[dd]
+                                                                          ;W[ld]N[A Ω”];B[qd];W[oa];B[lb];W[rd];B[qb];W[rb];B[kd];W[lg];B[qa];W[pa];B[ma];W[kb];B[jb];W[ka];B[ja];W[rc];B[dd]
                                                                         )
                                                                         (
-                                                                          ;W[lb]N[B Ë°ù]C[Â∑Æ„ÄÇ];B[na];W[qd];B[pa];W[qb];B[rb];W[rc];B[qa];W[qe];B[lg];W[kg];B[lf]LB[kd:A][kf:B]
+                                                                          ;W[lb]N[B –n]C[≤Ó°£];B[na];W[qd];B[pa];W[qb];B[rb];W[rc];B[qa];W[qe];B[lg];W[kg];B[lf]LB[kd:A][kf:B]
                                                                           (
-                                                                                ;W[kd]N[A Êâ≥];B[ke];W[ld];B[li];W[mj];B[mk];W[lj];B[lk];W[ki];B[kj];W[li];B[ji];W[kh];B[je];W[ih];B[jd];W[jc];B[jb]C[Â¶ô„ÄÇ];W[kb];B[ib]C[Â¶ô„ÄÇ];W[ic];B[hc];W[hd];B[id];W[kc];B[la]C[Á¥∞„ÄÇ];W[hb]
+                                                                                ;W[kd]N[A ∞‚];B[ke];W[ld];B[li];W[mj];B[mk];W[lj];B[lk];W[ki];B[kj];W[li];B[ji];W[kh];B[je];W[ih];B[jd];W[jc];B[jb]C[√Ó°£];W[kb];B[ib]C[√Ó°£];W[ic];B[hc];W[hd];B[id];W[kc];B[la]C[ºö°£];W[hb]
                                                                                 (
                                                                                   ;B[gc];W[ja];B[jh];W[jg];B[ig];W[if];B[hg]
                                                                                 )
                                                                           )
                                                                           (
-                                                                                ;W[kf]N[B Ë≤ºÈï∑];B[le];W[ld];B[ke];W[je];B[kd];W[kb];B[li];W[mj];B[mk];W[lj];B[kh]
+                                                                                ;W[kf]N[B ŸNÈL];B[le];W[ld];B[ke];W[je];B[kd];W[kb];B[li];W[mj];B[mk];W[lj];B[kh]
                                                                           )
                                                                         )
                                                                   )
                                                                 )
                                                                 (
-                                                                  ;B[mb]N[C Êâì];W[oa];B[ld];W[lg];B[pe];W[pc];B[qd];W[rd];B[qb];W[qa];B[ra];W[rc];B[pa];W[rk];B[rl];W[qa];B[rb];W[sb];B[pa];W[sk];B[sl];W[qa];B[ma];W[qe];B[pa];W[pl];B[sj];W[qa];B[le];W[sa];B[lf];W[mg];B[jg]
+                                                                  ;B[mb]N[C ¥Ú];W[oa];B[ld];W[lg];B[pe];W[pc];B[qd];W[rd];B[qb];W[qa];B[ra];W[rc];B[pa];W[rk];B[rl];W[qa];B[rb];W[sb];B[pa];W[sk];B[sl];W[qa];B[ma];W[qe];B[pa];W[pl];B[sj];W[qa];B[le];W[sa];B[lf];W[mg];B[jg]
                                                                 )
                                                           )
                                                           (
-                                                                ;B[mc]LB[lc:A][ob:B]N[B Èï∑]C[ÂÖàË°åÂ•Ω„ÄÇ]
+                                                                ;B[mc]LB[lc:A][ob:B]N[B ÈL]C[œ»––∫√°£]
                                                                 (
-                                                                  ;W[lc]N[A Êâ≥];B[ob]LB[nb:A][pe:B]
+                                                                  ;W[lc]N[A ∞‚];B[ob]LB[nb:A][pe:B]
                                                                   (
-                                                                        ;W[nb]N[A Êâì];B[mb];W[pb]LB[pc:A][na:B]
+                                                                        ;W[nb]N[A ¥Ú];B[mb];W[pb]LB[pc:A][na:B]
                                                                         (
-                                                                          ;B[pc]LB[pe:A][oa:B]N[A Êñ∑]C[Â•Ω„ÄÇ]
+                                                                          ;B[pc]LB[pe:A][oa:B]N[A î‡]C[∫√°£]
                                                                           (
-                                                                                ;W[pe]N[A Êé•];B[na];W[qb];B[rc];W[rb];B[rd];W[sd];B[sc];W[se];B[sb];W[qd];B[qe];W[rk];B[rl];W[qd];B[ld];W[kd];B[qe];W[sk];B[sl];W[qd];B[le];W[lf];B[qe];W[pl];B[sj];W[qd];B[ke];W[kf];B[qe];W[po];B[pm];W[qd];B[je];W[lb];B[qe];W[ol];B[nl];W[qd];B[jd];W[la];B[qe];W[om];B[on];W[qd];B[ma];W[pa];B[qe];W[nm];B[mm];W[qd];B[mj];W[li];B[qe];W[nn];B[no];W[qd];B[kb];W[oa]
+                                                                                ;W[pe]N[A Ω”];B[na];W[qb];B[rc];W[rb];B[rd];W[sd];B[sc];W[se];B[sb];W[qd];B[qe];W[rk];B[rl];W[qd];B[ld];W[kd];B[qe];W[sk];B[sl];W[qd];B[le];W[lf];B[qe];W[pl];B[sj];W[qd];B[ke];W[kf];B[qe];W[po];B[pm];W[qd];B[je];W[lb];B[qe];W[ol];B[nl];W[qd];B[jd];W[la];B[qe];W[om];B[on];W[qd];B[ma];W[pa];B[qe];W[nm];B[mm];W[qd];B[mj];W[li];B[qe];W[nn];B[no];W[qd];B[kb];W[oa]
                                                                           )
                                                                           (
-                                                                                ;W[oa]N[B Êèê]C[Â∑Æ„ÄÇ];B[pe];W[ob];B[lb];W[kc];B[kb];W[jb];B[jc];W[ib];B[lg]C[Â¶ô„ÄÇ]
+                                                                                ;W[oa]N[B Ã·]C[≤Ó°£];B[pe];W[ob];B[lb];W[kc];B[kb];W[jb];B[jc];W[ib];B[lg]C[√Ó°£]
                                                                           )
                                                                         )
                                                                         (
-                                                                          ;B[na]N[B Êèê];W[pc];B[kc]C[Â•Ω„ÄÇ];W[kd];B[lb];W[ld];B[jc];W[qd]
+                                                                          ;B[na]N[B Ã·];W[pc];B[kc]C[∫√°£];W[kd];B[lb];W[ld];B[jc];W[qd]
                                                                         )
                                                                   )
                                                                   (
-                                                                        ;W[pe]N[B Êé•]C[Êé•ËÄÅÊàê„ÄÇ];B[lb]LB[kc:A][pb:B]
+                                                                        ;W[pe]N[B Ω”]C[Ω”¿œ≥…°£];B[lb]LB[kc:A][pb:B]
                                                                         (
-                                                                          ;W[kc]N[A Èï∑];B[pb];W[qd];B[rc];W[pc];B[kb];W[jc]
+                                                                          ;W[kc]N[A ÈL];B[pb];W[qd];B[rc];W[pc];B[kb];W[jc]
                                                                         )
                                                                         (
-                                                                          ;W[pb]N[B Êâ≥]C[Â∑Æ„ÄÇ];B[lg]C[Âá∫ÔºåÂ¶ô„ÄÇ];W[kg];B[lf];W[kf];B[le];W[ld];B[ke];W[je];B[kd];W[kc];B[jd];W[kb];B[li];W[mj];B[mk];W[lj];B[lk];W[ki];B[kj];W[li];B[ji];W[kh];B[jf];W[jg];B[ig];W[if];B[jh]
+                                                                          ;W[pb]N[B ∞‚]C[≤Ó°£];B[lg]C[≥ˆ£¨√Ó°£];W[kg];B[lf];W[kf];B[le];W[ld];B[ke];W[je];B[kd];W[kc];B[jd];W[kb];B[li];W[mj];B[mk];W[lj];B[lk];W[ki];B[kj];W[li];B[ji];W[kh];B[jf];W[jg];B[ig];W[if];B[jh]
                                                                         )
                                                                   )
                                                                 )
                                                                 (
-                                                                  ;W[ob]N[B Á´ã];B[lc];W[ld];B[kd];W[ke];B[pe];W[rc];B[pb];W[qd];B[nb];W[rb];B[kf];W[lg];B[je]
+                                                                  ;W[ob]N[B ¡¢];B[lc];W[ld];B[kd];W[ke];B[pe];W[rc];B[pb];W[qd];B[nb];W[rb];B[kf];W[lg];B[je]
                                                                 )
                                                           )
                                                         )
                                                         (
-                                                          ;W[qd]N[B Êì†]C[Ê≠£„ÄÇ];B[nc];W[rc];B[lb];W[kc];B[qb];W[pe];B[od];W[kb];B[lc];W[kd];B[rb];W[sb];B[dc];W[la];B[mb];W[ob];B[pb]
+                                                          ;W[qd]N[B îD]C[’˝°£];B[nc];W[rc];B[lb];W[kc];B[qb];W[pe];B[od];W[kb];B[lc];W[kd];B[rb];W[sb];B[dc];W[la];B[mb];W[ob];B[pb]
                                                         )
                                                   )
                                                   (
-                                                        ;B[qd]N[B Âπ∂];W[oe];B[ne];W[od];B[nc];W[oc];B[mc];W[ob]C[Â•Ω„ÄÇ];B[lc];W[ld];B[kd];W[ke];B[pe];W[rc];B[qc];W[qb];B[pb];W[rb];B[oa];W[rd];B[nb];W[jd];B[kc];W[id];B[je];W[jf]C[Â∑Æ„ÄÇ];B[lg]C[Â¶ô„ÄÇ]
+                                                        ;B[qd]N[B ≤¢];W[oe];B[ne];W[od];B[nc];W[oc];B[mc];W[ob]C[∫√°£];B[lc];W[ld];B[kd];W[ke];B[pe];W[rc];B[qc];W[qb];B[pb];W[rb];B[oa];W[rd];B[nb];W[jd];B[kc];W[id];B[je];W[jf]C[≤Ó°£];B[lg]C[√Ó°£]
                                                   )
                                                 )
                                                 (
-                                                  ;W[qd]N[B Â∞ñÈ†Ç]C[Á©©„ÄÇ];B[md];W[ld];B[lc];W[kd];B[kc];W[jd];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[ib]
+                                                  ;W[qd]N[B º‚Ìî]C[∑Ä°£];B[md];W[ld];B[lc];W[kd];B[kc];W[jd];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[ib]
                                                 )
                                                 (
-                                                  ;W[qc]N[C Èªû‰∏â‰∏â];B[qd];W[rd];B[qb]LB[pc:A][oc:B]C[Â•Ω„ÄÇ]
+                                                  ;W[qc]N[C ¸c»˝»˝];B[qd];W[rd];B[qb]LB[pc:A][oc:B]C[∫√°£]
                                                   (
-                                                        ;W[pc]N[A Èï∑];B[oc];W[pb];B[ob];W[rb];B[kc];W[ke];B[ic];W[lc];B[lb];W[kb];B[kd]C[Â¶ô„ÄÇ]
+                                                        ;W[pc]N[A ÈL];B[oc];W[pb];B[ob];W[rb];B[kc];W[ke];B[ic];W[lc];B[lb];W[kb];B[kd]C[√Ó°£]
                                                   )
                                                   (
-                                                        ;W[oc]N[B Èªû]C[Â•Ω„ÄÇ];B[pc];W[od];B[ne];W[oe];B[nc];W[ob];B[nb];W[pb];B[ld];W[kf];B[ic]
+                                                        ;W[oc]N[B ¸c]C[∫√°£];B[pc];W[od];B[ne];W[oe];B[nc];W[ob];B[nb];W[pb];B[ld];W[kf];B[ic]
                                                   )
                                                 )
                                           )
                                           (
-                                                ;W[ni]N[B Ë≤ºÈï∑]C[Ê≠£„ÄÇ];B[oj];W[qd];B[nd];W[nj];B[ok];W[me];B[md];W[lg];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[jd]LB[jg:A][ml:B]
+                                                ;W[ni]N[B ŸNÈL]C[’˝°£];B[oj];W[qd];B[nd];W[nj];B[ok];W[me];B[md];W[lg];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[jd]LB[jg:A][ml:B]
                                                 (
-                                                  ;W[jg]N[A Èóú];B[nk];W[mk];B[lk]C[Â¶ô„ÄÇ]
+                                                  ;W[jg]N[A ÍP];B[nk];W[mk];B[lk]C[√Ó°£]
                                                 )
                                                 (
-                                                  ;W[ml]N[B È£õ];B[li];W[mi];B[jg]
+                                                  ;W[ml]N[B Ôw];B[li];W[mi];B[jg]
                                                 )
                                           )
                                           (
-                                                ;W[mh]N[C Êâì];B[me]LB[qd:A][lg:B]
+                                                ;W[mh]N[C ¥Ú];B[me]LB[qd:A][lg:B]
                                                 (
-                                                  ;W[qd]N[A Â∞ñÈ†Ç];B[lf]C[Â•Ω„ÄÇ];W[ph];B[qh];W[pj];B[lh];W[nj];B[qk];W[pk];B[li];W[mj];B[ql]
+                                                  ;W[qd]N[A º‚Ìî];B[lf]C[∫√°£];W[ph];B[qh];W[pj];B[lh];W[nj];B[qk];W[pk];B[li];W[mj];B[ql]
                                                 )
                                                 (
-                                                  ;W[lg]N[B Êèê];B[qd];W[rd];B[rc];W[od]C[Â•Ω„ÄÇ];B[ne];W[oc]C[Â•Ω„ÄÇ];B[qb];W[oe];B[pe];W[ld]C[ÂØ¶Â§ñÂ•ΩÔºåÈªëÂæóÂ§ßËßí„ÄÇ];B[le];W[ke];B[kf];W[lf];B[kd];W[je];B[md];W[lc];B[mc];W[lb];B[mb];W[nb];B[ma];W[jd];B[sd]
+                                                  ;W[lg]N[B Ã·];B[qd];W[rd];B[rc];W[od]C[∫√°£];B[ne];W[oc]C[∫√°£];B[qb];W[oe];B[pe];W[ld]C[åçÕ‚∫√£¨∫⁄µ√¥ÛΩ«°£];B[le];W[ke];B[kf];W[lf];B[kd];W[je];B[md];W[lc];B[mc];W[lb];B[mb];W[nb];B[ma];W[jd];B[sd]
                                                 )
                                           )
                                         )
                                         (
-                                          ;W[oh]LB[pi:A][nf:B]N[B Èï∑]
+                                          ;W[oh]LB[pi:A][nf:B]N[B ÈL]
                                           (
-                                                ;B[pi]LB[nf:A][oe:B]N[A Èõô]
+                                                ;B[pi]LB[nf:A][oe:B]N[A Îp]
                                                 (
-                                                  ;W[nf]N[A Âè≥Êâì];B[oe];W[qd];B[qb];W[pc];B[oc]LB[qc:A][pe:B]
+                                                  ;W[nf]N[A ”“¥Ú];B[oe];W[qd];B[qb];W[pc];B[oc]LB[qc:A][pe:B]
                                                   (
-                                                        ;W[qc]N[A Êé•];B[pb];W[rb];B[ra];W[rc];B[ne];W[mf];B[pe]C[Âº±„ÄÇ];W[me]C[Â•Ω„ÄÇ];B[mc];W[nd];B[nc];W[md];B[od];W[sd];B[jc];W[nj];B[ql]
+                                                        ;W[qc]N[A Ω”];B[pb];W[rb];B[ra];W[rc];B[ne];W[mf];B[pe]C[»ı°£];W[me]C[∫√°£];B[mc];W[nd];B[nc];W[md];B[od];W[sd];B[jc];W[nj];B[ql]
                                                   )
                                                   (
-                                                        ;W[pe]N[B Êâì]C[‰∏çÂÆúÊâì„ÄÇ];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[nj];W[mi];B[mj];W[md];B[mc];W[lc];B[me];W[ne];B[ld];W[nd];B[nc];W[mf];B[kc];W[lb];B[kb]
+                                                        ;W[pe]N[B ¥Ú]C[≤ª“À¥Ú°£];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[nj];W[mi];B[mj];W[md];B[mc];W[lc];B[me];W[ne];B[ld];W[nd];B[nc];W[mf];B[kc];W[lb];B[kb]
                                                   )
                                                 )
                                                 (
-                                                  ;W[oe]N[B ‰∏ãÊâì];B[nf]LB[pe:A][od:B][ne:C]
+                                                  ;W[oe]N[B œ¬¥Ú];B[nf]LB[pe:A][od:B][ne:C]
                                                   (
-                                                        ;W[pe]N[A Êé•];B[ne];W[nd];B[md];W[nc];B[od];W[qd];B[mc];W[ob];B[nb];W[oc]
+                                                        ;W[pe]N[A Ω”];B[ne];W[nd];B[md];W[nc];B[od];W[qd];B[mc];W[ob];B[nb];W[oc]
                                                   )
                                                   (
-                                                        ;W[od]N[B Èï∑]C[Â§™Âº∑„ÄÇ];B[pe]LB[pc:A][qc:B]C[ÂæóÁÆó„ÄÇ]
+                                                        ;W[od]N[B ÈL]C[Ã´èä°£];B[pe]LB[pc:A][qc:B]C[µ√À„°£]
                                                         (
-                                                          ;W[pc]N[A Êâ≥];B[qd];W[qc];B[rd];W[sd]C[Â•Ω„ÄÇ];B[sc];W[se];B[rc];W[rb];B[sb];W[qa];B[oc];W[sa];B[ra];W[ph];B[nd];W[qh];B[rj]
+                                                          ;W[pc]N[A ∞‚];B[qd];W[qc];B[rd];W[sd]C[∫√°£];B[sc];W[se];B[rc];W[rb];B[sb];W[qa];B[oc];W[sa];B[ra];W[ph];B[nd];W[qh];B[rj]
                                                         )
                                                         (
-                                                          ;W[qc]N[B Èªû‰∏â‰∏â];B[pc];W[qb];B[nc];W[ne];B[me];W[mf];B[ng];W[md];B[le];W[nd];B[ld];W[mc];B[lc];W[mb];B[nb]C[Â¶ôÔºå‰ª•Êúâ‰∏≠Â≠êÊïÖ‰πü„ÄÇ]
+                                                          ;W[qc]N[B ¸c»˝»˝];B[pc];W[qb];B[nc];W[ne];B[me];W[mf];B[ng];W[md];B[le];W[nd];B[ld];W[mc];B[lc];W[mb];B[nb]C[√Ó£¨“‘”–÷–◊”π “≤°£]
                                                         )
                                                   )
                                                   (
-                                                        ;W[ne]N[C Ë≤ºÈï∑]C[Â•Ω„ÄÇ];B[mf];W[me]C[Â•Ω„ÄÇ];B[lf]LB[pe:A][oc:B]
+                                                        ;W[ne]N[C ŸNÈL]C[∫√°£];B[mf];W[me]C[∫√°£];B[lf]LB[pe:A][oc:B]
                                                         (
-                                                          ;W[pe]N[A Á≤ò];B[nc];W[lc];B[mc]LB[ld:A][lb:B]
+                                                          ;W[pe]N[A ’≥];B[nc];W[lc];B[mc]LB[ld:A][lb:B]
                                                           (
-                                                                ;W[ld]N[A ÈÄÄ];B[rc];W[qc];B[qb];W[pb];B[pc];W[qd];B[rd];W[qe];B[ra];W[sb];B[rb];W[oc];B[ob];W[od];B[pa];W[nb];B[pc];W[mb];B[ic]C[Ê¥ªËßíÂ∑ß„ÄÇ]
+                                                                ;W[ld]N[A ÕÀ];B[rc];W[qc];B[qb];W[pb];B[pc];W[qd];B[rd];W[qe];B[ra];W[sb];B[rb];W[oc];B[ob];W[od];B[pa];W[nb];B[pc];W[mb];B[ic]C[ªÓΩ««…°£]
                                                           )
                                                           (
-                                                                ;W[lb]N[B Á´ã]C[Â•Ω„ÄÇ];B[ld];W[md];B[le];W[oc];B[ob];W[pb]C[Â¶ô„ÄÇ];B[pc];W[od];B[jc];W[jb];B[ib];W[kb];B[ic];W[nb]C[ÈªëÊ£ÑËßíÂæóÂ§ñÂã¢ÔºåÂèàÂæóÂÖàÊâãÔºåÊúâË¶ã„ÄÇÁÑ∂ÂâáÁôΩËßíÂ§™Â§ß„ÄÇ]
+                                                                ;W[lb]N[B ¡¢]C[∫√°£];B[ld];W[md];B[le];W[oc];B[ob];W[pb]C[√Ó°£];B[pc];W[od];B[jc];W[jb];B[ib];W[kb];B[ic];W[nb]C[∫⁄óâΩ«µ√Õ‚Ñ›£¨”÷µ√œ» ÷£¨”–“ä°£»ªÑt∞◊Ω«Ã´¥Û°£]
                                                           )
                                                         )
                                                         (
-                                                          ;W[oc]N[B Èóú]C[‰∏çÂ¶ÇÂØ¶Á≤ò„ÄÇ];B[pc]LB[ob:A][pe:B]
+                                                          ;W[oc]N[B ÍP]C[≤ª»Áåç’≥°£];B[pc]LB[ob:A][pe:B]
                                                           (
-                                                                ;W[ob]N[A Á´ã];B[pe];W[rc];B[le]LB[mc:A][lc:B]
+                                                                ;W[ob]N[A ¡¢];B[pe];W[rc];B[le]LB[mc:A][lc:B]
                                                                 (
-                                                                  ;W[mc]N[A Èóú];B[rd]LB[sd:A][qd:B][qc:C]C[Á¥∞„ÄÇ]
+                                                                  ;W[mc]N[A ÍP];B[rd]LB[sd:A][qd:B][qc:C]C[ºö°£]
                                                                   (
-                                                                        ;W[sd]N[A Â§ñÊâì];B[kc]LB[qp:A][pp:B][kb:C]
+                                                                        ;W[sd]N[A Õ‚¥Ú];B[kc]LB[qp:A][pp:B][kb:C]
                                                                         (
-                                                                          ;W[qp]N[A Â∞èÁõÆ];B[pb];W[qb]LB[pa:A][od:B]
+                                                                          ;W[qp]N[A –°ƒø];B[pb];W[qb]LB[pa:A][od:B]
                                                                           (
-                                                                                ;B[pa]N[A Á´ã];W[qd];B[od];W[nd];B[mb]C[Â•Ω„ÄÇ];W[lb];B[na]C[Â•Ω„ÄÇ];W[lc];B[kb];W[la];B[oa];W[nc];B[ld];W[qc];B[ka];W[qa];B[qn]
+                                                                                ;B[pa]N[A ¡¢];W[qd];B[od];W[nd];B[mb]C[∫√°£];W[lb];B[na]C[∫√°£];W[lc];B[kb];W[la];B[oa];W[nc];B[ld];W[qc];B[ka];W[qa];B[qn]
                                                                           )
                                                                           (
-                                                                                ;B[od]N[B Ë°ù]C[ÂΩºÊ≠§Ë¶ÅËëó„ÄÇ];W[nd];B[oa];W[mb];B[lb];W[na];B[nc];W[nb];B[ld];W[md];B[qn]
+                                                                                ;B[od]N[B –n]C[±À¥À“™÷¯°£];W[nd];B[oa];W[mb];B[lb];W[na];B[nc];W[nb];B[ld];W[md];B[qn]
                                                                           )
                                                                         )
                                                                         (
-                                                                          ;W[pp]N[B Êòü];B[pb];W[qb];B[pa];W[od];B[qc];W[rb];B[qe];W[qd];B[nq];W[oq];B[rd];W[se];B[sc];W[qd];B[np];W[pn];B[rd];W[sb];B[sh];W[oa];B[sf];W[qd];B[or];W[pr];B[rd];W[sc];B[qa];W[qd];B[op];W[pq];B[rd];W[ph];B[qh];W[qd];B[on];W[pm];B[rd];W[po];B[om];W[pl];B[ol];W[qd];B[ok];W[ra];B[dc]
+                                                                          ;W[pp]N[B –«];B[pb];W[qb];B[pa];W[od];B[qc];W[rb];B[qe];W[qd];B[nq];W[oq];B[rd];W[se];B[sc];W[qd];B[np];W[pn];B[rd];W[sb];B[sh];W[oa];B[sf];W[qd];B[or];W[pr];B[rd];W[sc];B[qa];W[qd];B[op];W[pq];B[rd];W[ph];B[qh];W[qd];B[on];W[pm];B[rd];W[po];B[om];W[pl];B[ol];W[qd];B[ok];W[ra];B[dc]
                                                                         )
                                                                         (
-                                                                          ;W[kb]N[C Êâò]C[ÊòØ„ÄÇÁ∏ΩË¶ãÈ£õÂ∞ÅÂæåÔºåÁôΩÂÆúÊáâ„ÄÇ];B[jb];W[lb];B[jc]
+                                                                          ;W[kb]N[C Õ–]C[ «°£øÇ“äÔw∑‚··£¨∞◊“Àë™°£];B[jb];W[lb];B[jc]
                                                                         )
                                                                   )
                                                                   (
-                                                                        ;W[qd]N[B ÂÖßÊâì]C[‰∏çÂÆúÂÖßÊâì„ÄÇ];B[qc];W[sd];B[rb];W[sb];B[qe];W[rd];B[qb];W[qa];B[sa]C[Â¶ô„ÄÇ];W[pb];B[sc];W[ph];B[qh];W[sb];B[qp];W[ra];B[kc]
+                                                                        ;W[qd]N[B É»¥Ú]C[≤ª“ÀÉ»¥Ú°£];B[qc];W[sd];B[rb];W[sb];B[qe];W[rd];B[qb];W[qa];B[sa]C[√Ó°£];W[pb];B[sc];W[ph];B[qh];W[sb];B[qp];W[ra];B[kc]
                                                                   )
                                                                   (
-                                                                        ;W[qc]N[C Èï∑]C[Êõ¥Â∑Æ„ÄÇ];B[qd];W[sd];B[qb];W[rb];B[pb];W[ra];B[sc];W[sb];B[se];W[sf];B[sh]
+                                                                        ;W[qc]N[C ÈL]C[∏¸≤Ó°£];B[qd];W[sd];B[qb];W[rb];B[pb];W[ra];B[sc];W[sb];B[se];W[sf];B[sh]
                                                                   )
                                                                 )
                                                                 (
-                                                                  ;W[lc]N[B È£õ];B[pb];W[qb];B[pa];W[qc];B[mc]C[Â•Ω„ÄÇ];W[mb];B[ld];W[md];B[kc];W[lb];B[od];W[nc];B[nd];W[mc];B[kb];W[na]
+                                                                  ;W[lc]N[B Ôw];B[pb];W[qb];B[pa];W[qc];B[mc]C[∫√°£];W[mb];B[ld];W[md];B[kc];W[lb];B[od];W[nc];B[nd];W[mc];B[kb];W[na]
                                                                 )
                                                           )
                                                           (
-                                                                ;W[pe]N[B Á≤ò]C[ÂÆâÈÄ∏„ÄÇ];B[nc];W[od];B[ob];W[nb];B[mb];W[pb];B[na];W[qb];B[kd]
+                                                                ;W[pe]N[B ’≥]C[∞≤“›°£];B[nc];W[od];B[ob];W[nb];B[mb];W[pb];B[na];W[qb];B[kd]
                                                           )
                                                         )
                                                   )
                                                 )
                                           )
                                           (
-                                                ;B[nf]N[B Èï∑]C[ÊúâÂäõ„ÄÇ];W[pi];B[qh];W[qd]LB[pj:A][ql:B][qk:C][nd:D]
+                                                ;B[nf]N[B ÈL]C[”–¡¶°£];W[pi];B[qh];W[qd]LB[pj:A][ql:B][qk:C][nd:D]
                                                 (
-                                                  ;B[pj]N[A Êâ≥];W[oj]LB[pk:A][ni:B]
+                                                  ;B[pj]N[A ∞‚];W[oj]LB[pk:A][ni:B]
                                                   (
-                                                        ;B[pk]N[A Èï∑]
+                                                        ;B[pk]N[A ÈL]
                                                         (
                                                           ;W[ok];B[ni];W[oi];B[pm];W[pl];B[ql];W[ol];B[qn];W[mg];B[pc];W[qb];B[qc];W[rc];B[pb];W[pe];B[nd]LB[nn:A][mi:B]
                                                           (
-                                                                ;W[nn]N[A È£õ];B[rb];W[sb];B[ng];W[nh];B[mh]C[Êñ∑Â•Ω„ÄÇ]
+                                                                ;W[nn]N[A Ôw];B[rb];W[sb];B[ng];W[nh];B[mh]C[î‡∫√°£]
                                                           )
                                                           (
-                                                                ;W[mi]N[B Â§æ];B[lh];W[mh];B[nn]C[Â§ß„ÄÇ]
+                                                                ;W[mi]N[B äA];B[lh];W[mh];B[nn]C[¥Û°£]
                                                           )
                                                         )
                                                   )
                                                   (
-                                                        ;B[ni]N[B Âà∫]C[Á¥∞ÔºåÂÖàÈªûÂæóÁÆó„ÄÇ];W[oi];B[ok]C[Á´üÊâ≥Â¶ô„ÄÇ];W[pk];B[qj];W[nj];B[ol]LB[mg:A][mk:B]
+                                                        ;B[ni]N[B ¥Ã]C[ºö£¨œ»¸cµ√À„°£];W[oi];B[ok]C[æπ∞‚√Ó°£];W[pk];B[qj];W[nj];B[ol]LB[mg:A][mk:B]
                                                         (
-                                                          ;W[mg]LB[mk:A][nd:B][pc:C]N[A Ë∑≥]
+                                                          ;W[mg]LB[mk:A][nd:B][pc:C]N[A Ã¯]
                                                           (
-                                                                ;B[mk]N[A Ë∑≥Êû∑];W[mj];B[lk];W[mf];B[nd];W[ld];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[lb]C[Â•Ω„ÄÇ];W[kb];B[le]C[Â∑ß„ÄÇ];W[me];B[kc];W[lc];B[mb]
+                                                                ;B[mk]N[A Ã¯ºœ];W[mj];B[lk];W[mf];B[nd];W[ld];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[lb]C[∫√°£];W[kb];B[le]C[«…°£];W[me];B[kc];W[lc];B[mb]
                                                           )
                                                           (
-                                                                ;B[nd]N[B Ë∑≥Ë£ú];W[ql];B[qm];W[rm];B[rl];W[pm];B[qn];W[pl];B[rk];W[pn];B[po];W[qo];B[rn];W[ro];B[sm];W[oo];B[pp];W[qq];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[pq];W[qr];B[pr];W[qp];B[no]
+                                                                ;B[nd]N[B Ã¯—a];W[ql];B[qm];W[rm];B[rl];W[pm];B[qn];W[pl];B[rk];W[pn];B[po];W[qo];B[rn];W[ro];B[sm];W[oo];B[pp];W[qq];B[qb];W[pc];B[oc];W[pe];B[od];W[qc];B[pb];W[rb];B[ra];W[rc];B[pq];W[qr];B[pr];W[qp];B[no]
                                                           )
                                                           (
-                                                                ;B[pc]N[C Á´ãË£ú];W[qb];B[pb];W[pe];B[nd];W[ql];B[qm];W[rm];B[rl];W[qn];B[pm];W[rk];B[qk];W[sl];B[mk];W[mj];B[qp];W[pn];B[ro];W[rn];B[op];W[nn];B[lk]
+                                                                ;B[pc]N[C ¡¢—a];W[qb];B[pb];W[pe];B[nd];W[ql];B[qm];W[rm];B[rl];W[qn];B[pm];W[rk];B[qk];W[sl];B[mk];W[mj];B[qp];W[pn];B[ro];W[rn];B[op];W[nn];B[lk]
                                                           )
                                                         )
                                                         (
-                                                          ;W[mk]N[B Â∞ñ]C[Â•Ω„ÄÇ];B[qm];W[nd];B[mg];W[mh];B[pc];W[pe];B[qc];W[oe];B[ob];W[nb];B[rc]C[ÈªëÊ¥ªÈÇäÔºåÁ∏±ÁôΩÂá∫‰∫¶‰∏ÄÊ≥ï„ÄÇ]
+                                                          ;W[mk]N[B º‚]C[∫√°£];B[qm];W[nd];B[mg];W[mh];B[pc];W[pe];B[qc];W[oe];B[ob];W[nb];B[rc]C[∫⁄ªÓﬂÖ£¨øv∞◊≥ˆ“‡“ª∑®°£]
                                                         )
                                                   )
                                                 )
                                                 (
-                                                  ;B[ql]N[B ÊãÜ‰∫å];W[mh];B[pc];W[qb];B[pb];W[pe];B[nd];W[ol];B[pn];W[qp];B[qo];W[pp];B[nn];W[mq];B[kg]
+                                                  ;B[ql]N[B ≤∂˛];W[mh];B[pc];W[qb];B[pb];W[pe];B[nd];W[ol];B[pn];W[qp];B[qo];W[pp];B[nn];W[mq];B[kg]
                                                 )
                                                 (
-                                                  ;B[qk]N[C Èóú];W[ok];B[pm];W[qo];B[qn];W[po];B[nl];W[mh];B[lg];W[ki];B[pb];W[qb];B[jh]
+                                                  ;B[qk]N[C ÍP];W[ok];B[pm];W[qo];B[qn];W[po];B[nl];W[mh];B[lg];W[ki];B[pb];W[qb];B[jh]
                                                 )
                                                 (
-                                                  ;B[nd]LB[qk:A][pk:B]N[D Ë∑≥Ë£ú]
+                                                  ;B[nd]LB[qk:A][pk:B]N[D Ã¯—a]
                                                   (
-                                                        ;W[qk]N[A È£õ‰∏ã];B[rl]LB[rk:A][ql:B]C[Âá∫Ê≥ïÊ•µÂ¶ô„ÄÇ]
+                                                        ;W[qk]N[A Ôwœ¬];B[rl]LB[rk:A][ql:B]C[≥ˆ∑®òO√Ó°£]
                                                         (
-                                                          ;W[rk]N[A Á´ã];B[pj];W[oj];B[pk]
+                                                          ;W[rk]N[A ¡¢];B[pj];W[oj];B[pk]
                                                         )
                                                         (
-                                                          ;W[ql]N[B Â£ì];B[pj];W[oj];B[qj];W[ok];B[pk];W[pl];B[rk];W[qn];B[rm];W[on]C[Á∏ΩË¶ãÈªë25‰πãÂ¶ô„ÄÇ]
+                                                          ;W[ql]N[B â∫];B[pj];W[oj];B[qj];W[ok];B[pk];W[pl];B[rk];W[qn];B[rm];W[on]C[øÇ“ä∫⁄25÷Æ√Ó°£]
                                                         )
                                                   )
                                                   (
-                                                        ;W[pk]N[B Èóú];B[ql]C[Â¶ô„ÄÇ];W[qk];B[rk]LB[rj:A][rl:B]C[Á¥∞„ÄÇ]
+                                                        ;W[pk]N[B ÍP];B[ql]C[√Ó°£];W[qk];B[rk]LB[rj:A][rl:B]C[ºö°£]
                                                         (
-                                                          ;W[rj]N[A Êâ≥];B[qj]C[Á¥∞„ÄÇ];W[rl];B[pj];W[oj];B[ok];W[sk];B[pl];W[rk];B[nj];W[oi];B[ni];W[nh];B[mh];W[nk];B[ol];W[mi];B[mj];W[mg];B[lh];W[ng];B[lf]C[Â¶ô„ÄÇ]
+                                                          ;W[rj]N[A ∞‚];B[qj]C[ºö°£];W[rl];B[pj];W[oj];B[ok];W[sk];B[pl];W[rk];B[nj];W[oi];B[ni];W[nh];B[mh];W[nk];B[ol];W[mi];B[mj];W[mg];B[lh];W[ng];B[lf]C[√Ó°£]
                                                         )
                                                         (
-                                                          ;W[rl]N[B Êñ∑];B[qj];W[pl]C[Â¶ô„ÄÇ]
+                                                          ;W[rl]N[B î‡];B[qj];W[pl]C[√Ó°£]
                                                         )
                                                   )
                                                 )
@@ -837,592 +833,592 @@
                                         )
                                   )
                                   (
-                                        ;W[sf]N[B ÈñãÂä´];B[qi];W[oh];B[nf];W[pi];B[qh];W[qd]LB[pj:A][nd:B]
+                                        ;W[sf]N[B È_ΩŸ];B[qi];W[oh];B[nf];W[pi];B[qh];W[qd]LB[pj:A][nd:B]
                                         (
-                                          ;B[pj]N[A Êâ≥];W[oj];B[ni];W[oi];B[ok];W[pk];B[qj];W[nj];B[ol];W[mk]C[Â•Ω„ÄÇ];B[qm];W[nd];B[mg];W[mh];B[pc];W[pe];B[qc];W[oe];B[ob];W[nb];B[rc]C[ÈªëÊ¥ªÈÇäËßíÔºåÁ∏±ÁôΩÂá∫‰∫¶‰∏ÄÊ≥ï„ÄÇ]
+                                          ;B[pj]N[A ∞‚];W[oj];B[ni];W[oi];B[ok];W[pk];B[qj];W[nj];B[ol];W[mk]C[∫√°£];B[qm];W[nd];B[mg];W[mh];B[pc];W[pe];B[qc];W[oe];B[ob];W[nb];B[rc]C[∫⁄ªÓﬂÖΩ«£¨øv∞◊≥ˆ“‡“ª∑®°£]
                                         )
                                         (
-                                          ;B[nd]N[B Ë∑≥Ë£ú];W[qk];B[rl]C[Âá∫Ê≥ïÊ•µÂ¶ô„ÄÇ];W[ql];B[pj];W[oj];B[qj];W[ok];B[pk];W[pl];B[rk];W[qn];B[rm];W[on]C[Á∏ΩË¶ãÈªë25‰πãÂ¶ô„ÄÇ]
+                                          ;B[nd]N[B Ã¯—a];W[qk];B[rl]C[≥ˆ∑®òO√Ó°£];W[ql];B[pj];W[oj];B[qj];W[ok];B[pk];W[pl];B[rk];W[qn];B[rm];W[on]C[øÇ“ä∫⁄25÷Æ√Ó°£]
                                         )
                                   )
                                 )
                                 (
-                                  ;B[oh]N[B ‰∏äÊâì];W[ng];B[nf];W[mf];B[mg];W[nh];B[qi]LB[qd:A][oe:B]
+                                  ;B[oh]N[B …œ¥Ú];W[ng];B[nf];W[mf];B[mg];W[nh];B[qi]LB[qd:A][oe:B]
                                   (
-                                        ;W[qd]N[A Êâò];B[nd];W[pc];B[oc];W[pe];B[od];W[pb];B[qc]C[ÂÖàÊñ∑Â•Ω„ÄÇ];W[rc];B[ob];W[qb];B[lg]C[Â§ß„ÄÇ];W[oi];B[qh];W[mi];B[pk];W[nk];B[qn]
+                                        ;W[qd]N[A Õ–];B[nd];W[pc];B[oc];W[pe];B[od];W[pb];B[qc]C[œ»î‡∫√°£];W[rc];B[ob];W[qb];B[lg]C[¥Û°£];W[oi];B[qh];W[mi];B[pk];W[nk];B[qn]
                                   )
                                   (
-                                        ;W[oe]N[B Êâì];B[ne];W[od];B[nd];W[oc];B[nc];W[nb];B[pe];W[pc];B[mb];W[ob];B[rf];W[qe];B[re];W[qd];B[lc];W[rh];B[ri];W[rd];B[lg];W[ni];B[qh];W[nk];B[mj];W[nj];B[qm]
+                                        ;W[oe]N[B ¥Ú];B[ne];W[od];B[nd];W[oc];B[nc];W[nb];B[pe];W[pc];B[mb];W[ob];B[rf];W[qe];B[re];W[qd];B[lc];W[rh];B[ri];W[rd];B[lg];W[ni];B[qh];W[nk];B[mj];W[nj];B[qm]
                                   )
                                 )
                                 (
-                                  ;B[rf]N[C Êñ∑];W[re];B[qe];W[sf];B[pe];W[rf];B[qi]LB[pc:A][pi:B]
+                                  ;B[rf]N[C î‡];W[re];B[qe];W[sf];B[pe];W[rf];B[qi]LB[pc:A][pi:B]
                                   (
-                                        ;W[pc]N[A È†Ç]C[Â•Ω„ÄÇ];B[nf];W[oh];B[pi];W[qc];B[oc];W[ob];B[nc];W[nb];B[mc];W[mh];B[nj];W[lg];B[lj]C[ÂÄüÊîªÂèñÂã¢Â•Ω„ÄÇ]
+                                        ;W[pc]N[A Ìî]C[∫√°£];B[nf];W[oh];B[pi];W[qc];B[oc];W[ob];B[nc];W[nb];B[mc];W[mh];B[nj];W[lg];B[lj]C[ΩËπ•»°Ñ›∫√°£]
                                   )
                                   (
-                                        ;W[pi]N[B Ë∑®];B[qh];W[qc];B[nf];W[ng];B[mf];W[pc];B[ni]C[Â¶ô„ÄÇ];W[mg];B[lg];W[mh];B[pj]
+                                        ;W[pi]N[B øÁ];B[qh];W[qc];B[nf];W[ng];B[mf];W[pc];B[ni]C[√Ó°£];W[mg];B[lg];W[mh];B[pj]
                                   )
                                 )
                           )
                           (
-                                ;B[oh]N[B ‰∏äÊâì];W[ng];B[nf]LB[mf:A][ph:B]
+                                ;B[oh]N[B …œ¥Ú];W[ng];B[nf]LB[mf:A][ph:B]
                                 (
-                                  ;W[mf]N[A Êâ≥];B[mg];W[nh];B[ph];W[qd];B[nd];W[pc];B[oc];W[pe];B[od];W[ni];B[pj];W[pb];B[qc]C[Â•Ω„ÄÇ];W[qb];B[rc];W[rb];B[rd];W[qe];B[re];W[rf];B[rg];W[sc];B[qg];W[se];B[lg]C[Ë¶ÅËëó„ÄÇ]
+                                  ;W[mf]N[A ∞‚];B[mg];W[nh];B[ph];W[qd];B[nd];W[pc];B[oc];W[pe];B[od];W[ni];B[pj];W[pb];B[qc]C[∫√°£];W[qb];B[rc];W[rb];B[rd];W[qe];B[re];W[rf];B[rg];W[sc];B[qg];W[se];B[lg]C[“™÷¯°£]
                                 )
                                 (
-                                  ;W[ph]N[B Êâì];B[qg];W[mf];B[mg];W[nh];B[oi]LB[qh:A][pi:B]
+                                  ;W[ph]N[B ¥Ú];B[qg];W[mf];B[mg];W[nh];B[oi]LB[qh:A][pi:B]
                                   (
-                                        ;W[qh]N[A Êâì];B[rg];W[ni];B[pi];W[qd];B[oe]C[Â¶ô„ÄÇ];W[rf];B[rh];W[pc];B[oc];W[qc];B[pb];W[qb];B[lg]
+                                        ;W[qh]N[A ¥Ú];B[rg];W[ni];B[pi];W[qd];B[oe]C[√Ó°£];W[rf];B[rh];W[pc];B[oc];W[qc];B[pb];W[qb];B[lg]
                                   )
                                   (
-                                        ;W[pi]LB[rg:A][rh:B]N[B Ë≤ºÈï∑]
+                                        ;W[pi]LB[rg:A][rh:B]N[B ŸNÈL]
                                         (
-                                          ;B[rg]N[A Á´ã];W[qd];B[nd];W[ri];B[re];W[qe];B[rf];W[rd];B[qc];W[rc];B[qi]C[Â•Ω„ÄÇ];W[qh];B[rh];W[qj];B[pj];W[qi];B[qk]C[Â•Ω„ÄÇ];W[rk];B[si];W[rj];B[oj];W[mh];B[rl]C[Â•Ω„ÄÇ];W[ql];B[sk];W[pk];B[sj];W[qk];B[rm]
+                                          ;B[rg]N[A ¡¢];W[qd];B[nd];W[ri];B[re];W[qe];B[rf];W[rd];B[qc];W[rc];B[qi]C[∫√°£];W[qh];B[rh];W[qj];B[pj];W[qi];B[qk]C[∫√°£];W[rk];B[si];W[rj];B[oj];W[mh];B[rl]C[∫√°£];W[ql];B[sk];W[pk];B[sj];W[qk];B[rm]
                                         )
                                         (
-                                          ;B[rh]N[B Â∞ñ]C[Â•Ω„ÄÇ];W[qd];B[oe];W[rg];B[qh];W[re];B[sg];W[rf];B[pj]
+                                          ;B[rh]N[B º‚]C[∫√°£];W[qd];B[oe];W[rg];B[qh];W[re];B[sg];W[rf];B[pj]
                                         )
                                   )
                                 )
                           )
                         )
                         (
-                          ;W[oe]N[B È£õË∑®];B[pe];W[pf];B[of];W[og];B[nf];W[ph];B[ng]
+                          ;W[oe]N[B ÔwøÁ];B[pe];W[pf];B[of];W[og];B[nf];W[ph];B[ng]
                           (
-                                ;W[qg];B[oi]C[Â•Ω„ÄÇ];W[qj];B[re]
+                                ;W[qg];B[oi]C[∫√°£];W[qj];B[re]
                           )
                           (
-                                ;W[oh];B[rf]C[Â•Ω„ÄÇ];W[qg];B[re]
+                                ;W[oh];B[rf]C[∫√°£];W[qg];B[re]
                           )
                         )
                   )
                   (
-                        ;B[pf]N[Â£ì];W[pg];B[og]LB[oh:A][pe:B][qg:C]N[Â§ßÂ£ìÊ¢Å]C[Â§ßÂ£ìÊ¢Å Ê≠§Á≥ªÊïµÊâãÂÖ©ÂàÜ‰πãÂºèÔºå‰ªäÂèó‰∏âÂ≠êËÄÖÁî®‰πãÔºåÂâá‰πÉÂÄü‰∏≠Â≠êÂäõÈáèÔºåËìãÁôΩ‰∫é‰∏ãÔºå‰ª•ÊàêËÖπÂã¢ÔºåÂèØÂæó‰æøÂÆú„ÄÇÂæåÂ≠∏Á¥∞Âë≥ÁÜüÂèÉÔºåËá™ÂæóÂÖ∂ÁêÜ„ÄÇ]
+                        ;B[pf]N[â∫];W[pg];B[og]LB[oh:A][pe:B][qg:C]N[¥Ûâ∫¡∫]C[¥Ûâ∫¡∫ ¥Àœµî≥ ÷É…∑÷÷Æ Ω£¨ΩÒ ‹»˝◊”’ﬂ”√÷Æ£¨ÑtƒÀΩË÷–◊”¡¶¡ø£¨…w∞◊”⁄œ¬£¨“‘≥…∏πÑ›£¨ø…µ√±„“À°£··åWºöŒ∂ ÏÖ¢£¨◊‘µ√∆‰¿Ì°£]
                         (
-                          ;W[oh]N[A ÈÄ£Êâ≥];B[of];W[qe];B[ph];W[qg];B[pi];W[oi];B[oj];W[nh]LB[qd:A][rh:B][mh:C]C[È´ò„ÄÇ]
+                          ;W[oh]N[A ﬂB∞‚];B[of];W[qe];B[ph];W[qg];B[pi];W[oi];B[oj];W[nh]LB[qd:A][rh:B][mh:C]C[∏ﬂ°£]
                           (
-                                ;B[qd]N[A Êîî];W[rd];B[rc];W[pj];B[qj];W[pk];B[ri];W[rh];B[qi];W[ql];B[rl];W[rm];B[rk];W[qm];B[sj]LB[re:A][sd:B]
+                                ;B[qd]N[A îr];W[rd];B[rc];W[pj];B[qj];W[pk];B[ri];W[rh];B[qi];W[ql];B[rl];W[rm];B[rk];W[qm];B[sj]LB[re:A][sd:B]
                                 (
-                                  ;W[re]N[A Á≤ò];B[mh]LB[ng:A][mg:B]
+                                  ;W[re]N[A ’≥];B[mh]LB[ng:A][mg:B]
                                   (
-                                        ;W[ng]N[A Èï∑];B[nf];W[mg];B[sl];W[pe]LB[mf:A][nc:B]
+                                        ;W[ng]N[A ÈL];B[nf];W[mg];B[sl];W[pe]LB[mf:A][nc:B]
                                         (
-                                          ;B[mf]LB[lg:A][oe:B]N[A Ë≤ºÈï∑]
+                                          ;B[mf]LB[lg:A][oe:B]N[A ŸNÈL]
                                           (
-                                                ;W[lg]N[A Èï∑Âá∫];B[nd];W[oe];B[nc]C[Á¥∞ÔºåÂ¶ÇËôéÊàêÂä´„ÄÇ]
+                                                ;W[lg]N[A ÈL≥ˆ];B[nd];W[oe];B[nc]C[ºö£¨»Áª¢≥…ΩŸ°£]
                                           )
                                           (
-                                                ;W[oe]N[B Ë°ùÂá∫];B[lg];W[ni];B[nd]C[Â¶ô„ÄÇ];W[od];B[nj];W[mi];B[mj];W[li];B[ki]C[Â¶ô„ÄÇÂèØË¶ãÁôΩ42‰πã‰∏çÂÆúÔºåËã•ÈùûÂèóÂ≠êÂâáÂèØ„ÄÇ]
+                                                ;W[oe]N[B –n≥ˆ];B[lg];W[ni];B[nd]C[√Ó°£];W[od];B[nj];W[mi];B[mj];W[li];B[ki]C[√Ó°£ø…“ä∞◊42÷Æ≤ª“À£¨»Ù∑« ‹◊”Ñtø…°£]
                                           )
                                         )
                                         (
-                                          ;B[nc]N[B È£õ];W[oe];B[mf];W[oc];B[od];W[nd];B[ob]LB[ne:A][mc:B]
+                                          ;B[nc]N[B Ôw];W[oe];B[mf];W[oc];B[od];W[nd];B[ob]LB[ne:A][mc:B]
                                           (
-                                                ;W[ne]N[A Êé•];B[lg];W[ni];B[lf];W[nb]C[Â•Ω„ÄÇ];B[pc];W[mc];B[nj];W[qb];B[rb];W[pb];B[qc];W[oc];B[oa];W[na];B[nc];W[mi];B[mj];W[oc];B[qp];W[pa];B[pn];W[nl];B[nn]
+                                                ;W[ne]N[A Ω”];B[lg];W[ni];B[lf];W[nb]C[∫√°£];B[pc];W[mc];B[nj];W[qb];B[rb];W[pb];B[qc];W[oc];B[oa];W[na];B[nc];W[mi];B[mj];W[oc];B[qp];W[pa];B[pn];W[nl];B[nn]
                                           )
                                           (
-                                                ;W[mc]N[B Êâì];B[pc];W[ne];B[lg];W[ni];B[lf];W[nj];B[ld];W[nb];B[qb];W[le]C[Â•Ω„ÄÇ];B[ke];W[md];B[kc];W[kb];B[jb];W[lc];B[kd];W[la];B[na];W[mb];B[ja];W[ka]
+                                                ;W[mc]N[B ¥Ú];B[pc];W[ne];B[lg];W[ni];B[lf];W[nj];B[ld];W[nb];B[qb];W[le]C[∫√°£];B[ke];W[md];B[kc];W[kb];B[jb];W[lc];B[kd];W[la];B[na];W[mb];B[ja];W[ka]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[mg]N[B Êâ≥];B[ng];W[ni];B[sl];W[pe];B[oe];W[od];B[oc];W[nd];B[mf];W[lg];B[lf];W[ob]LB[pb:A][nc:B]C[Â•Ω„ÄÇ]
+                                        ;W[mg]N[B ∞‚];B[ng];W[ni];B[sl];W[pe];B[oe];W[od];B[oc];W[nd];B[mf];W[lg];B[lf];W[ob]LB[pb:A][nc:B]C[∫√°£]
                                         (
-                                          ;B[pb]N[A Êâ≥];W[nc];B[pc];W[rb];B[nb];W[mb];B[oa];W[lc];B[kg];W[qb];B[nj];W[qc];B[qp];W[op];B[ro]
+                                          ;B[pb]N[A ∞‚];W[nc];B[pc];W[rb];B[nb];W[mb];B[oa];W[lc];B[kg];W[qb];B[nj];W[qc];B[qp];W[op];B[ro]
                                         )
                                         (
-                                          ;B[nc]N[B Ë°ù]C[Êõ¥Â•Ω„ÄÇ];W[me];B[nf];W[mc];B[nb];W[pc];B[qc];W[pb];B[mb];W[rb];B[lc];W[md];B[sc];W[qb];B[ld];W[sb];B[le];W[sd]
+                                          ;B[nc]N[B –n]C[∏¸∫√°£];W[me];B[nf];W[mc];B[nb];W[pc];B[qc];W[pb];B[mb];W[rb];B[lc];W[md];B[sc];W[qb];B[ld];W[sb];B[le];W[sd]
                                         )
                                   )
                                 )
                                 (
-                                  ;W[sd]N[B Á´ã]C[Ê¥ªÂ•ΩÔºå‰ΩïÁ≠âÁúÅÂäõÔºå‰∫∫Â§öÂøΩ‰πãÔºåÊ≠£Â±Ä„ÄÇ];B[sc];W[rf];B[se];W[re];B[pe]LB[sh:A][qc:B]
+                                  ;W[sd]N[B ¡¢]C[ªÓ∫√£¨∫Œµ» °¡¶£¨»À∂‡∫ˆ÷Æ£¨’˝æ÷°£];B[sc];W[rf];B[se];W[re];B[pe]LB[sh:A][qc:B]
                                   (
-                                        ;W[sh]N[A Á´ã];B[sl];W[nj]
+                                        ;W[sh]N[A ¡¢];B[sl];W[nj]
                                   )
                                   (
-                                        ;W[qc]N[B Êñ∑];B[qb];W[pc]C[Êñ∑ÂÖàÁà≤Âä´Âú∞‰πãÊÑèÔºåÁÑ∂ÁÑ°ÊøüÊñº‰∫ãÔºåËá≥Ê≠§ËôïË≤™Âä´Â∑Æ„ÄÇ];B[oc];W[sl];B[sh];W[sg];B[qh];W[si];B[mh];W[nj];B[sh];W[rb];B[pb];W[si];B[ng];W[ni];B[sh];W[qc];B[rg];W[sb];B[sf]
+                                        ;W[qc]N[B î‡];B[qb];W[pc]C[î‡œ»†ëΩŸµÿ÷Æ“‚£¨»ªüoù˙Ï∂ ¬£¨÷¡¥ÀÃéÿùΩŸ≤Ó°£];B[oc];W[sl];B[sh];W[sg];B[qh];W[si];B[mh];W[nj];B[sh];W[rb];B[pb];W[si];B[ng];W[ni];B[sh];W[qc];B[rg];W[sb];B[sf]
                                   )
                                 )
                           )
                           (
-                                ;B[rh]N[B Èóú]C[ÂÖàÈóúÂ¶ô„ÄÇ];W[pe];B[oe];W[od];B[ng]C[‰ª•ÊãôÁà≤Â∑ßÔºåÂ¶ô„ÄÇ];W[mh];B[pc];W[oc];B[ob];W[nb];B[pb];W[mc];B[md]LB[ld:A][ne:B]
+                                ;B[rh]N[B ÍP]C[œ»ÍP√Ó°£];W[pe];B[oe];W[od];B[ng]C[“‘◊æ†ë«…£¨√Ó°£];W[mh];B[pc];W[oc];B[ob];W[nb];B[pb];W[mc];B[md]LB[ld:A][ne:B]
                                 (
-                                  ;W[ld]N[A Â§ñÊâ≥];B[ne];W[me];B[nd];W[nc];B[le];W[lc];B[mf];W[rc];B[rb];W[qc];B[qd];W[rd];B[qb];W[rg];B[qh];W[sb];B[re];W[se];B[sg];W[rf];B[sh];W[sf];B[sc];W[oa];B[sa];W[pa];B[qa];W[na];B[pk]
+                                  ;W[ld]N[A Õ‚∞‚];B[ne];W[me];B[nd];W[nc];B[le];W[lc];B[mf];W[rc];B[rb];W[qc];B[qd];W[rd];B[qb];W[rg];B[qh];W[sb];B[re];W[se];B[sg];W[rf];B[sh];W[sf];B[sc];W[oa];B[sa];W[pa];B[qa];W[na];B[pk]
                                 )
                                 (
-                                  ;W[ne]N[B Êâ≥]C[Êõ¥ÂãùÔºåÁôΩÂ§ñ‰∏çÂÇ∑„ÄÇ];B[mg];W[lg];B[mf];W[lf];B[me];W[kc];B[kd];W[jc];B[jd];W[id];B[lh];W[mi];B[kh];W[pj];B[qj];W[pk];B[qk]
+                                  ;W[ne]N[B ∞‚]C[∏¸ÑŸ£¨∞◊Õ‚≤ªÇ˚°£];B[mg];W[lg];B[mf];W[lf];B[me];W[kc];B[kd];W[jc];B[jd];W[id];B[lh];W[mi];B[kh];W[pj];B[qj];W[pk];B[qk]
                                 )
                           )
                           (
-                                ;B[mh]N[C È†Ç]C[Á¥∞„ÄÇ];W[ng];B[pj]C[‰æøÂÆúÔºåÂ†ÖÂØ¶‰∫¶Âõ†‰∏≠Â≠ê‰πãÂã¢„ÄÇ];W[pe]LB[nf:A][oe:B]
+                                ;B[mh]N[C Ìî]C[ºö°£];W[ng];B[pj]C[±„“À£¨à‘åç“‡“Ú÷–◊”÷ÆÑ›°£];W[pe]LB[nf:A][oe:B]
                                 (
-                                  ;B[nf]N[A Èï∑];W[mg];B[mf];W[lg];B[qc];W[oe];B[lf]LB[od:A][nc:B]
+                                  ;B[nf]N[A ÈL];W[mg];B[mf];W[lg];B[qc];W[oe];B[lf]LB[od:A][nc:B]
                                   (
-                                        ;W[od]N[A Êõ≤];B[kg];W[lh];B[oc];W[nc];B[ob];W[nb];B[kf];W[qd];B[pc];W[rc];B[rb];W[rd];B[na];W[ma];B[oa];W[lb];B[sb];W[md];B[mj];W[lj];B[lk];W[nj];B[nk];W[mi];B[mk];W[kj];B[kk];W[ki];B[ji];W[kh];B[jh]
+                                        ;W[od]N[A «˙];B[kg];W[lh];B[oc];W[nc];B[ob];W[nb];B[kf];W[qd];B[pc];W[rc];B[rb];W[rd];B[na];W[ma];B[oa];W[lb];B[sb];W[md];B[mj];W[lj];B[lk];W[nj];B[nk];W[mi];B[mk];W[kj];B[kk];W[ki];B[ji];W[kh];B[jh]
                                   )
                                   (
-                                        ;W[nc]N[B È£õ‰∏ã]C[ËºÉÂãùÊõ≤„ÄÇ];B[kg];W[lh];B[od];W[nd];B[jg]C[Â¶ô„ÄÇ];W[nj];B[ob];W[oc];B[pb];W[nb];B[rb];W[rd];B[rc];W[ne];B[kd];W[kb];B[jc];W[jb];B[hc]
+                                        ;W[nc]N[B Ôwœ¬]C[›^ÑŸ«˙°£];B[kg];W[lh];B[od];W[nd];B[jg]C[√Ó°£];W[nj];B[ob];W[oc];B[pb];W[nb];B[rb];W[rd];B[rc];W[ne];B[kd];W[kb];B[jc];W[jb];B[hc]
                                   )
                                 )
                                 (
-                                  ;B[oe]N[B Êìã];W[od];B[mf];W[mg];B[lg];W[lh];B[me]C[Â•Ω„ÄÇ];W[lf];B[kg];W[mi];B[qd];W[rd];B[rc];W[sd];B[oc];W[nd];B[nb]LB[mc:A][nc:B]
+                                  ;B[oe]N[B ìı];W[od];B[mf];W[mg];B[lg];W[lh];B[me]C[∫√°£];W[lf];B[kg];W[mi];B[qd];W[rd];B[rc];W[sd];B[oc];W[nd];B[nb]LB[mc:A][nc:B]
                                   (
-                                        ;W[mc]N[A Â∞ñ];B[le];W[rb];B[qb];W[sc];B[qc];W[pb];B[ra];W[sb];B[ob];W[ri];B[lc]
+                                        ;W[mc]N[A º‚];B[le];W[rb];B[qb];W[sc];B[qc];W[pb];B[ra];W[sb];B[ob];W[ri];B[lc]
                                   )
                                   (
-                                        ;W[nc]N[B Êì†];B[ob];W[rb];B[qb];W[sc];B[qc];W[nf];B[ne];W[ld];B[le];W[ke];B[kf];W[md];B[lf];W[je];B[ie]C[Â∑ßÊâãÊ≥ï„ÄÇ]
+                                        ;W[nc]N[B îD];B[ob];W[rb];B[qb];W[sc];B[qc];W[nf];B[ne];W[ld];B[le];W[ke];B[kf];W[md];B[lf];W[je];B[ie]C[«… ÷∑®°£]
                                   )
                                 )
                           )
                         )
                         (
-                          ;W[pe]N[B ‰∏ãÊâì];B[of]LB[qe:A][oe:B]
+                          ;W[pe]N[B œ¬¥Ú];B[of]LB[qe:A][oe:B]
                           (
-                                ;W[qe]N[A Êé•];B[oe]LB[ph:A][od:B]
+                                ;W[qe]N[A Ω”];B[oe]LB[ph:A][od:B]
                                 (
-                                  ;W[ph]N[A Èï∑];B[qd];W[rd];B[rc];W[od];B[qg]C[Á¥∞„ÄÇ];W[rg];B[md]LB[oc:A][nd:B]
+                                  ;W[ph]N[A ÈL];B[qd];W[rd];B[rc];W[od];B[qg]C[ºö°£];W[rg];B[md]LB[oc:A][nd:B]
                                   (
-                                        ;W[oc]N[A Á´ã];B[pb];W[pc];B[qc];W[ob];B[qb]LB[mc:A][mb:B]
+                                        ;W[oc]N[A ¡¢];B[pb];W[pc];B[qc];W[ob];B[qb]LB[mc:A][mb:B]
                                         (
-                                          ;W[mc]N[A Êâò];B[lc]LB[nd:A][lb:B]
+                                          ;W[mc]N[A Õ–];B[lc]LB[nd:A][lb:B]
                                           (
-                                                ;W[nd]N[A È†Ç];B[me];W[lb];B[mb];W[nb];B[nc];W[ne];B[nf];W[mc];B[ma];W[mf];B[oa];W[oh];B[ng];W[nh];B[mg];W[mh];B[lg]C[ÈªëÈõñÂæóÂà©ÔºåËÄåÁôΩÂ§ñÈÇäÊî∂‰∫¶Êö¢„ÄÇ]
+                                                ;W[nd]N[A Ìî];B[me];W[lb];B[mb];W[nb];B[nc];W[ne];B[nf];W[mc];B[ma];W[mf];B[oa];W[oh];B[ng];W[nh];B[mg];W[mh];B[lg]C[∫⁄Îmµ√¿˚£¨∂¯∞◊Õ‚ﬂÖ ’“‡ï≥°£]
                                           )
                                           (
-                                                ;W[lb]N[B ‰∏ãÊâ≥];B[mb];W[nc];B[kc];W[kb];B[ma]LB[na:A][oa:B]
+                                                ;W[lb]N[B œ¬∞‚];B[mb];W[nc];B[kc];W[kb];B[ma]LB[na:A][oa:B]
                                                 (
-                                                  ;W[na]N[A Â∞ñ];B[jb];W[nb];B[ic];W[re];B[sb]C[Â¶ô„ÄÇ];W[ra];B[pa];W[sd];B[sc]
+                                                  ;W[na]N[A º‚];B[jb];W[nb];B[ic];W[re];B[sb]C[√Ó°£];W[ra];B[pa];W[sd];B[sc]
                                                 )
                                                 (
-                                                  ;W[oa]N[B Á´ã]C[‰∏çË°å„ÄÇ];B[jb];W[ne];B[qh]C[Â¶ô„ÄÇ];W[qi];B[oh]C[Â¶ô„ÄÇ];W[pi];B[le];W[me];B[ld];W[nd];B[mf]
+                                                  ;W[oa]N[B ¡¢]C[≤ª––°£];B[jb];W[ne];B[qh]C[√Ó°£];W[qi];B[oh]C[√Ó°£];W[pi];B[le];W[me];B[ld];W[nd];B[mf]
                                                 )
                                           )
                                         )
                                         (
-                                          ;W[mb]N[B Ë∑≥]C[‰∏çÂ¶ÇÊâò„ÄÇ];B[lb];W[nb];B[qh];W[qi];B[oh];W[pi];B[lc];W[re];B[ra];W[sb];B[sc];W[pa];B[oa];W[nd];B[mc];W[ne];B[mf]
+                                          ;W[mb]N[B Ã¯]C[≤ª»ÁÕ–°£];B[lb];W[nb];B[qh];W[qi];B[oh];W[pi];B[lc];W[re];B[ra];W[sb];B[sc];W[pa];B[oa];W[nd];B[mc];W[ne];B[mf]
                                         )
                                   )
                                   (
-                                        ;W[nd]N[B È†Ç]C[È†ÇÂ•ΩÔºåÂãùÁ´ã„ÄÇ];B[ne];W[mc]LB[qh:A][lc:B]
+                                        ;W[nd]N[B Ìî]C[Ìî∫√£¨ÑŸ¡¢°£];B[ne];W[mc]LB[qh:A][lc:B]
                                         (
-                                          ;B[qh]N[A Èï∑]C[Áà≤Âä´Âú∞ÔºåÁ¥∞„ÄÇ];W[qi];B[lc];W[oc];B[pb];W[ld];B[me];W[lb];B[kc];W[ob];B[re];W[rf];B[mb];W[nb];B[nc];W[pc];B[qc];W[mc];B[ma];W[la];B[nc];W[qb];B[rb];W[mc];B[rh]LB[ri:A][na:B]
+                                          ;B[qh]N[A ÈL]C[†ëΩŸµÿ£¨ºö°£];W[qi];B[lc];W[oc];B[pb];W[ld];B[me];W[lb];B[kc];W[ob];B[re];W[rf];B[mb];W[nb];B[nc];W[pc];B[qc];W[mc];B[ma];W[la];B[nc];W[qb];B[rb];W[mc];B[rh]LB[ri:A][na:B]
                                           (
-                                                ;W[ri]N[A Êáâ‰πã];B[nc];W[pa];B[na];W[mc];B[oh];W[oa];B[pi];W[se];B[sg]
+                                                ;W[ri]N[A ë™÷Æ];B[nc];W[pa];B[na];W[mc];B[oh];W[oa];B[pi];W[se];B[sg]
                                           )
                                           (
-                                                ;W[na]N[B Êèê];B[pi];W[oh];B[ri];W[se];B[sg];W[pa];B[sh];W[sf];B[sd]C[‰∏üÂä´‰∫¶Â¶ô„ÄÇ];W[sc];B[sb]
+                                                ;W[na]N[B Ã·];B[pi];W[oh];B[ri];W[se];B[sg];W[pa];B[sh];W[sf];B[sd]C[ÅGΩŸ“‡√Ó°£];W[sc];B[sb]
                                           )
                                         )
                                         (
-                                          ;B[lc]N[B Êâ≥];W[ld];B[me];W[lb]LB[kc:A][nc:B]
+                                          ;B[lc]N[B ∞‚];W[ld];B[me];W[lb]LB[kc:A][nc:B]
                                           (
-                                                ;B[kc]N[A Èï∑Âá∫];W[pb]C[ËôõÂ¶ô„ÄÇ];B[re];W[rf];B[mb];W[nb];B[nc];W[oc];B[qc];W[mc];B[qh];W[qi];B[nc];W[qb];B[rb];W[mc];B[rh];W[ri];B[nc];W[se];B[na];W[mc];B[oh];W[pi];B[nc];W[ob];B[mc];W[ra];B[oa];W[sc];B[sb];W[sd];B[pa]
+                                                ;B[kc]N[A ÈL≥ˆ];W[pb]C[Ãì√Ó°£];B[re];W[rf];B[mb];W[nb];B[nc];W[oc];B[qc];W[mc];B[qh];W[qi];B[nc];W[qb];B[rb];W[mc];B[rh];W[ri];B[nc];W[se];B[na];W[mc];B[oh];W[pi];B[nc];W[ob];B[mc];W[ra];B[oa];W[sc];B[sb];W[sd];B[pa]
                                           )
                                           (
-                                                ;B[nc]N[B ÂèçÊâì];W[oc];B[re];W[rf];B[mb];W[qc];B[sd];W[pc];B[rd];W[rb];B[qb]C[Â¶ô„ÄÇ];W[qa];B[ra]C[Â¶ô„ÄÇ];W[sa];B[sb];W[sc];B[qh];W[qi];B[sb];W[pb];B[ra];W[nb];B[mc];W[sa];B[rh];W[ri];B[ra];W[qb];B[oa];W[sh];B[ob];W[sa];B[pq];W[sc];B[qn];W[se];B[dc]C[ÁôΩÈõñÂæóÂà©ÔºåÈªëÂã¢Â§ßÂºµ„ÄÇ]
+                                                ;B[nc]N[B ∑¥¥Ú];W[oc];B[re];W[rf];B[mb];W[qc];B[sd];W[pc];B[rd];W[rb];B[qb]C[√Ó°£];W[qa];B[ra]C[√Ó°£];W[sa];B[sb];W[sc];B[qh];W[qi];B[sb];W[pb];B[ra];W[nb];B[mc];W[sa];B[rh];W[ri];B[ra];W[qb];B[oa];W[sh];B[ob];W[sa];B[pq];W[sc];B[qn];W[se];B[dc]C[∞◊Îmµ√¿˚£¨∫⁄Ñ›¥Ûèà°£]
                                           )
                                         )
                                   )
                                 )
                                 (
-                                  ;W[od]LB[qd:A][oc:B][pc:C]N[B Êñ∑]
+                                  ;W[od]LB[qd:A][oc:B][pc:C]N[B î‡]
                                   (
-                                        ;B[qd]LB[qg:A][oc:B]N[A Ë≤º]
+                                        ;B[qd]LB[qg:A][oc:B]N[A ŸN]
                                         (
-                                          ;W[qg]LB[md:A][pb:B]N[A Á≤ò]C[Êé•Â•ΩÔºåÂÖç‰ºèÂÖµ„ÄÇ]
+                                          ;W[qg]LB[md:A][pb:B]N[A ’≥]C[Ω”∫√£¨√‚∑¸±¯°£]
                                           (
-                                                ;B[md]N[A È£õ];W[nd];B[ne];W[mc];B[lc];W[nb];B[mb];W[nc];B[lb];W[me];B[ld];W[oh];B[mf]LB[pc:A][pb:B]
+                                                ;B[md]N[A Ôw];W[nd];B[ne];W[mc];B[lc];W[nb];B[mb];W[nc];B[lb];W[me];B[ld];W[oh];B[mf]LB[pc:A][pb:B]
                                                 (
-                                                  ;W[pc]N[A Êâ≥];B[qc];W[qb];B[rb];W[pb];B[re];W[ra];B[rd];W[sc];B[sb];W[qa];B[sf]C[Â¶ô„ÄÇ];W[sa];B[rc];W[sg];B[rg];W[rf];B[sh];W[rh];B[ob]C[Á¥∞„ÄÇ];W[oa];B[qh];W[sg];B[na];W[ma];B[rg];W[ph];B[ri]
+                                                  ;W[pc]N[A ∞‚];B[qc];W[qb];B[rb];W[pb];B[re];W[ra];B[rd];W[sc];B[sb];W[qa];B[sf]C[√Ó°£];W[sa];B[rc];W[sg];B[rg];W[rf];B[sh];W[rh];B[ob]C[ºö°£];W[oa];B[qh];W[sg];B[na];W[ma];B[rg];W[ph];B[ri]
                                                 )
                                                 (
-                                                  ;W[pb]LB[qb:A][pc:B]N[B Èóú]
+                                                  ;W[pb]LB[qb:A][pc:B]N[B ÍP]
                                                   (
-                                                        ;B[qb]N[A Êîî];W[rb];B[pc];W[ob];B[rc];W[qa];B[qc];W[ra];B[sb];W[re];B[na];W[rd];B[oa];W[pa];B[ma]C[ÂÖ©ÂÆ∂‰ø±Â•Ω„ÄÇ]
+                                                        ;B[qb]N[A îr];W[rb];B[pc];W[ob];B[rc];W[qa];B[qc];W[ra];B[sb];W[re];B[na];W[rd];B[oa];W[pa];B[ma]C[É…º“æ„∫√°£]
                                                   )
                                                   (
-                                                        ;B[pc]N[B È†Ç]C[ËºÉÊúãËôõÂ¶ô„ÄÇ];W[qb];B[rc];W[rb];B[ob];W[oa];B[oc];W[na];B[pa];W[qa];B[re];W[sb];B[ph]LB[qh:A][pi:B]C[Â¶ôÊî∂ÔºåÊö¢Â§ß„ÄÇÁôΩËã•‰∏äÊâìÔºåÈªëÂç≥ËëóÊ¥ª„ÄÇ]
+                                                        ;B[pc]N[B Ìî]C[›^≈ÛÃì√Ó°£];W[qb];B[rc];W[rb];B[ob];W[oa];B[oc];W[na];B[pa];W[qa];B[re];W[sb];B[ph]LB[qh:A][pi:B]C[√Ó ’£¨ï≥¥Û°£∞◊»Ù…œ¥Ú£¨∫⁄º¥÷¯ªÓ°£]
                                                         (
-                                                          ;W[qh]N[A ‰∏ãÊâì];B[pi];W[qi];B[rf];W[rg];B[qj];W[pj];B[oi];W[rj];B[qk];W[rk];B[ql];W[rl];B[qm];W[rm];B[qn]
+                                                          ;W[qh]N[A œ¬¥Ú];B[pi];W[qi];B[rf];W[rg];B[qj];W[pj];B[oi];W[rj];B[qk];W[rk];B[ql];W[rl];B[qm];W[rm];B[qn]
                                                         )
                                                         (
-                                                          ;W[pi]N[B ‰∏äÊâì];B[rg]C[Â•Ω„ÄÇ];W[rh];B[rf];W[qh];B[ma];W[pa];B[sc];W[sd];B[ra];W[sg];B[sf];W[sh]
+                                                          ;W[pi]N[B …œ¥Ú];B[rg]C[∫√°£];W[rh];B[rf];W[qh];B[ma];W[pa];B[sc];W[sd];B[ra];W[sg];B[sf];W[sh]
                                                         )
                                                   )
                                                 )
                                           )
                                           (
-                                                ;B[pb]N[B Ë∑≥‰∏ã];W[nd]LB[nb:A][me:B][qj:C]
+                                                ;B[pb]N[B Ã¯œ¬];W[nd]LB[nb:A][me:B][qj:C]
                                                 (
-                                                  ;B[nb]N[A Ë∑≥]C[1„ÄÅ3ËÄÅÊàêÔºåÊ≠£Â±Ä„ÄÇ];W[oh];B[me];W[md];B[nh];W[ni];B[oi];W[ph];B[mh];W[mf]C[Â•Ω„ÄÇ]
+                                                  ;B[nb]N[A Ã¯]C[1°¢3¿œ≥…£¨’˝æ÷°£];W[oh];B[me];W[md];B[nh];W[ni];B[oi];W[ph];B[mh];W[mf]C[∫√°£]
                                                   (
                                                         ;B[ng]LB[le:A][oj:B]
                                                         (
-                                                          ;W[le]N[A Ë£ú];B[oj];W[qj];B[lc]
+                                                          ;W[le]N[A —a];B[oj];W[qj];B[lc]
                                                         )
                                                         (
-                                                          ;W[oj]N[B ÂêÉ];B[mi];W[nj];B[ld]C[Â¶ô„ÄÇ];W[lc];B[le]C[Â¶ô„ÄÇ]
+                                                          ;W[oj]N[B ≥‘];B[mi];W[nj];B[ld]C[√Ó°£];W[lc];B[le]C[√Ó°£]
                                                         )
                                                   )
                                                 )
                                                 (
-                                                  ;B[me]N[B Êû∑];W[ob];B[re];W[rf];B[rd];W[lc];B[pi]LB[ph:A][qi:B]C[ÊàêÂ•ó„ÄÇ]
+                                                  ;B[me]N[B ºœ];W[ob];B[re];W[rf];B[rd];W[lc];B[pi]LB[ph:A][qi:B]C[≥…Ã◊°£]
                                                   (
-                                                        ;W[ph]N[A È†Ç];B[oh];W[qi];B[qj];W[pj];B[oi];W[rj];B[rh]C[Â¶ô„ÄÇ]
+                                                        ;W[ph]N[A Ìî];B[oh];W[qi];B[qj];W[pj];B[oi];W[rj];B[rh]C[√Ó°£]
                                                   )
                                                   (
-                                                        ;W[qi]N[B Êâò];B[qj];W[rj];B[ph];W[rh];B[qh];W[ri];B[sf];W[rg];B[qk];W[rk];B[ql];W[rl];B[qm];W[rm]
+                                                        ;W[qi]N[B Õ–];B[qj];W[rj];B[ph];W[rh];B[qh];W[ri];B[sf];W[rg];B[qk];W[rk];B[ql];W[rl];B[qm];W[rm]
                                                   )
                                                 )
                                                 (
-                                                  ;B[qj]N[C ÈÄº]C[Â•Ω„ÄÇ];W[ob];B[pc]LB[pi:A][oh:B]C[Â¶ôÔºå‰∏çÊòì‰πãËëó„ÄÇ]
+                                                  ;B[qj]N[C ±∆]C[∫√°£];W[ob];B[pc]LB[pi:A][oh:B]C[√Ó£¨≤ª“◊÷Æ÷¯°£]
                                                   (
-                                                        ;W[pi]N[A Ë∑≥Âá∫];B[oh];W[qi];B[nj];W[pj];B[mc];W[mb]C[Â¶ô„ÄÇ];B[md];W[ne];B[mf];W[nf];B[mg];W[lb];B[nc];W[oc];B[nb];W[na];B[kc]C[Ê≠§Â±Ä‰πãÂ¶ôÔºåÈùûÊ∑±ÈÄ†‰∏çÁü•„ÄÇ]
+                                                        ;W[pi]N[A Ã¯≥ˆ];B[oh];W[qi];B[nj];W[pj];B[mc];W[mb]C[√Ó°£];B[md];W[ne];B[mf];W[nf];B[mg];W[lb];B[nc];W[oc];B[nb];W[na];B[kc]C[¥Àæ÷÷Æ√Ó£¨∑«…Ó‘Ï≤ª÷™°£]
                                                   )
                                                   (
-                                                        ;W[oh]N[B Êâ≥];B[mf];W[rd];B[rc];W[re];B[nh];W[oi];B[qi];W[qh];B[ni];W[oj];B[ld]C[Â•Ω„ÄÇ]
+                                                        ;W[oh]N[B ∞‚];B[mf];W[rd];B[rc];W[re];B[nh];W[oi];B[qi];W[qh];B[ni];W[oj];B[ld]C[∫√°£]
                                                   )
                                                 )
                                           )
                                         )
                                         (
-                                          ;W[oc]N[B Èï∑];B[pb];W[pc];B[qc];W[ob];B[pa];W[ra];B[qb]LB[md:A][rd:B]
+                                          ;W[oc]N[B ÈL];B[pb];W[pc];B[qc];W[ob];B[pa];W[ra];B[qb]LB[md:A][rd:B]
                                           (
-                                                ;W[md]N[A Èóú];B[ph]LB[rd:A][qg:B]
+                                                ;W[md]N[A ÍP];B[ph]LB[rd:A][qg:B]
                                                 (
-                                                  ;W[rd]N[A Êâ≥];B[rc];W[re]C[Â∑ÆÔºåÁï∂ÂÖàÈ£õ„ÄÇ];B[sd]LB[rh:A][se:B]
+                                                  ;W[rd]N[A ∞‚];B[rc];W[re]C[≤Ó£¨Æîœ»Ôw°£];B[sd]LB[rh:A][se:B]
                                                   (
-                                                        ;W[rh]N[A È£õ];B[rg];W[qg];B[qh];W[sg];B[ri];W[rf];B[si];W[sh];B[se];W[qi];B[pi];W[qj]
+                                                        ;W[rh]N[A Ôw];B[rg];W[qg];B[qh];W[sg];B[ri];W[rf];B[si];W[sh];B[se];W[qi];B[pi];W[qj]
                                                   )
                                                   (
-                                                        ;W[se]N[B Êâì];B[qg];W[rg];B[rh];W[sc];B[sb];W[rb];B[sd];W[qh];B[qi];W[sc];B[oa]C[Â∑ß„ÄÇ]
+                                                        ;W[se]N[B ¥Ú];B[qg];W[rg];B[rh];W[sc];B[sb];W[rb];B[sd];W[qh];B[qi];W[sc];B[oa]C[«…°£]
                                                   )
                                                 )
                                                 (
-                                                  ;W[qg]N[B Á≤ò];B[qh];W[rh];B[ri];W[rg];B[re];W[qi];B[me];W[qj];B[ld];W[lc];B[mc];W[nd];B[le];W[mb];B[kc];W[lb];B[kb];W[oa];B[oi];W[tt]C[Ê£ÑÊ¨äÔºåÁñëÂéüË≠úÊúâÂ§±„ÄÇ];B[ql];W[oj];B[pj]C[Â¶ô„ÄÇ]
+                                                  ;W[qg]N[B ’≥];B[qh];W[rh];B[ri];W[rg];B[re];W[qi];B[me];W[qj];B[ld];W[lc];B[mc];W[nd];B[le];W[mb];B[kc];W[lb];B[kb];W[oa];B[oi];W[tt]C[óâô‡£¨“…‘≠◊V”– ß°£];B[ql];W[oj];B[pj]C[√Ó°£]
                                                 )
                                           )
                                           (
-                                                ;W[rd]N[B Êâ≥];B[rc];W[re];B[nb]C[Â•Ω„ÄÇ];W[mc];B[nc];W[nd];B[md];W[me];B[ld];W[ne];B[oa];W[mb];B[na];W[le];B[kd];W[ke];B[ph];W[qg];B[qh];W[oh];B[ng];W[rh];B[ri];W[rg];B[jd];W[oi];B[mh];W[qi]
+                                                ;W[rd]N[B ∞‚];B[rc];W[re];B[nb]C[∫√°£];W[mc];B[nc];W[nd];B[md];W[me];B[ld];W[ne];B[oa];W[mb];B[na];W[le];B[kd];W[ke];B[ph];W[qg];B[qh];W[oh];B[ng];W[rh];B[ri];W[rg];B[jd];W[oi];B[mh];W[qi]
                                           )
                                         )
                                   )
                                   (
-                                        ;B[oc]N[B Êâì];W[nd];B[qd];W[nc]LB[qg:A][ph:B][pb:C]
+                                        ;B[oc]N[B ¥Ú];W[nd];B[qd];W[nc]LB[qg:A][ph:B][pb:C]
                                         (
-                                          ;B[qg]N[A Êñ∑Êâì];W[rg];B[ph];W[rd];B[rc];W[qc]C[Â•Ω„ÄÇ];B[pc];W[ob];B[qb];W[pb];B[qc];W[re];B[sb];W[rh];B[mb];W[nb];B[ra]LB[kc:A][qj:B]
+                                          ;B[qg]N[A î‡¥Ú];W[rg];B[ph];W[rd];B[rc];W[qc]C[∫√°£];B[pc];W[ob];B[qb];W[pb];B[qc];W[re];B[sb];W[rh];B[mb];W[nb];B[ra]LB[kc:A][qj:B]
                                           (
-                                                ;W[kc]N[A ÊãÜ];B[qi];W[ri];B[qk];W[rj];B[ql]
+                                                ;W[kc]N[A ≤];B[qi];W[ri];B[qk];W[rj];B[ql]
                                           )
                                           (
-                                                ;W[qj]N[B È£õ];B[lc]C[Â•Ω„ÄÇ];W[ld];B[me];W[md];B[jc];W[jd];B[id];W[je];B[le];W[kd];B[hc]
+                                                ;W[qj]N[B Ôw];B[lc]C[∫√°£];W[ld];B[me];W[md];B[jc];W[jd];B[id];W[je];B[le];W[kd];B[hc]
                                           )
                                         )
                                         (
-                                          ;B[ph]N[B ‰∏äÊâì];W[qg];B[pb];W[ob];B[pc]LB[oh:A][qh:B]
+                                          ;B[ph]N[B …œ¥Ú];W[qg];B[pb];W[ob];B[pc]LB[oh:A][qh:B]
                                           (
-                                                ;W[oh]N[A Êñ∑];B[nh]C[Á¥∞„ÄÇ];W[oi];B[qh];W[rh];B[qi]C[Á¥∞„ÄÇ];W[ri];B[qj];W[rd];B[rc];W[re];B[rj]LB[nb:A][rb:B]
+                                                ;W[oh]N[A î‡];B[nh]C[ºö°£];W[oi];B[qh];W[rh];B[qi]C[ºö°£];W[ri];B[qj];W[rd];B[rc];W[re];B[rj]LB[nb:A][rb:B]
                                                 (
-                                                  ;W[nb]N[A Êé•];B[rb];W[sg];B[si];W[rf];B[kc]
+                                                  ;W[nb]N[A Ω”];B[rb];W[sg];B[si];W[rf];B[kc]
                                                 )
                                                 (
-                                                  ;W[rb]N[B Â§æ];B[nb];W[mb];B[oa];W[me];B[mf];W[qb];B[lb];W[ma];B[lc];W[mc];B[le]LB[na:A][qa:B]
+                                                  ;W[rb]N[B äA];B[nb];W[mb];B[oa];W[me];B[mf];W[qb];B[lb];W[ma];B[lc];W[mc];B[le]LB[na:A][qa:B]
                                                   (
-                                                        ;W[na]LB[qa:A]N[A Êâì]C[Â∑ÆÔºåÈùûÂä´ÔºåÁï∂AÁ´ã„ÄÇ];B[ne];W[ob];B[oj];W[pa];B[ni]
+                                                        ;W[na]LB[qa:A]N[A ¥Ú]C[≤Ó£¨∑«ΩŸ£¨ÆîA¡¢°£];B[ne];W[ob];B[oj];W[pa];B[ni]
                                                   )
                                                   (
-                                                        ;W[qa]N[B Á´ã]
+                                                        ;W[qa]N[B ¡¢]
                                                   )
                                                 )
                                           )
                                           (
-                                                ;W[qh]N[B Èï∑];B[pi];W[qi];B[pj];W[qk];B[le];W[kc];B[ol]
+                                                ;W[qh]N[B ÈL];B[pi];W[qi];B[pj];W[qk];B[le];W[kc];B[ol]
                                           )
                                         )
                                         (
-                                          ;B[pb]N[C Ëôé];W[qg];B[nb];W[lc];B[oh];W[qj];B[mb];W[kc]C[Â•Ω„ÄÇ];B[me];W[ld];B[kf]C[Á©©„ÄÇ];W[hc]
+                                          ;B[pb]N[C ª¢];W[qg];B[nb];W[lc];B[oh];W[qj];B[mb];W[kc]C[∫√°£];B[me];W[ld];B[kf]C[∑Ä°£];W[hc]
                                         )
                                   )
                                   (
-                                        ;B[pc]N[C Èï∑];W[oc];B[ob];W[nb];B[pb];W[mc];B[qg];W[rg];B[ph];W[rd];B[rc];W[rh];B[qd];W[re];B[rb];W[qj];B[kc]LB[me:A][kd:B]
+                                        ;B[pc]N[C ÈL];W[oc];B[ob];W[nb];B[pb];W[mc];B[qg];W[rg];B[ph];W[rd];B[rc];W[rh];B[qd];W[re];B[rb];W[qj];B[kc]LB[me:A][kd:B]
                                         (
-                                          ;W[me]N[A Èóú];B[ke];W[kb];B[jb];W[lb];B[mf]C[Â•Ω„ÄÇ];W[jc];B[ib]C[Â•Ω„ÄÇ];W[kd];B[jd];W[lc];B[id];W[le];B[lf]
+                                          ;W[me]N[A ÍP];B[ke];W[kb];B[jb];W[lb];B[mf]C[∫√°£];W[jc];B[ib]C[∫√°£];W[kd];B[jd];W[lc];B[id];W[le];B[lf]
                                         )
                                         (
-                                          ;W[kd]N[B Â£ì]C[Â∑Æ„ÄÇ];B[nd];W[nc];B[md]C[Â•Ω„ÄÇ]
+                                          ;W[kd]N[B â∫]C[≤Ó°£];B[nd];W[nc];B[md]C[∫√°£]
                                         )
                                   )
                                 )
                           )
                           (
-                                ;W[oe]N[B Ë°ù];B[qe];W[qd];B[re];W[rd];B[rf];W[pc];B[od];W[ne];B[oc];W[pb];B[ob];W[qg];B[rg];W[rb];B[qc];W[qb];B[lc]LB[qi:A][md:B][qh:C]
+                                ;W[oe]N[B –n];B[qe];W[qd];B[re];W[rd];B[rf];W[pc];B[od];W[ne];B[oc];W[pb];B[ob];W[qg];B[rg];W[rb];B[qc];W[qb];B[lc]LB[qi:A][md:B][qh:C]
                                 (
-                                  ;W[qi]N[A Ë∑≥];B[qh]C[Á¥∞„ÄÇ];W[ph];B[mf]C[Â¶ô„ÄÇ];W[nf];B[mg]
+                                  ;W[qi]N[A Ã¯];B[qh]C[ºö°£];W[ph];B[mf]C[√Ó°£];W[nf];B[mg]
                                 )
                                 (
-                                  ;W[md]N[B Â∞ñ];B[sd];W[rc];B[mc]LB[oh:A][qi:B]
+                                  ;W[md]N[B º‚];B[sd];W[rc];B[mc]LB[oh:A][qi:B]
                                   (
-                                        ;W[oh]N[A Êâ≥];B[mf];W[ld];B[kd];W[le];B[ph];W[qh]C[Â•Ω„ÄÇ];B[pi];W[qi];B[qj]C[Â•Ω„ÄÇ];W[pj];B[oi];W[rj];B[qk];W[ri];B[lf];W[nh];B[ng]C[Â•Ω„ÄÇ];W[pk];B[ni];W[ql];B[ke]
+                                        ;W[oh]N[A ∞‚];B[mf];W[ld];B[kd];W[le];B[ph];W[qh]C[∫√°£];B[pi];W[qi];B[qj]C[∫√°£];W[pj];B[oi];W[rj];B[qk];W[ri];B[lf];W[nh];B[ng]C[∫√°£];W[pk];B[ni];W[ql];B[ke]
                                   )
                                   (
-                                        ;W[qi]N[B Ë∑≥];B[mf];W[ld];B[kd];W[le];B[nd];W[me];B[kf];W[ke];B[je];W[jd];B[kc];W[jf];B[ie];W[lf];B[kg];W[lg];B[lh];W[kh];B[jg];W[mh];B[li];W[mg];B[oh]C[Â∑Æ„ÄÇ];W[rh];B[qh];W[ph];B[pi];W[qh];B[qj];W[sh]C[Â¶ô„ÄÇ];B[mi];W[sg];B[pj]
+                                        ;W[qi]N[B Ã¯];B[mf];W[ld];B[kd];W[le];B[nd];W[me];B[kf];W[ke];B[je];W[jd];B[kc];W[jf];B[ie];W[lf];B[kg];W[lg];B[lh];W[kh];B[jg];W[mh];B[li];W[mg];B[oh]C[≤Ó°£];W[rh];B[qh];W[ph];B[pi];W[qh];B[qj];W[sh]C[√Ó°£];B[mi];W[sg];B[pj]
                                   )
                                 )
                                 (
-                                  ;W[qh]N[C Èï∑];B[sd];W[rc];B[qi];W[rh];B[ri];W[sh];B[me]C[Â•Ω„ÄÇ];W[ng];B[nf];W[mf]
+                                  ;W[qh]N[C ÈL];B[sd];W[rc];B[qi];W[rh];B[ri];W[sh];B[me]C[∫√°£];W[ng];B[nf];W[mf]
                                 )
                           )
                         )
                         (
-                          ;W[qg]N[C Á≤ò];B[of]LB[qc:A][qd:B]
+                          ;W[qg]N[C ’≥];B[of]LB[qc:A][qd:B]
                           (
-                                ;W[qc]N[A Èªû]C[ËΩâÊèõ‰Ω≥Ëëó„ÄÇ];B[qd];W[rd];B[re];W[rc];B[qe];W[ob];B[pi];W[qj]C[ËΩâÊèõ‰Ω≥Ëëó„ÄÇ];B[qi];W[ri];B[pj];W[qk];B[rh];W[rj];B[qm];W[pk];B[rg];W[pm];B[pn];W[qn];B[om];W[pl];B[qo];W[rn];B[ro];W[rm];B[po]
+                                ;W[qc]N[A ¸c]C[ﬁDìQº—÷¯°£];B[qd];W[rd];B[re];W[rc];B[qe];W[ob];B[pi];W[qj]C[ﬁDìQº—÷¯°£];B[qi];W[ri];B[pj];W[qk];B[rh];W[rj];B[qm];W[pk];B[rg];W[pm];B[pn];W[qn];B[om];W[pl];B[qo];W[rn];B[ro];W[rm];B[po]
                           )
                           (
-                                ;W[qd]N[B Êâò];B[qc];W[rd];B[rc];W[qj];B[qn];W[od];B[pc];W[oc];B[lc];W[md];B[ld];W[me];B[mc]
+                                ;W[qd]N[B Õ–];B[qc];W[rd];B[rc];W[qj];B[qn];W[od];B[pc];W[oc];B[lc];W[md];B[ld];W[me];B[mc]
                           )
                         )
                   )
                   (
-                        ;B[qh]N[Â§æ];W[of];B[oh];W[nd]LB[ne:A][rd:B]N[Èáë‰∫ïÊ¨Ñ]C[Èáë‰∫ïÊ¨Ñ Ê≠§ÂºèËµ∑Êâã‰∏çÂÆúÔºåÈ†à‰ΩàÂ±ÄÂæåÁúãÂ§ñÂã¢‰πãÂ§ßÂ∞èÂõ†ËÄåÊàê‰πãÔºåÂΩºÊ≠§‰ø±Áï∂ÂØ©Êü•ÔºåÂ§ßÁ¥ÑÊâÄÈáç‰∏çÂú®ËßíËÄ≥„ÄÇÂèó‰∏âÂ≠êËÄÖÔºåÂõ†Êúâ‰∏≠Â≠êÔºåÂâáÂèØÂÄü‰ª•ÊàêÂã¢ÔºåÂ≠∏ËÄÖÁï∂Á¥∞Âë≥ÂÖ∂Ê≥ï„ÄÇ]
+                        ;B[qh]N[äA];W[of];B[oh];W[nd]LB[ne:A][rd:B]N[ΩæÆô⁄]C[ΩæÆô⁄ ¥À Ω∆ ÷≤ª“À£¨ÌöÅ—æ÷··ø¥Õ‚Ñ›÷Æ¥Û–°“Ú∂¯≥…÷Æ£¨±À¥Àæ„Æîåè≤È£¨¥ÛºsÀ˘÷ÿ≤ª‘⁄Ω«∂˙°£ ‹»˝◊”’ﬂ£¨“Ú”–÷–◊”£¨Ñtø…ΩË“‘≥…Ñ›£¨åW’ﬂÆîºöŒ∂∆‰∑®°£]
                         (
-                          ;B[ne]LB[oe:A][od:B]N[A Ë∑®Êñ∑]
+                          ;B[ne]LB[oe:A][od:B]N[A øÁî‡]
                           (
-                                ;W[oe]N[A Êñ∑];B[od];W[nc];B[nf];W[ng];B[mg]LB[qd:A][og:B]C[Â•Ω„ÄÇ]
+                                ;W[oe]N[A î‡];B[od];W[nc];B[nf];W[ng];B[mg]LB[qd:A][og:B]C[∫√°£]
                                 (
-                                  ;W[qd]N[A È†Ç]C[Á∑ä„ÄÇ];B[pe];W[pf];B[qe]LB[re:A][rd:B]
+                                  ;W[qd]N[A Ìî]C[æo°£];B[pe];W[pf];B[qe]LB[re:A][rd:B]
                                   (
-                                        ;W[re]N[A Êìã]C[Á∑ä„ÄÇ];B[rd];W[pc]C[Á∑ä„ÄÇ];B[qc];W[oc];B[qd];W[rf];B[rb]LB[qb:A][sd:B][pb:C][rh:D]
+                                        ;W[re]N[A ìı]C[æo°£];B[rd];W[pc]C[æo°£];B[qc];W[oc];B[qd];W[rf];B[rb]LB[qb:A][sd:B][pb:C][rh:D]
                                         (
-                                          ;W[qb]LB[pb:A][sc:B]N[A Êì†]
+                                          ;W[qb]LB[pb:A][sc:B]N[A îD]
                                           (
-                                                ;B[pb]N[A ÂêÉ];W[sd];B[qa];W[sb];B[rc];W[ra]
+                                                ;B[pb]N[A ≥‘];W[sd];B[qa];W[sb];B[rc];W[ra]
                                           )
                                           (
-                                                ;B[sc]N[B ÂÅöÁúº];W[ra];B[pb];W[pa]
+                                                ;B[sc]N[B ◊ˆ—€];W[ra];B[pb];W[pa]
                                           )
                                         )
                                         (
-                                          ;W[sd]LB[sc:A][pb:B]N[B Êâ≥]
+                                          ;W[sd]LB[sc:A][pb:B]N[B ∞‚]
                                           (
-                                                ;B[sc]N[A Êâì];W[qb];B[se];W[ra];B[pb];W[pa]
+                                                ;B[sc]N[A ¥Ú];W[qb];B[se];W[ra];B[pb];W[pa]
                                           )
                                           (
-                                                ;B[pb]N[B Êâ≥];W[sb];B[sc];W[rc]
-                                          )
-                                        )
-                                        (
-                                          ;W[pb]N[C ÂΩé]C[ÊòØ„ÄÇ];B[sc];W[qb];B[ra];W[rh];B[ri];W[sf]C[Â∑ß„ÄÇ];B[sd];W[qi];B[og]C[ËÄÅÊàê„ÄÇ];W[qj];B[rg];W[ph];B[ld];W[lc];B[kc];W[kd];B[lb];W[mc];B[jc];W[le];B[jd];W[ke];B[me];W[md];B[nh];W[oi];B[ni]LB[oj:A][kg:B]
-                                          (
-                                                ;W[oj]N[A Èï∑];B[jg];W[kg];B[jh];W[lg];B[lh];W[jf];B[if];W[je];B[ie];W[kh];B[ki];W[lf];B[ql];W[qk];B[qp];W[qn];B[op]
-                                          )
-                                          (
-                                                ;W[kg]N[B Èóú];B[sh];W[pg];B[oj];W[pi];B[ql];W[pk];B[pl];W[ok];B[rj]
+                                                ;B[pb]N[B ∞‚];W[sb];B[sc];W[rc]
                                           )
                                         )
                                         (
-                                          ;W[rh]N[D Êâò];B[ri]LB[qi:A][ph:B]
+                                          ;W[pb]N[C èù]C[ «°£];B[sc];W[qb];B[ra];W[rh];B[ri];W[sf]C[«…°£];B[sd];W[qi];B[og]C[¿œ≥…°£];W[qj];B[rg];W[ph];B[ld];W[lc];B[kc];W[kd];B[lb];W[mc];B[jc];W[le];B[jd];W[ke];B[me];W[md];B[nh];W[oi];B[ni]LB[oj:A][kg:B]
                                           (
-                                                ;W[qi]N[A Êñ∑];B[pi];W[qj];B[rg];W[ph];B[pg];W[qg];B[sh];W[og];B[nh];W[ph];B[mh];W[rh];B[le];W[pj];B[oi];W[sg];B[lb]C[Â•ΩÔºåÂ§öÈö®ÊâãÂñÆÈóú„ÄÇ];W[ld];B[kd];W[md];B[kc];W[qb];B[pb];W[sd];B[qa];W[sb];B[ma]
+                                                ;W[oj]N[A ÈL];B[jg];W[kg];B[jh];W[lg];B[lh];W[jf];B[if];W[je];B[ie];W[kh];B[ki];W[lf];B[ql];W[qk];B[qp];W[qn];B[op]
                                           )
                                           (
-                                                ;W[ph]LB[og:A][pi:B]N[B Êåñ]
+                                                ;W[kg]N[B ÍP];B[sh];W[pg];B[oj];W[pi];B[ql];W[pk];B[pl];W[ok];B[rj]
+                                          )
+                                        )
+                                        (
+                                          ;W[rh]N[D Õ–];B[ri]LB[qi:A][ph:B]
+                                          (
+                                                ;W[qi]N[A î‡];B[pi];W[qj];B[rg];W[ph];B[pg];W[qg];B[sh];W[og];B[nh];W[ph];B[mh];W[rh];B[le];W[pj];B[oi];W[sg];B[lb]C[∫√£¨∂‡ÎS ÷ÜŒÍP°£];W[ld];B[kd];W[md];B[kc];W[qb];B[pb];W[sd];B[qa];W[sb];B[ma]
+                                          )
+                                          (
+                                                ;W[ph]LB[og:A][pi:B]N[B Õ⁄]
                                                 (
-                                                  ;B[og]N[A Ë°ùÊñ∑]C[Á©©Èáç„ÄÇ];W[qi];B[pi];W[qg];B[pj];W[qj];B[qk];W[rj];B[pk];W[kc];B[pb]
+                                                  ;B[og]N[A –nî‡]C[∑Ä÷ÿ°£];W[qi];B[pi];W[qg];B[pj];W[qj];B[qk];W[rj];B[pk];W[kc];B[pb]
                                                 )
                                                 (
-                                                  ;B[pi]N[B Êâì];W[nh]LB[og:A][le:B]
+                                                  ;B[pi]N[B ¥Ú];W[nh]LB[og:A][le:B]
                                                   (
-                                                        ;B[og]N[A Ë°ùÊñ∑];W[oi];B[pg];W[mh]C[ÂÖàË°åÂ•Ω„ÄÇ];B[qg];W[le]
+                                                        ;B[og]N[A –nî‡];W[oi];B[pg];W[mh]C[œ»––∫√°£];B[qg];W[le]
                                                   )
                                                   (
-                                                        ;B[le]N[B Ë∑≥Ë£ú]C[ÂÖàÂæóÂà∂‰πãÊ≥ï„ÄÇ];W[pb];B[sc];W[qb];B[qa];W[pa];B[ra];W[kc];B[og];W[oi];B[pg];W[qg];B[ph];W[pj];B[qi];W[se];B[sd];W[sg];B[ni];W[mh];B[oj]
+                                                        ;B[le]N[B Ã¯—a]C[œ»µ√÷∆÷Æ∑®°£];W[pb];B[sc];W[qb];B[qa];W[pa];B[ra];W[kc];B[og];W[oi];B[pg];W[qg];B[ph];W[pj];B[qi];W[se];B[sd];W[sg];B[ni];W[mh];B[oj]
                                                   )
                                                 )
                                           )
                                         )
                                   )
                                   (
-                                        ;W[rd]N[B Á´ã]C[‰πÉÈõôÊ¥ª‰πãËëó„ÄÇ];B[re];W[rf];B[sf]C[ÊòØÔºåÂøåÁ´ã„ÄÇ];W[sg];B[se];W[og]LB[nh:A][rg:B]
+                                        ;W[rd]N[B ¡¢]C[ƒÀÎpªÓ÷Æ÷¯°£];B[re];W[rf];B[sf]C[ «£¨º…¡¢°£];W[sg];B[se];W[og]LB[nh:A][rg:B]
                                         (
-                                          ;B[nh]N[A Êìã];W[rh];B[pb];W[qi];B[le];W[qb];B[pc]C[Â•Ω„ÄÇ];W[ob];B[pa]LB[rb:A][mh:B]
+                                          ;B[nh]N[A ìı];W[rh];B[pb];W[qi];B[le];W[qb];B[pc]C[∫√°£];W[ob];B[pa]LB[rb:A][mh:B]
                                           (
-                                                ;W[rb]N[A Èõô];B[sd];W[rc]C[Â•Ω„ÄÇ];B[sc];W[sb];B[qa];W[kc]
+                                                ;W[rb]N[A Îp];B[sd];W[rc]C[∫√°£];B[sc];W[sb];B[qa];W[kc]
                                           )
                                           (
-                                                ;W[mh]N[B Êñ∑]C[ÂÖàÊñ∑ÊòØ„ÄÇ];B[lg];W[lh];B[kg];W[kc];B[ph];W[rj];B[mj]
+                                                ;W[mh]N[B î‡]C[œ»î‡ «°£];B[lg];W[lh];B[kg];W[kc];B[ph];W[rj];B[mj]
                                           )
                                         )
                                         (
-                                          ;B[rg]N[B Êâì];W[nh];B[ob];W[nb];B[mh];W[ni];B[le]C[ÊääÈÇäËÆìÂá∫ÔºåÂæóÊ≠§Ëëó‰πãÈÄºÊúâË¶ã„ÄÇ]
+                                          ;B[rg]N[B ¥Ú];W[nh];B[ob];W[nb];B[mh];W[ni];B[le]C[∞—ﬂÖ◊å≥ˆ£¨µ√¥À÷¯÷Æ±∆”–“ä°£]
                                         )
                                   )
                                 )
                                 (
-                                  ;W[og]N[B Á≤ò];B[nh]LB[rd:A][qg:B]
+                                  ;W[og]N[B ’≥];B[nh]LB[rd:A][qg:B]
                                   (
-                                        ;W[rd]LB[re:A][qd:B]N[A È£õ]
+                                        ;W[rd]LB[re:A][qd:B]N[A Ôw]
                                         (
-                                          ;B[re]N[A Ë∑®];W[qe];B[qd];W[rf];B[rc];W[se];B[qb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kf]LB[lh:A][kc:B]
+                                          ;B[re]N[A øÁ];W[qe];B[qd];W[rf];B[rc];W[se];B[qb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[kf]LB[lh:A][kc:B]
                                           (
-                                                ;B[lh]N[A Ëôé];W[kc];B[kd];W[jd];B[lc];W[kb];B[lb];W[mb]C[Â•Ω„ÄÇ];B[la];W[ic];B[na];W[ob];B[ma];W[oa];B[oc];W[nb];B[pb];W[ka];B[pa]
+                                                ;B[lh]N[A ª¢];W[kc];B[kd];W[jd];B[lc];W[kb];B[lb];W[mb]C[∫√°£];B[la];W[ic];B[na];W[ob];B[ma];W[oa];B[oc];W[nb];B[pb];W[ka];B[pa]
                                           )
                                           (
-                                                ;B[kc]N[B Â∞ñ];W[jc];B[jb];W[ib];B[ic];W[jd];B[kb];W[hc];B[ob];W[mh];B[lg];W[ph]C[ÂèñÂÖàË£úÁà≤Â¶ô„ÄÇ];B[pi];W[pg];B[oj];W[kh];B[lh];W[li];B[mi];W[kg];B[mh];W[kj];B[lj];W[ki];B[ri];W[rg];B[kk]
+                                                ;B[kc]N[B º‚];W[jc];B[jb];W[ib];B[ic];W[jd];B[kb];W[hc];B[ob];W[mh];B[lg];W[ph]C[»°œ»—a†ë√Ó°£];B[pi];W[pg];B[oj];W[kh];B[lh];W[li];B[mi];W[kg];B[mh];W[kj];B[lj];W[ki];B[ri];W[rg];B[kk]
                                           )
                                         )
                                         (
-                                          ;B[qd]N[B È†Ç];W[qg]LB[rc:A][re:B]C[Ë¶ÅÁ∑ä„ÄÇ]
+                                          ;B[qd]N[B Ìî];W[qg]LB[rc:A][re:B]C[“™æo°£]
                                           (
-                                                ;B[rc]N[A Â§ñÊâ≥];W[rh];B[qi];W[ri];B[qk];W[rj]LB[pl:A][lf:B]
+                                                ;B[rc]N[A Õ‚∞‚];W[rh];B[qi];W[ri];B[qk];W[rj]LB[pl:A][lf:B]
                                                 (
-                                                  ;B[pl]N[A Â∞ñ];W[rb]C[Â¶ô„ÄÇ];B[qc];W[re];B[sb];W[pb];B[qb];W[nb];B[ra];W[mf]
+                                                  ;B[pl]N[A º‚];W[rb]C[√Ó°£];B[qc];W[re];B[sb];W[pb];B[qb];W[nb];B[ra];W[mf]
                                                 )
                                                 (
-                                                  ;B[lf]N[B Ëôé]C[ÂÖàËôéÊîªÔºåÂèñÂøÖÊáâ‰πü„ÄÇ];W[rb];B[qc];W[re];B[sb];W[pb];B[qb];W[nb];B[ra];W[jc]
+                                                  ;B[lf]N[B ª¢]C[œ»ª¢π•£¨»°±ÿë™“≤°£];W[rb];B[qc];W[re];B[sb];W[pb];B[qb];W[nb];B[ra];W[jc]
                                                 )
                                           )
                                           (
-                                                ;B[re]N[B ÂÖßÊâ≥]C[ÂãùÂ§ñÊâ≥„ÄÇ];W[rh];B[qi];W[ri];B[qk];W[rj];B[rf];W[rg];B[rc]C[ÂÖàËÄÖÁà¨Ôºå‰ªäÊâìË¶ãÂæóÂø´ÔºåÂ•Ω„ÄÇ];W[qj];B[lf];W[kc];B[mj]C[Ëôé„ÄÅÈ£õÂæóÂÆú„ÄÇ];W[qm];B[qo]
+                                                ;B[re]N[B É»∞‚]C[ÑŸÕ‚∞‚°£];W[rh];B[qi];W[ri];B[qk];W[rj];B[rf];W[rg];B[rc]C[œ»’ﬂ≈¿£¨ΩÒ¥Ú“äµ√øÏ£¨∫√°£];W[qj];B[lf];W[kc];B[mj]C[ª¢°¢Ôwµ√“À°£];W[qm];B[qo]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[qg]N[B Èõô]C[ÂÖàË°åÔºå‰æøÊñºÈ£õËßíÔºå‰ΩøÈªë‰∏çÊï¢Êîî„ÄÇ];B[qc]C[ÈÄÄÂæóÂ¶ôÔºåÂÆâÈÄ∏Á∞°Ë¶ÅÔºåÊ≠£Â±ÄÂèØÂºè„ÄÇ]
+                                        ;W[qg]N[B Îp]C[œ»––£¨±„Ï∂ÔwΩ«£¨ π∫⁄≤ª∏“îr°£];B[qc]C[ÕÀµ√√Ó£¨∞≤“›∫Ü“™£¨’˝æ÷ø… Ω°£]
                                   )
                                 )
                           )
                           (
-                                ;W[od]N[B È†Ç]C[Ê¥ª„ÄÇ];B[oe];W[pe]LB[md:A][pc:B]
+                                ;W[od]N[B Ìî]C[ªÓ°£];B[oe];W[pe]LB[md:A][pc:B]
                                 (
-                                  ;B[md]N[A Êâ≥];W[pc];B[qd];W[qc]LB[qe:A][re:B]
+                                  ;B[md]N[A ∞‚];W[pc];B[qd];W[qc]LB[qe:A][re:B]
                                   (
-                                        ;B[qe]N[A Êâì]C[‰Ωé„ÄÇ];W[pf];B[rf];W[rg];B[rc];W[rb];B[oc];W[nc];B[ob];W[me];B[nf];W[pb];B[pa];W[qb];B[nb];W[mc];B[mb];W[lc];B[rd];W[sb];B[qg]
+                                        ;B[qe]N[A ¥Ú]C[µÕ°£];W[pf];B[rf];W[rg];B[rc];W[rb];B[oc];W[nc];B[ob];W[me];B[nf];W[pb];B[pa];W[qb];B[nb];W[mc];B[mb];W[lc];B[rd];W[sb];B[qg]
                                   )
                                   (
-                                        ;B[re]N[B Â∞ñ]C[Â∞ñÂ•Ω„ÄÇ];W[rf];B[rc];W[nb];B[qb];W[pb];B[pa];W[nc];B[sb];W[oa];B[qa];W[ra];B[rb];W[ng];B[me];W[kc]
+                                        ;B[re]N[B º‚]C[º‚∫√°£];W[rf];B[rc];W[nb];B[qb];W[pb];B[pa];W[nc];B[sb];W[oa];B[qa];W[ra];B[rb];W[ng];B[me];W[kc]
                                   )
                                 )
                                 (
-                                  ;B[pc]N[B Èï∑];W[ng];B[me];W[md]LB[le:A][ld:B]
+                                  ;B[pc]N[B ÈL];W[ng];B[me];W[md]LB[le:A][ld:B]
                                   (
-                                        ;B[le]N[A Èï∑];W[ld];B[re];W[rf];B[nb];W[mb];B[lg]C[Âº∑„ÄÇ];W[nh];B[kd];W[kc];B[jc];W[kb];B[jd];W[ob];B[pb];W[na];B[rd]
+                                        ;B[le]N[A ÈL];W[ld];B[re];W[rf];B[nb];W[mb];B[lg]C[èä°£];W[nh];B[kd];W[kc];B[jc];W[kb];B[jd];W[ob];B[pb];W[na];B[rd]
                                   )
                                   (
-                                        ;B[ld]N[B Êâ≥];W[le];B[mf];W[lc];B[kd];W[kc];B[ke];W[nb]C[ÂØ¨‰∏ÄÊ≠•Â•ΩÔºå‰πÉÂç†ÂÆòÊ≥ï„ÄÇ];B[re];W[rf];B[qe];W[pf];B[rc];W[nh];B[lh]C[‰∏çÈ°ßÈÇäÊî∂ËÖπÂ¶ô„ÄÇ];W[oi];B[ic];W[ib];B[hb];W[jb];B[hc];W[ob];B[pb];W[qj];B[ql];W[qk];B[pl]
+                                        ;B[ld]N[B ∞‚];W[le];B[mf];W[lc];B[kd];W[kc];B[ke];W[nb]C[åí“ª≤Ω∫√£¨ƒÀ’ºπŸ∑®°£];B[re];W[rf];B[qe];W[pf];B[rc];W[nh];B[lh]C[≤ªÓôﬂÖ ’∏π√Ó°£];W[oi];B[ic];W[ib];B[hb];W[jb];B[hc];W[ob];B[pb];W[qj];B[ql];W[qk];B[pl]
                                   )
                                 )
                           )
                         )
                         (
-                          ;B[rd]N[B Èóú];W[re]LB[ne:A][ob:B][nc:C][oc:D]
+                          ;B[rd]N[B ÍP];W[re]LB[ne:A][ob:B][nc:C][oc:D]
                           (
-                                ;B[ne]N[A Ë∑®];W[oe];B[od]LB[nc:A][nf:B][md:C]
+                                ;B[ne]N[A øÁ];W[oe];B[od]LB[nc:A][nf:B][md:C]
                                 (
-                                  ;W[nc]N[A Á´ã];B[nf];W[ng];B[mg]LB[og:A][qd:B]
+                                  ;W[nc]N[A ¡¢];B[nf];W[ng];B[mg]LB[og:A][qd:B]
                                   (
-                                        ;W[og]N[A Á≤ò];B[nh];W[rh]C[Á≤ò„ÄÅÊâòÂÖàËµ∞Â•Ω„ÄÇ];B[ri];W[qg];B[pg];W[pf];B[ph];W[rc];B[qe]C[ÊòØ„ÄÇ];W[rf];B[qc];W[rb]C[Â¶ô„ÄÇ];B[sd];W[qb];B[sg];W[se];B[rg];W[sc]
+                                        ;W[og]N[A ’≥];B[nh];W[rh]C[’≥°¢Õ–œ»◊ﬂ∫√°£];B[ri];W[qg];B[pg];W[pf];B[ph];W[rc];B[qe]C[ «°£];W[rf];B[qc];W[rb]C[√Ó°£];B[sd];W[qb];B[sg];W[se];B[rg];W[sc]
                                   )
                                   (
-                                        ;W[qd]N[B Êåñ];B[qc];W[qe]LB[pb:A][rc:B]
+                                        ;W[qd]N[B Õ⁄];B[qc];W[qe]LB[pb:A][rc:B]
                                         (
-                                          ;B[pb]N[A Ëôé]C[ÂÆâÈÄ∏„ÄÇ];W[rc];B[rb];W[sd];B[ob];W[nb];B[sb];W[rh];B[ri];W[qg];B[qi];W[sf];B[jc]C[ÊúâÂ∫èÔºåÂæóÈÇäÂ¶ô„ÄÇ];W[kd]
+                                          ;B[pb]N[A ª¢]C[∞≤“›°£];W[rc];B[rb];W[sd];B[ob];W[nb];B[sb];W[rh];B[ri];W[qg];B[qi];W[sf];B[jc]C[”––Ú£¨µ√ﬂÖ√Ó°£];W[kd]
                                         )
                                         (
-                                          ;B[rc]N[B Á≤ò];W[pb];B[pc];W[qb];B[rb];W[oc];B[qa];W[ob];B[og];W[rg];B[sf]LB[qg:A][rh:B]C[Á¥∞„ÄÇ]
+                                          ;B[rc]N[B ’≥];W[pb];B[pc];W[qb];B[rb];W[oc];B[qa];W[ob];B[og];W[rg];B[sf]LB[qg:A][rh:B]C[ºö°£]
                                           (
-                                                ;W[qg]N[A Âúò]C[Â•ΩÔºåÁ†¥Â•ó„ÄÇ];B[rh];W[se];B[sg];W[pe];B[pg];W[sb]C[Â¶ô„ÄÇ];B[sd];W[ra];B[sa];W[mf];B[me];W[ra];B[lf];W[sc]
+                                                ;W[qg]N[A àF]C[∫√£¨∆∆Ã◊°£];B[rh];W[se];B[sg];W[pe];B[pg];W[sb]C[√Ó°£];B[sd];W[ra];B[sa];W[mf];B[me];W[ra];B[lf];W[sc]
                                           )
                                           (
-                                                ;W[rh]N[B Èï∑];B[qg]C[Â¶ô„ÄÇ];W[qi];B[rf];W[se];B[pf]C[ËêΩÂ•ó„ÄÇ]
+                                                ;W[rh]N[B ÈL];B[qg]C[√Ó°£];W[qi];B[rf];W[se];B[pf]C[¬‰Ã◊°£]
                                           )
                                         )
                                   )
                                 )
                                 (
-                                  ;W[nf]N[B Êâì]C[ÂÖàÊâìÂ•Ω„ÄÇ];B[me];W[nc];B[pb]C[Â•Ω„ÄÇ]
+                                  ;W[nf]N[B ¥Ú]C[œ»¥Ú∫√°£];B[me];W[nc];B[pb]C[∫√°£]
                                 )
                                 (
-                                  ;W[md]N[C Èï∑];B[me];W[ng];B[ld];W[lc]LB[lf:A][kd:B]
+                                  ;W[md]N[C ÈL];B[me];W[ng];B[ld];W[lc]LB[lf:A][kd:B]
                                   (
-                                        ;B[lf]N[A Ëôé]C[Â•Ω„ÄÇ];W[kd];B[le];W[kc];B[mh];W[nh];B[ni];W[mg];B[lg];W[oi];B[lh];W[qd];B[qc];W[qe];B[rc];W[pi];B[ph];W[qi];B[ri];W[rj];B[rg];W[si];B[rh];W[ok];B[se];W[sf];B[sd];W[rf];B[pe];W[pf];B[ob];W[nb];B[pk]C[Êî∂Ê≥ï„ÄÇ]
+                                        ;B[lf]N[A ª¢]C[∫√°£];W[kd];B[le];W[kc];B[mh];W[nh];B[ni];W[mg];B[lg];W[oi];B[lh];W[qd];B[qc];W[qe];B[rc];W[pi];B[ph];W[qi];B[ri];W[rj];B[rg];W[si];B[rh];W[ok];B[se];W[sf];B[sd];W[rf];B[pe];W[pf];B[ob];W[nb];B[pk]C[ ’∑®°£]
                                   )
                                   (
-                                        ;B[kd]N[B Èï∑]C[Â•Ω„ÄÇ];W[kc];B[lf];W[nb];B[ob];W[jd];B[mh];W[nh];B[ni];W[mg];B[lg];W[oi];B[mi];W[qd];B[qc];W[qe];B[rc];W[pi];B[ph];W[qi];B[ri];W[rj];B[rg];W[si];B[rh];W[qk]C[Â¶•„ÄÇ];B[se];W[sf];B[sd];W[rf];B[pe];W[pf];B[oc]C[‰∏çÊâìÂ•Ω„ÄÇ];W[mb];B[nc];W[mc];B[ic];W[jc];B[hd]
+                                        ;B[kd]N[B ÈL]C[∫√°£];W[kc];B[lf];W[nb];B[ob];W[jd];B[mh];W[nh];B[ni];W[mg];B[lg];W[oi];B[mi];W[qd];B[qc];W[qe];B[rc];W[pi];B[ph];W[qi];B[ri];W[rj];B[rg];W[si];B[rh];W[qk]C[Õ◊°£];B[se];W[sf];B[sd];W[rf];B[pe];W[pf];B[oc]C[≤ª¥Ú∫√°£];W[mb];B[nc];W[mc];B[ic];W[jc];B[hd]
                                   )
                                 )
                           )
                           (
-                                ;B[ob]N[B È£õ‰∏ã];W[nb];B[ne]LB[oe:A][od:B]
+                                ;B[ob]N[B Ôwœ¬];W[nb];B[ne]LB[oe:A][od:B]
                                 (
-                                  ;W[oe]N[A Êñ∑];B[od]LB[nc:A][md:B]
+                                  ;W[oe]N[A î‡];B[od]LB[nc:A][md:B]
                                   (
-                                        ;W[nc]N[A Êé•];B[nf];W[ng];B[mg];W[qd];B[qc];W[qe];B[rc];W[oc];B[pc]LB[rh:A][pb:B]
+                                        ;W[nc]N[A Ω”];B[nf];W[ng];B[mg];W[qd];B[qc];W[qe];B[rc];W[oc];B[pc]LB[rh:A][pb:B]
                                         (
-                                          ;W[rh]N[A Êâò];B[og];W[qi];B[pb];W[jc];B[ri];W[ph];B[pi];W[qg];B[pj];W[rj];B[qj];W[si];B[ql]
+                                          ;W[rh]N[A Õ–];B[og];W[qi];B[pb];W[jc];B[ri];W[ph];B[pi];W[qg];B[pj];W[rj];B[qj];W[si];B[ql]
                                         )
                                         (
-                                          ;W[pb]N[B ÂêÉ];B[qb];W[oa]LB[og:A][qg:B]
+                                          ;W[pb]N[B ≥‘];B[qb];W[oa]LB[og:A][qg:B]
                                           (
-                                                ;B[og]N[A Êñ∑];W[rg];B[sd];W[rh];B[sb]C[ÂÖ©ÂàÜ„ÄÇ]
+                                                ;B[og]N[A î‡];W[rg];B[sd];W[rh];B[sb]C[É…∑÷°£]
                                           )
                                           (
-                                                ;B[qg]N[B È†Ç];W[rg];B[og];W[se]C[Â¶ô„ÄÇ];B[sf];W[rh];B[ri];W[pe];B[sd];W[si]C[Â¶ô„ÄÇ];B[sb];W[rj]
+                                                ;B[qg]N[B Ìî];W[rg];B[og];W[se]C[√Ó°£];B[sf];W[rh];B[ri];W[pe];B[sd];W[si]C[√Ó°£];B[sb];W[rj]
                                           )
                                         )
                                   )
                                   (
-                                        ;W[md]N[B Èï∑];B[nf];W[ng];B[le];W[og]C[Â•Ω„ÄÇ]
+                                        ;W[md]N[B ÈL];B[nf];W[ng];B[le];W[og]C[∫√°£]
                                   )
                                 )
                                 (
-                                  ;W[od]N[B È†Ç];B[oe];W[pe]LB[pc:A][md:B]
+                                  ;W[od]N[B Ìî];B[oe];W[pe]LB[pc:A][md:B]
                                   (
-                                        ;B[pc]N[A ÈÄÄ];W[ng];B[me];W[md];B[ld]LB[lc:A][le:B]
+                                        ;B[pc]N[A ÕÀ];W[ng];B[me];W[md];B[ld]LB[lc:A][le:B]
                                         (
-                                          ;W[lc]N[A Êâ≥];B[kd];W[kc];B[lf]C[Â•Ω„ÄÇ];W[nh];B[jc];W[jb];B[ib];W[ka];B[ic];W[lb]
+                                          ;W[lc]N[A ∞‚];B[kd];W[kc];B[lf]C[∫√°£];W[nh];B[jc];W[jb];B[ib];W[ka];B[ic];W[lb]
                                         )
                                         (
-                                          ;W[le]N[B Êñ∑];B[lf];W[ke];B[mf];W[lc];B[kf];W[je];B[nh]C[Â•Ω„ÄÇ];W[mg];B[kh]C[Â•Ω„ÄÇ]
+                                          ;W[le]N[B î‡];B[lf];W[ke];B[mf];W[lc];B[kf];W[je];B[nh]C[∫√°£];W[mg];B[kh]C[∫√°£]
                                         )
                                   )
                                   (
-                                        ;B[md]LB[nc:A][pc:B]N[B Êâ≥]C[ÂÖàÊâ≥Â•Ω„ÄÇ]
+                                        ;B[md]LB[nc:A][pc:B]N[B ∞‚]C[œ»∞‚∫√°£]
                                         (
-                                          ;W[nc]N[A Êé•]C[Â∑Æ„ÄÇ];B[pc];W[ng];B[nf];W[og];B[mg];W[nh];B[kc]
+                                          ;W[nc]N[A Ω”]C[≤Ó°£];B[pc];W[ng];B[nf];W[og];B[mg];W[nh];B[kc]
                                         )
                                         (
-                                          ;W[pc]N[B Êâì]C[ÂÖàÊâìÊòØ„ÄÇ];B[qd];W[ng];B[nf];W[og];B[mc];W[pb];B[mb];W[oa];B[rb];W[qb];B[qe];W[pf];B[rf];W[qa];B[se]
+                                          ;W[pc]N[B ¥Ú]C[œ»¥Ú «°£];B[qd];W[ng];B[nf];W[og];B[mc];W[pb];B[mb];W[oa];B[rb];W[qb];B[qe];W[pf];B[rf];W[qa];B[se]
                                         )
                                   )
                                 )
                           )
                           (
-                                ;B[nc]LB[mc:A][pc:B]N[C Êâò]
+                                ;B[nc]LB[mc:A][pc:B]N[C Õ–]
                                 (
-                                  ;W[mc]N[A Êâ≥];B[md];W[od];B[oc];W[pc]LB[qc:A][pb:B]
+                                  ;W[mc]N[A ∞‚];B[md];W[od];B[oc];W[pc]LB[qc:A][pb:B]
                                   (
-                                        ;B[qc]N[A ‰∏äÊâì];W[pb];B[mb];W[lc];B[ob];W[oa];B[nb];W[pe];B[qd];W[lb];B[qb];W[le]C[ÈªëÁôΩ‰ø±Á©©„ÄÇ]
+                                        ;B[qc]N[A …œ¥Ú];W[pb];B[mb];W[lc];B[ob];W[oa];B[nb];W[pe];B[qd];W[lb];B[qb];W[le]C[∫⁄∞◊æ„∑Ä°£]
                                   )
                                   (
-                                        ;B[pb]N[B ‰∏ãÊâì];W[qc];B[qd];W[qb];B[ob];W[sb]C[Â¶ô„ÄÇ];B[ra];W[sd]C[Â¶ô„ÄÇ]
+                                        ;B[pb]N[B œ¬¥Ú];W[qc];B[qd];W[qb];B[ob];W[sb]C[√Ó°£];B[ra];W[sd]C[√Ó°£]
                                   )
                                 )
                                 (
-                                  ;W[pc]N[B Êâò];B[oc];W[pb];B[qd];W[od];B[ob];W[rb];B[rc];W[pa]C[Â∑ßÂ¶ô„ÄÇ];B[mc]C[Ê≠§ÊâãËã•ÊåñÂèØÊàêÂä´„ÄÇ];W[ra]C[Â∑ßÂ¶ô„ÄÇ];B[pf]C[Â¶ô„ÄÇ];W[pe];B[qe];W[pg];B[rf];W[rg];B[se];W[qg]
+                                  ;W[pc]N[B Õ–];B[oc];W[pb];B[qd];W[od];B[ob];W[rb];B[rc];W[pa]C[«…√Ó°£];B[mc]C[¥À ÷»ÙÕ⁄ø…≥…ΩŸ°£];W[ra]C[«…√Ó°£];B[pf]C[√Ó°£];W[pe];B[qe];W[pg];B[rf];W[rg];B[se];W[qg]
                                 )
                           )
                           (
-                                ;B[oc]N[D Â∞ñ];W[nc];B[nb];W[mb];B[ob];W[lc]C[Ê≠£Áï∂„ÄÇ]
+                                ;B[oc]N[D º‚];W[nc];B[nb];W[mb];B[ob];W[lc]C[’˝Æî°£]
                           )
                         )
                   )
                 )
           )
           (
-                ;W[qf];B[qh];W[of];B[oh];W[nd]C[„ÄäÂèó‰∏âÂ≠êË≠ú„ÄãÈáë‰∫ïÊ¨Ñ‰∏Ä‰∫åÂ≠êËÆä„ÄÇ];B[rd];W[re];B[ne];W[oe];B[od];W[nc];B[nf];W[ng];B[mg];W[og];B[nh];W[rh]C[Á≤ò„ÄÅÊâòÂÖàËµ∞Â•Ω„ÄÇ];B[ri];W[qg];B[pg];W[pf];B[ph];W[rc];B[qd];W[sd]C[Â•Ω„ÄÇ];B[qb];W[qc]C[ÂÖàË°ùÂ•Ω„ÄÇ];B[pb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[mb];B[ob];W[kd];B[lc];W[kc];B[lb];W[kb];B[ma];W[na];B[la];W[nb];B[kf];W[lg];B[mh];W[kg];B[oa];W[ka];B[oc];W[rb];B[rg];W[rf];B[sh];W[ra];B[jf];W[jg];B[if];W[ig];B[hf];W[hc];B[hg];W[ii];B[hi];W[ij];B[hj];W[ik];B[qa]
+                ;W[qf];B[qh];W[of];B[oh];W[nd]C[°∂ ‹»˝◊”◊V°∑ΩæÆô⁄“ª∂˛◊”◊É°£];B[rd];W[re];B[ne];W[oe];B[od];W[nc];B[nf];W[ng];B[mg];W[og];B[nh];W[rh]C[’≥°¢Õ–œ»◊ﬂ∫√°£];B[ri];W[qg];B[pg];W[pf];B[ph];W[rc];B[qd];W[sd]C[∫√°£];B[qb];W[qc]C[œ»–n∫√°£];B[pb];W[mf];B[me];W[lf];B[le];W[ke];B[ld];W[mb];B[ob];W[kd];B[lc];W[kc];B[lb];W[kb];B[ma];W[na];B[la];W[nb];B[kf];W[lg];B[mh];W[kg];B[oa];W[ka];B[oc];W[rb];B[rg];W[rf];B[sh];W[ra];B[jf];W[jg];B[if];W[ig];B[hf];W[hc];B[hg];W[ii];B[hi];W[ij];B[hj];W[ik];B[qa]
           )
         )
   )

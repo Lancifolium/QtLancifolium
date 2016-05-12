@@ -11,6 +11,8 @@
 #include <stack>
 #include <algorithm>
 
+#include "FileBuff.h"
+
 inline int iswhite(char tmpc) { /* 判斷空白字符 */
 	if (tmpc == ' ' || tmpc == '\n' || tmpc == '\t'
 		|| tmpc == 13 || tmpc == 10) return 1;
@@ -33,45 +35,43 @@ inline int operatecase(char *operate) { /* 專門用來 switch 操縱符的 */
 
 /* 棋譜格式調整函數 */
 inline int ManualAdjustment(char *infile, char *oufile) {
-	FILE *fil, *wrl;
-	fil = fopen(infile, "r");
-	wrl = fopen(oufile, "w");
-
-	if (fil == NULL) return 0;
+	FileOpenBuff fil;
+	FileSaveBuff wrl;
+	if (!fil.openfile(infile)) return 0;
+	wrl.openfile(oufile);
 
 	int deep, tmpi, mod;
 	char tmpc, tmpb;
 	deep = 0; tmpb = '0'; mod = 0;
-	while (tmpc = fgetc(fil)) {
+	while (tmpc = fil.getc()) {
 		if ((tmpc == '(') && (mod == 0)) {
-			fprintf(wrl, "\n");
-			for (tmpi = 0; tmpi < deep; tmpi++) fprintf(wrl, "  ");
-			fprintf(wrl, "(\n");
+			wrl.putc('\n');
+			for (tmpi = 0; tmpi < deep; tmpi++) wrl.putc(' ');
+			wrl.putc('(');
 			deep++;
-			for (tmpi = 0; tmpi < deep; tmpi++) fprintf(wrl, "  ");
+			for (tmpi = 0; tmpi < deep; tmpi++) wrl.putc(' ');
 		}
 		else if ((tmpc == ')') && (mod == 0)) {
-			fprintf(wrl, "\n");
+			wrl.putc('\n');
 			deep--;
-			for (tmpi = 0; tmpi < deep; tmpi++) fprintf(wrl, "  ");
-			fprintf(wrl, ")");
+			for (tmpi = 0; tmpi < deep; tmpi++) wrl.putc(' ');
+			wrl.putc(')');
 		}
 		else if ((tmpc == '\t') || (tmpc == '\n') || (tmpc == ' ')) {
-			if (mod == 1) fprintf(wrl, " ");
+			if (mod == 1) wrl.putc(' ');
 		}
 		else if ((tmpc == '[') && (tmpb != '\\') && (mod == 0)) {
-			fprintf(wrl, "["); mod = 1;
+			wrl.putc('['); mod = 1;
 		}
 		else if ((tmpc == ']') && (tmpb != '\\') && (mod == 1)) {
-			fprintf(wrl, "]"); mod = 0;
+			wrl.putc(']'); mod = 0;
 		}
 		else if (tmpc == EOF) break;
-		else fprintf(wrl, "%c", tmpc);
+		else wrl.putc(tmpc);
 
 		tmpb = tmpc;
 		//printf("|%c|%d|", tmpc, tmpc); //system("pause");
 	}
-	fclose(fil); fclose(wrl); /* 關閉文件 */
 	return 1;
 } /* finished ManualAdjustment */
 
