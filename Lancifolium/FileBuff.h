@@ -4,12 +4,13 @@
 #include <cstdio>
 #include <cstring>
 
-#define MAXFILEBUFF 108
+#define MAXFILEBUFF 9000
 
 
 typedef struct FileOpenBuff {
 	char buff[MAXFILEBUFF];
 	int indx;
+	int reallen;
 	FILE *fileopen;
 
 	FileOpenBuff();

@@ -11,13 +11,6 @@ int main(void) {
 	//sig.openfile("tmp.sgf"); // file
 	//char buff[1000];
 	//sig.configManual("D:\\Code\\QtLancifolium\\formularygb2312.SGF");
-	FileSaveBuff svf;
-	svf.openfile("D:\\Code\\QtLancifolium\\form.SGF");
-	char buff[100];
-	for (int tmpi = 0; tmpi < 10; tmpi++) {
-        //gets(buff);
-        scanf("%s", buff);
-        svf.puts(buff);
-	}
-	svf.putc(EOF);
+
+	ManualAdjustment_main   ("D:\\Code\\QtLancifolium\\formularygb2312.SGF", "D:\\Code\\QtLancifolium\\form.SGF");
 }

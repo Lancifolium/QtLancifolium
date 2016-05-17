@@ -5,9 +5,7 @@ void DevLancifolium::init() {
 }
 
 int DevLancifolium::openfile(char *filename)  { // 讀入文件
-	filebuff = fopen(filename, "r");
-	if (filebuff == NULL) return 0;
-	else return 1;
+	return read.openfile(filename);
 } // finished openfile
 
 void DevLancifolium::deleteroot(GnNode *tmproot) {
@@ -39,16 +37,16 @@ DevLancifolium::~DevLancifolium() {
 int DevLancifolium::dealSize() {
 	char tmpnum[3];//, reader;
 	int tmpi;
-	reader = fgetc(filebuff); // 棄了'['
+	reader = read.getc(); // 棄了'['
 	tmpi = 0;
 	while (isdigit(reader)) {
-		tmpnum[tmpi++] = reader; reader = fgetc(filebuff);
+		tmpnum[tmpi++] = reader; reader = read.getc();
 		if (tmpi > 2) break;
 	}
 	tmpnum[tmpi] = '\0';
 	siz = atoi(tmpnum);
 	if (siz < 4) siz = 4; else if (siz > 26) siz = 26;
-	reader = fgetc(filebuff); //
+	reader = read.getc(); //
 	return 1;
 }
 
@@ -58,41 +56,41 @@ int DevLancifolium::dealAddStones(struct GnNode *tmpnode, int colour) {
 	if (colour == 0) return 0;
 	else if (colour == 1) { // 添加黑子
 		while (reader == '[') {
-			tmpx = toupper(fgetc(filebuff)) - 'A';
-			tmpy = toupper(fgetc(filebuff)) - 'A';
+			tmpx = toupper(read.getc()) - 'A';
+			tmpy = toupper(read.getc()) - 'A';
 			if ((tmpx >= 0) && (tmpx < siz) && (tmpy >= 0) && (tmpy < siz)) {
 				tmpnode->addblacks.push_back(tmpx * 100 + tmpy);
 			}
-			reader = fgetc(filebuff); // 棄了']'
-			reader = fgetc(filebuff); // '['
+			reader = read.getc(); // 棄了']'
+			reader = read.getc(); // '['
 		}
 	}
 	else { // 添加白子
 		while (reader == '[') {
-			tmpx = toupper(fgetc(filebuff)) - 'A';
-			tmpy = toupper(fgetc(filebuff)) - 'A';
+			tmpx = toupper(read.getc()) - 'A';
+			tmpy = toupper(read.getc()) - 'A';
 			if ((tmpx >= 0) && (tmpx < siz) && (tmpy >= 0) && (tmpy < siz)) {
 				tmpnode->addwhites.push_back(tmpx * 100 + tmpy);
 			}
-			reader = fgetc(filebuff); // 棄了']'
-			reader = fgetc(filebuff); // '['
+			reader = read.getc(); // 棄了']'
+			reader = read.getc(); // '['
 		}
 	}
 } // finished dealAddStones
 
 int DevLancifolium::dealMove(GnNode *tmpnode, int colour) {
 	int tmpx, tmpy;
-	reader = toupper(fgetc(filebuff));
-	while (!isalpha(reader) && reader != EOF) reader = fgetc(filebuff);
+	reader = toupper(read.getc());
+	while (!isalpha(reader) && reader != EOF) reader = read.getc();
 	tmpx = reader - 'A';
-	reader = toupper(fgetc(filebuff));
+	reader = toupper(read.getc());
 	tmpy = reader - 'A';
 	if (reader == EOF) return 0;
 	tmpnode->mov = tmpx * 100 + tmpy;
 	tmpnode->stoneProp = colour;
 
-	reader = fgetc(filebuff); // ']'
-	reader = fgetc(filebuff); // 棄了']'
+	reader = read.getc(); // ']'
+	reader = read.getc(); // 棄了']'
 	return 1;
 }
 
@@ -100,7 +98,7 @@ int DevLancifolium::dealCommentNodename(GnNode *tmpnode, int tmpkind) {
 	char tmpsave, buff[BUFFER_LENGTH]; /* 此處不宜過大，否則會出問題的 */
 	int tmpi = 0;
 
-	reader = fgetc(filebuff); // 棄了'['
+	reader = read.getc(); // 棄了'['
 	tmpsave = '\0';
 	while ((reader != ']') || (tmpsave == '\\')) {
 		if (tmpsave == '\\') { // 此處要改
@@ -115,14 +113,14 @@ int DevLancifolium::dealCommentNodename(GnNode *tmpnode, int tmpkind) {
 			tmpsave = reader;
 			if (tmpi < BUFFER_LENGTH) buff[tmpi++] = reader;
 		}
-		reader = fgetc(filebuff); // 下一個
+		reader = read.getc(); // 下一個
 	}
 	buff[tmpi] = '\0';
 	//printf("$$buff: %s", buff); ////////////
 	if (tmpkind == 1) tmpnode->comment = buff; // 評論
 	else tmpnode->nodename = buff; // 節點名稱
 	//std::cout << "|" << tmpnode->comment << "|" << tmpnode->nodename << "|";
-	reader = fgetc(filebuff); // 棄了']'
+	reader = read.getc(); // 棄了']'
 } // finished dealCommentNodename
 
 int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
@@ -133,11 +131,11 @@ int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
 	int tmpform;
 	int tmplab;
 	while (reader == '[') {
-		tmplab = toupper(fgetc(filebuff)) - 'A';
+		tmplab = toupper(read.getc()) - 'A';
 		tmplab *= 100;
-		tmplab += toupper(fgetc(filebuff)) - 'A';
-		while (reader != ']') reader = fgetc(filebuff); // ']'
-		reader = fgetc(filebuff); // '[' or not
+		tmplab += toupper(read.getc()) - 'A';
+		while (reader != ']') reader = read.getc(); // ']'
+		reader = read.getc(); // '[' or not
 		tmpnode->labels.push_back(tmplab);
 	}
 
@@ -165,16 +163,16 @@ int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
 /* 處理節點和棋譜的函數 */
 int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 	char operate[10]; int tmpi;
-	reader = fgetc(filebuff); // 棄掉';' 始以';'，終以';', '(', ')'
+	reader = read.getc(); // 棄掉';' 始以';'，終以';', '(', ')'
 
 	while ((reader != ';') && (reader != '(') && (reader != ')')) { // 內容
-		while (iswhite(reader)) reader = fgetc(filebuff); // 空白
+		while (iswhite(reader)) reader = read.getc(); // 空白
 		tmpi = 0; // 獲取標誌
 		while (isalpha(reader)) { // 當是字母的時候
-			operate[tmpi++] = toupper(reader); reader = fgetc(filebuff);
+			operate[tmpi++] = toupper(reader); reader = read.getc();
 		}
 		operate[tmpi] = '\0'; // LB, C, N, AB, AW, SZ,
-		while (reader != '[' && reader != EOF) reader = fgetc(filebuff); // 找到'['
+		while (reader != '[' && reader != EOF) reader = read.getc(); // 找到'['
 		if (reader == EOF) return 0; // EOF
 
 		switch (operatecase(operate)) {
@@ -191,11 +189,11 @@ int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 		case 2:    dealMove(curNode, BLACKSTONE); break; /* B 黑走子 */
 		case 23:   dealMove(curNode, WHITESTONE); break; /* W 白走子 */
 		default: /* 其他忽略 */
-			while (reader != ']' && reader != EOF) reader = fgetc(filebuff);
-			reader = fgetc(filebuff); // 棄了']'
+			while (reader != ']' && reader != EOF) reader = read.getc();
+			reader = read.getc(); // 棄了']'
 		}
 
-		while (iswhite(reader)) reader = fgetc(filebuff); // 去掉空白，必不可少
+		while (iswhite(reader)) reader = read.getc(); // 去掉空白，必不可少
 	} // finished while ';' '('
 	std::sort(curNode->addblacks.begin(), curNode->addblacks.end(), sortcmp);
 	std::sort(curNode->addwhites.begin(), curNode->addwhites.end(), sortcmp);
@@ -210,9 +208,9 @@ int DevLancifolium::configManual(char *filename) {
 	root->init(NULL);
 	while (!branchStack.empty()) branchStack.pop(); // 清空棧
 
-	reader = fgetc(filebuff);
-	while (reader != '(' && reader != EOF) reader = fgetc(filebuff); /* 找到第一個左括號 */
-	while (reader != ';' && reader != EOF) reader = fgetc(filebuff); /* 找到分號 */
+	reader = read.getc();
+	while (reader != '(' && reader != EOF) reader = read.getc(); /* 找到第一個左括號 */
+	while (reader != ';' && reader != EOF) reader = read.getc(); /* 找到分號 */
 	curNode = root; /**/
 	configNode();
 
@@ -228,9 +226,9 @@ int DevLancifolium::configManual(char *filename) {
 			curNode = new struct GnNode;
 			tmpNode->insertNextNode(curNode); /* 挿入分支 */
 			branchStack.push(tmpNode); /* 上一分支節點入棧 */
-			reader = fgetc(filebuff);
+			reader = read.getc();
 			while ((reader != ';') && (reader != '(') && (reader != ')')
-				&& (reader != EOF)) reader = fgetc(filebuff);
+				&& (reader != EOF)) reader = read.getc();
 			if (reader == ';') configNode(); /* 當是節點的時候直接設置 */
 		}
 		else if (reader == ')') { // ')'
@@ -241,9 +239,9 @@ int DevLancifolium::configManual(char *filename) {
 			else {
 				curNode = branchStack.top();
 				branchStack.pop();
-				reader = fgetc(filebuff); // 棄掉')'
+				reader = read.getc(); // 棄掉')'
 				while ((reader != ';') && (reader != '(') && (reader != ')')
-					&& (reader != EOF)) reader = fgetc(filebuff);
+					&& (reader != EOF)) reader = read.getc();
 			}
 		} // finished if-else ';', '(', ')'.
 		if (reader == EOF) break; // EOF

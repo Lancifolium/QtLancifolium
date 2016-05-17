@@ -5,6 +5,7 @@
 #include "GnCalculate.h"
 #include "GnNode.h"
 #include "FunLancifolium.h"
+#include "FileBuff.h"
 
 #define TRIANGLE 1 /* 三角形 */
 #define DIAMOND 2 /* 方塊 */
@@ -18,8 +19,8 @@ struct DevLancifolium { // 全局結構
 
 	struct GnNode *root; // 根節點
 
-	FILE *filebuff;
 	char reader;
+	FileOpenBuff read;
 
 	struct GnNode *curNode; // 當前節點指針
 	struct GnNode *tmpNode; // 臨時指針
