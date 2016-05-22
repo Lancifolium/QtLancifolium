@@ -288,6 +288,14 @@ int DevLancifolium::joinManuals(DevLancifolium &sig) { /* 將另一個棋譜歸�
 	adjustManual(this->root); /* 調整棋譜即可 */
 }
 
+int DevLancifolium::saveManual(char *filename) { /* 保存棋譜 */
+	FileSaveBuff wrl;
+	wrl.openfile(filename);
+	int deep = 0;
+
+
+}
+
 /* 周邊函數 */
 int DevLancifolium::reverse(int deep, struct GnNode *cur) {
 	if (cur == NULL) return 0;

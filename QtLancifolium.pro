@@ -25,7 +25,6 @@ SOURCES += main.cpp\
     Lancifolium/GnNode.cpp \
     Lancifolium/MovLancifolium.cpp \
     Lancifolium/UniLancifolium.cpp \
-    QtLancifolium/Formula.cpp \
     Lancifolium/FileBuff.cpp
 
 HEADERS  += \
@@ -39,7 +38,6 @@ HEADERS  += \
     QtLancifolium/QtLancifolium.h \
     QtLancifolium/QtWithoutForm.h \
     QtLancifolium/testing.h \
-    QtLancifolium/Formula.h \
     Lancifolium/FileBuff.h
 
 
@@ -51,5 +49,4 @@ RESOURCES += \
 DISTFILES += \
     README.md \
     CHANGELOG \
-    formula.sgf \
     tmp.sgf

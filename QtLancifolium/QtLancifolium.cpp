@@ -51,10 +51,26 @@ QtLancifolium::~QtLancifolium() {
 
 /* 繪圖程序 */
 void QtLancifolium::drawingbord(int bordsiz) {
-    QPainter pain(this);
-    pain.setRenderHint(QPainter::Antialiasing, true); // 使得邊緣柔和
+	QPainter pain(this);
 
-    int tmpi, tmpj;
+	int tmpi, tmpj;
+	pain.setPen(Qt::blue);
+	pain.setBrush(Qt::blue);
+	for (tmpi = 0; tmpi < 19; tmpi++) { // 畫棋盤
+		pain.drawLine(win_xlb + win_gap, win_ylb + win_gap + tmpi * win_gap,
+					  win_xlb + win_gap + 18 * win_gap, win_ylb + win_gap + tmpi * win_gap);
+		pain.drawLine(win_xlb + win_gap + tmpi * win_gap, win_ylb + win_gap,
+					  win_xlb + win_gap + tmpi * win_gap, win_ylb + win_gap + 18 * win_gap);
+	}
+	int dotsize = win_gap / 10;
+	for (tmpi = win_gap + 3 * win_gap - dotsize; tmpi < win_size; tmpi += 6 * win_gap) { // 畫星位
+		for (tmpj = win_gap + 3 * win_gap - dotsize; tmpj < win_size; tmpj += 6 * win_gap) {
+			pain.drawRect(win_xlb + tmpi, win_ylb + tmpj, dotsize * 2, dotsize * 2);
+		}
+	}
+
+	//pain.setRenderHint(QPainter::Antialiasing, true); // 使得邊緣柔和
+
     for (tmpi = 0; tmpi < bordsiz; tmpi++) {
 		for (tmpj = 0; tmpj < bordsiz; tmpj++) {
 			if (onlymov.ston[tmpi][tmpj] == 1) {
