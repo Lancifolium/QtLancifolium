@@ -148,5 +148,57 @@ inline int ManualAdjustment(char *infile, char *oufile) {
 	return 1; // will never reach here
 } /* finished ManualAdjustment */
 
+void
+silent_examine_position(int how_much)
+{
+  int save_verbose = verbose;
+  SGFTree *save_sgf_dumptree = sgf_dumptree;
+  int save_count_variations = count_variations;
+  int save_debug = debug;
+  int save_printmoyo = printmoyo;
+
+  verbose = 0;
+  sgf_dumptree = NULL;
+  count_variations = 0;
+  debug = 0;
+  printmoyo = 0;
+
+  examine_position(how_much, 0);
+
+  verbose = save_verbose;
+  sgf_dumptree = save_sgf_dumptree;
+  count_variations = save_count_variations;
+  debug = save_debug;
+  printmoyo = save_printmoyo;
+}
+
+#define EXAMINE_DRAGONS 4
+float gnugo_estimate_score(float *upper, float *lower) {
+  silent_examine_position(EXAMINE_DRAGONS);
+  if (upper != NULL)
+	*upper = white_score;
+  if (lower != NULL)
+	*lower = black_score;
+  return ((white_score + black_score) / 2.0);
+}
+
+static int gtp_estimate_score(char *s)
+{
+  float score;
+  float upper_bound, lower_bound;
+  UNUSED(s);
+
+  score = gnugo_estimate_score(&upper_bound, &lower_bound);
+  gtp_start_response(GTP_SUCCESS);
+  /* Traditionally W wins jigo */
+  if (score >= 0.0)
+	gtp_printf("W+%3.1f (upper bound: %3.1f, lower: %3.1f)",
+		   score, upper_bound, lower_bound);
+  else if (score < 0.0)
+	gtp_printf("B+%3.1f (upper bound: %3.1f, lower: %3.1f)",
+		   -score, upper_bound, lower_bound);
+  return gtp_finish_response();
+}
+
 #endif // FUNLANCIFOLIUM
 
