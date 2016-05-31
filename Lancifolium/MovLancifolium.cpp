@@ -256,6 +256,7 @@ int MovLancifolium::savetree(int colour, int mov) { //
 		curNode->mov = mov;
 		tmpnode->nxt.push_back(curNode);
 	}
+	return 0;
 }
 
 int MovLancifolium::regainMove() { // 恢復提子
@@ -282,6 +283,7 @@ int MovLancifolium::regainMove() { // 恢復提子
 			}
 		}
 		ston[curNode->mov / 100][curNode->mov % 100] = 0; // 撤銷落子
+		curNode->liftsave.clear(); // clear lift stones
 	    printf(" @ mov: %d $ [%p] ", curNode->mov, curNode);
 		curNode = curNode->parent; // 回溯一個節點
 	    printf("$ [%p]\n", curNode);

@@ -2,7 +2,6 @@
 #define DEVLANCIFOLIUM_H
 
 #include <algorithm>
-#include "GnCalculate.h"
 #include "GnNode.h"
 #include "FunLancifolium.h"
 #include "FileBuff.h"

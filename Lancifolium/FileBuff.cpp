@@ -6,13 +6,13 @@ FileOpenBuff::FileOpenBuff() {
 	this->fileopen = NULL;
 }
 
-int FileOpenBuff::openfile(char *filename)  { /* 失敗將返回0 */
+int FileOpenBuff::openfile(char *filename)  { /* 成功將返回0 */
 	fileopen = fopen(filename, "r");
 	if (fileopen) {
 		reallen = fread(buff, 1, MAXFILEBUFF, fileopen);
-		indx = 0; return 1;
+		indx = 0; return 0;
 	}
-	else return 0;
+	else return 1;
 }
 
 char FileOpenBuff::getc() {
@@ -32,12 +32,12 @@ FileSaveBuff::FileSaveBuff() {
 	this->indx = 0; this->fileopen = NULL;
 }
 
-int FileSaveBuff::openfile(char *filename) { /* 失敗將返回0 */
+int FileSaveBuff::openfile(char *filename) { /* 成功將返回0 */
 	fileopen = fopen(filename, "w");
 	if (fileopen) {
-		indx = 0; return 1;
+		indx = 0; return 0;
 	}
-	else return 0;
+	else return 1;
 }
 
 void FileSaveBuff::putc(char chr) { /* 輸入EOF結束流並保存文件 */

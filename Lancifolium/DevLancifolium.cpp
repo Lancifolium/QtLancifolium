@@ -47,7 +47,6 @@ int DevLancifolium::dealSize() {
 	siz = atoi(tmpnum);
 	if (siz < 4) siz = 4; else if (siz > 26) siz = 26;
 	reader = read.getc(); //
-	return 1;
 }
 
 int DevLancifolium::dealAddStones(struct GnNode *tmpnode, int colour) {
@@ -91,7 +90,6 @@ int DevLancifolium::dealMove(GnNode *tmpnode, int colour) {
 
 	reader = read.getc(); // ']'
 	reader = read.getc(); // 棄了']'
-	return 1;
 }
 
 int DevLancifolium::dealCommentNodename(GnNode *tmpnode, int tmpkind) {
@@ -156,7 +154,7 @@ int DevLancifolium::dealLabels(struct GnNode *tmpnode, int form) {
 	default: break;
 	}
 
-	return 1;
+	return 0;
 }
 
 
@@ -201,8 +199,8 @@ int DevLancifolium::configNode() { // 處理一個非根節點，curNode指之
 } // finished configNode
 
 int DevLancifolium::configManual(char *filename) {
-	if (!openfile(filename)) return 0; /* 文件讀取失敗 */
-	if (root != NULL) return 0; /* 棋譜樹不爲空 */
+	if (openfile(filename)) return 1; /* 文件讀取失敗 */
+	if (root != NULL) return 2; /* 棋譜樹不爲空 */
 	this->init(); /* init */
 	root = new struct GnNode;
 	root->init(NULL);
@@ -268,13 +266,13 @@ int DevLancifolium::adjustnxtlist(vector<GnNode *> &nxt) {
 }
 
 int DevLancifolium::adjustManual(GnNode *tmpnode) {
-	if (tmpnode == NULL) return 0;
+	if (tmpnode == NULL) return 1;
 	adjustnxtlist(tmpnode->nxt); /* 調整當前節點的子節點列表 */
 	for (vector<GnNode *>::iterator tmpi = tmpnode->nxt.begin();
 			tmpi != tmpnode->nxt.end(); tmpi++) {
 		adjustManual(*tmpi);
 	}
-	return 1;
+	return 0;
 }
 
 
@@ -298,7 +296,7 @@ int DevLancifolium::saveManual(char *filename) { /* 保存棋譜 */
 
 /* 周邊函數 */
 int DevLancifolium::reverse(int deep, struct GnNode *cur) {
-	if (cur == NULL) return 0;
+	if (cur == NULL) return 1;
 	cur->printbase();
 
 	if (cur->nxt.size() > 1) {

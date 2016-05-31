@@ -22,6 +22,8 @@ public:
 	Formula(QWidget *parent = 0);
 	~Formula();
 
+	void drawingbord(); // draw bord
+
 private:
 	void paintEvent(QPaintEvent *);
 	void mouseReleaseEvent(QMouseEvent *las);
@@ -49,6 +51,7 @@ private:
 	QPushButton *butt_backroot; // 收子
 	QPushButton *butt_prebranch; // 上分支
 	QPushButton *butt_openfile; // 打開文件
+	QPushButton *butt_trymoving; // 試下
 };
 
 #endif // FORMULA_H

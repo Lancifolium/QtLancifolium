@@ -24,3 +24,10 @@ The research plan of Qt Lancifolium distribution:
 
 2016.05.12:
 1, sgf棋譜注釋內只對方括號進行了轉義;
+
+2016.05.31:
+1, 考慮構建FormLancifolium文件;
+2, 畫代碼佈局圖並將之放到網頁上;
+3, 精簡DevLancifolium等文件的功能，使之功能單一化，Dev就用來讀取和修改sgf棋譜樹就好了;
+4, Formulary使用Dev讀取棋譜，繼承使用MovLancifolium;
+5, 規範一下返回值，返回0才正常，否則就是報錯~
