@@ -12,8 +12,15 @@
 #include <QMessageBox>
 #include <QPalette>
 #include <QPushButton>
+#include <QLineEdit>
+#include <QTextBrowser>
+#include <QCheckBox>
+#include <QComboBox>
 #include <QResizeEvent>
 #include "Lancifolium/DevLancifolium.h"
+
+#define FORM_READ 0 // 讀譜模式
+#define FORM_EDIT 1 // 編輯模式
 
 /* 先試著實現一個簡單的打譜界面再說 */
 struct Formula : public QWidget {
@@ -52,6 +59,11 @@ private:
 	QPushButton *butt_prebranch; // 上分支
 	QPushButton *butt_openfile; // 打開文件
 	QPushButton *butt_trymoving; // 試下
+
+	QLineEdit *show_nodename; // 顯示節點名稱
+	QTextBrowser *show_comment; // 顯示評論
+	QCheckBox *show_coor; // 顯示坐標
+	QComboBox *show_movnumber; // 顯示手數
 };
 
 #endif // FORMULA_H
