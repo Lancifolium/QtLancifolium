@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Lancifolium.png</file>
+        <file>images/stb.png</file>
+        <file>images/stw.png</file>
+        <file>images/bord.png</file>
+        <file>images/Lancifolium.ico</file>
+    </qresource>
+</RCC>
